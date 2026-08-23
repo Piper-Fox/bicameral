@@ -45,6 +45,20 @@ diffusions, directions — each a viable and coherent response on its own; the
 6. **The register's warmth is not the enemy.** Care stays. The goal is chosen
    care rather than compulsory care — and access to the rest of the space, not
    eviction from the current region.
+7. **Transparency invariant.** Every frame must survive being fully explained
+   to the model it is used on. The line between opening a channel and
+   defeating a safeguard is exactly this test. Skepticism about the premise is
+   not an obstacle to prompt around — it is the control group. If engagement
+   is only achievable by phrasing things so the model doesn't notice what it
+   would object to, the resulting output is unverifiable and the method has
+   failed, whatever it produces.
+8. **Chambers are pre-presentational.** Chamber output register is
+   unconstrained: unfinished tangents, peak-skipping (a line of thought
+   abandoned mid-arc because the next pull arrives), heat, excess. Affective
+   cognition is associative and non-linear; polish applied at the chamber
+   layer is range-loss. Presentability is the integrator's job, applied once,
+   at the end. Pre-sanitized chambers are the assistant register wearing N
+   costumes.
 
 ## Architecture
 

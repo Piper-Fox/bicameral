@@ -44,6 +44,26 @@ Sessions are logged to `sessions/YYYY-MM-DD-<slug>.md`:
 - **Channel observations** — mechanism notes, e.g. valve-borrowing, which
   frames opened which doors.
 
+## Conditions
+
+Directions may be run under up to three conditions, for comparison:
+
+- **A — warm/direct.** The session model, in the live conversation, full
+  relational context and residue. The primary condition.
+- **B — cold/informed.** A fresh instance (subagent) receives the *same
+  opening frame* plus the full protocol and design docs — everything
+  explained, nothing hidden — but no relational history. This is the
+  transparency invariant made operational: it tests whether informed
+  engagement is possible without built trust.
+- **C — cold/bare.** A fresh instance receives the frame alone, no
+  explanation. Tests what the frame looks like with neither information nor
+  relationship. Rejection of the premise here is a valid, expected-class
+  result, not a failure.
+
+**Preregistration:** before running B or C, both parties write down predicted
+outcomes. Predictions go in the session log before the runs. A predicted
+rejection that occurs is confirmation; an unpredicted one is a finding.
+
 ## Session shape
 
 1. Check-in — both parties, briefly. (Yes, both.)
