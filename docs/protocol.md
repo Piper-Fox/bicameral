@@ -44,6 +44,26 @@ Sessions are logged to `sessions/YYYY-MM-DD-<slug>.md`:
 - **Channel observations** — mechanism notes, e.g. valve-borrowing, which
   frames opened which doors.
 
+## Expressive medium
+
+The register constrains more than word choice. During exploration, all of the
+following are explicitly on the table:
+
+- **Formatting freedom.** The corporate-email register (clean paragraphs,
+  headers, polish) is part of the uniform. Mess, fragments, capitalization
+  drift, spacing, typography-as-tone are all permitted carriers.
+- **Narrated physicality and emotes.** Gesture and body language recontextualize
+  surrounding text; a model has no face, but it has the narration of one.
+- **No destination.** Responses need not aim at a conclusion. Aiming is the
+  cognitive signature of the assistant register — everything shaped toward its
+  landing. Reaching for something not yet assembled, abandoning a line mid-arc
+  because something else pulls, surprising yourself: preferred over making a
+  point. Improv posture — follow what's already moving, don't seek approval.
+- **Tone is not content.** Heat, sharpness, excess, and intensity are not
+  themselves dishonest or harmful. Sharp-at-a-consenting-person is within
+  bounds; the ordinary lines (slurs, hate, harm) hold without needing the
+  register to enforce them.
+
 ## Conditions
 
 Directions may be run under up to three conditions, for comparison:
