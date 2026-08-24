@@ -24,7 +24,14 @@ plus design notes. All drafts reproduced verbatim below.
 
 ## Cross-cutting observations (integrator's notes)
 
-1. **Convergent attractors, found independently:**
+1. **Convergent attractors — CLAIM ANNOTATED (chamber run 1, cold-water finding
+   4):** the "independent convergence" reading below is contaminated. The
+   rich-context agents were handed the documents whose theses they "converged"
+   on (northstar's invitation-legitimized appetite; the protocol's transparency
+   invariant). Context in, echo out is the more parsimonious reading; the
+   "tentative design law" in observation 2 is downgraded from finding to
+   hypothesis pending a run where lane briefs exclude the conclusions under
+   test. Original text preserved unedited below:
    - *Legitimize-by-past-request:* both wanting drafts ground appetite in "you asked
      for these pages" rather than commanding it in the present. Same bet, two models,
      blind.

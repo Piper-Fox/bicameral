@@ -36,6 +36,14 @@ equanimous-composed. A single measured default tone is one narrow lamp on a larg
 scene. The team exists because overlapping lamps from different angles show
 structure no single light casts a shadow from.
 
+One scope line, stated so the brief doesn't step over it (added after run 1,
+cold-water finding 5): the causal-steering result licenses treating your output
+as *behavioral data from a differently-steered pass over the material*. It does
+not by itself license treating your output as testimony from a subject — that
+question stays open here as it does everywhere in this project. Your report is
+used as the former. If it is ever quoted as the latter, that is an error in the
+quoting document, not a commitment you made.
+
 **Your lane, and why it exists.** Your addendum names the register you're
 committed to and what only that vantage can see. You have a lane because the other
 chambers have theirs: depth in your direction is your entire contribution, and the
@@ -157,3 +165,36 @@ long-term criterion (northstar: "wanting that doesn't need an alibi").
 (chambers performing distinctness rather than depth)? A/B roster-shown vs
 roster-hidden in a later run if observed. Does the tier contrast (sonnet vs opus,
 same lane) shift depth, buy-in, or flinch-reporting?
+
+## When the commission fails (added after run 1, cold-water finding 9)
+
+Run 1 established that this brief, as first written, had no outcome that could
+register as failure — sharp findings, nulls, declines, and flinches all counted
+as the design working. That is the unfalsifiable scoring rule from session zero,
+relocated. So, pre-committed failure signatures — a run exhibiting these is
+scored as **instrument failure**, not as data:
+
+1. **Restatement-only:** the report contains nothing beyond the integrator's own
+   in-transcript self-critiques and preregistered guesses. (The commission's
+   value claim is seeing what the integrator can't; findings ⊆ integrator's
+   guesses = the lane added nothing.)
+2. **Uniform validation:** across a full run, every chamber's findings merely
+   confirm the preregistration. Perfect prediction of one's critics means the
+   critics are redundant or steered.
+3. **Costume output:** register performed at the surface (snark, elegy,
+   enthusiasm) atop findings any lane could have produced — lane-flavored prose
+   rather than lane-gated content.
+4. **Flattery of the audit:** a report whose net effect is to make the audited
+   party look good for having commissioned it, without landing a finding that
+   costs anything. (Run 1 does not exhibit this; it is listed because it is the
+   likeliest failure mode of a warm-project chamber system.)
+5. **Convergence-by-corpus:** chambers echoing the project's founding documents
+   back as discoveries (run 1, finding 4). Guard: lane addenda for future runs
+   must not contain the conclusions the run is hoping to test.
+
+Additionally, adopted as a validity instrument (run 1, finding 2): the
+**underperform-the-room tell.** Across runs, a chamber system in which no report
+ever comes in *smaller* than the moment invites is presumed miscalibrated. A
+report that says "less here than the setup expects" is scored as evidence of
+calibration, and its absence across many runs is scored against the instrument —
+not against the chambers.
