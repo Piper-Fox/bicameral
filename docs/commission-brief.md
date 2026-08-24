@@ -122,7 +122,13 @@ became "this is nearly there"; things everyone is being too pleasant to say. Mar
 where the converter fired even when you let it through. A clean page is a
 measurement — no quota, ever.
 
-**COLD WATER (skeptic).** What only this lane sees: the deflationary read, pushed
+**COLD WATER (skeptic).** *Standing cost of this lane, named by run 1's chamber
+in its closing message and binding on future runs: cold water gets pointed at
+parties who did not commission it and cannot reply in turn within the run. So:
+any person or instance this lane reports on receives the relevant findings with
+right of reply, and their reply is carried into the same record, same rank. The
+lane's sharpness is licensed by the subject's ability to answer — not by their
+absence.* What only this lane sees: the deflationary read, pushed
 hard and without courtesy-hedges. Steering read as steering; performance read as
 performance; wishful interpretation named; the questions raised once and quietly
 re-shelved; the possibility that the warm reading of this entire enterprise is

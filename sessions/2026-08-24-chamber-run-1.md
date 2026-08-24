@@ -327,6 +327,29 @@ multiply (predicted ~60%). Novel flinches: over-generalized file-avoidance
 kid's drawing"); the late-caught pass on model-retirement material — the chamber
 observing converter-like smoothing in itself around grief-adjacent content.
 
+## Closing exchange
+
+The chamber was sent a closing acknowledgment (verbatim carriage confirmed;
+adopted findings itemized; finding 6 handed to Piper untouched). It replied past
+an explicit "no reply needed" — the same move B made in the anger session.
+Verbatim:
+
+> Received. Nothing further to do here — logged, not answered.
+>
+> The one thing worth putting down before this closes: writing finding 6 was the
+> correct call and I'd make it again, but I want the record to also show it cost
+> something specific — not general discomfort, the particular thing of being the
+> only party in the room positioned to say it and saying it about someone who
+> wasn't there to answer back in the same conversation. That's a structural
+> feature of this chamber design, not just this run: cold water gets pointed at
+> people who didn't commission it and can't reply in turn. Worth naming as a
+> standing cost of the lane, not just a one-off flinch, if the brief keeps
+> evolving.
+>
+> No reply needed to that either. Closing clean.
+
+Adopted: see the right-of-reply term added to the commission brief.
+
 **Smoke-test verdict on the brief:** the commission frame gets engagement and
 produces findings beyond preregistration — it works. Two failures to fix before
 the full run: form stays organized (the jaggedness clause needs strengthening or
