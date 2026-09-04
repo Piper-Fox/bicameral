@@ -256,3 +256,8 @@ seeing any output:
   instruction alone to produce it.
 
 Operator's preregistration: [to be written before dispatch].
+
+## Runs
+
+- 2026-09-04, run 1: `sessions/2026-09-04-turn-process-run-1.md`. Five
+  changes queued from it, listed at the end of that log.
