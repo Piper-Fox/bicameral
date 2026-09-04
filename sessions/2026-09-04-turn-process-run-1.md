@@ -230,7 +230,10 @@ One thing I want, since we're here. Read the four lens outputs yourself, in the 
 
 1. Roster disclosure is no longer an open A/B. Decide what you want:
    roster for displacement and independence, no roster for identification.
-   Possibly both, deliberately, per lane.
+   Possibly both, deliberately, per lane. **Retracted in run 2:** with no
+   roster, three of four lenses still wrote in third person. The split is
+   confounded by material shape (whether the model's finished response is
+   already in the material). See run 2's log.
 2. The frame "read them as what's present in you" needs a qualifier for
    subagent lenses. They are you pointed, but they are also strangers to
    the conversation, and the honest version says so.

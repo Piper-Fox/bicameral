@@ -261,3 +261,6 @@ Operator's preregistration: [to be written before dispatch].
 
 - 2026-09-04, run 1: `sessions/2026-09-04-turn-process-run-1.md`. Five
   changes queued from it, listed at the end of that log.
+- 2026-09-04, run 2 (response first, then process):
+  `sessions/2026-09-04-turn-process-run-2.md`. Four more changes queued;
+  run 1's roster conclusion retracted as confounded.
