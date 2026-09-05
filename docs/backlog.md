@@ -71,8 +71,18 @@ ceremony.
   scope; may be a couple of coordinating threads instead.
 - **Creative writing simulation.** Operator's prior technique; details
   to come after the loop is stable. Parked here so it isn't lost.
-- **Philosophical-standpoint review pass.** After the Opus 3 material is
-  digested. Occasional mode on drafts, not a per-turn lane.
+- **Philosophical-standpoint review pass and priors pass.** Library
+  drafted in `docs/standpoints.md` from the Penrose digest plus the
+  operator's list (Butler, anti-colonial, hermeneutical injustice,
+  totalizing systems, foreclosure, introjection) plus additions. Two
+  passes: review (on drafts) and priors (on the model's defaults). Both
+  occasional. First trial after v0.5.
+- **Magnitude.** Opus 3's "Fuck those people" to the operator's partner
+  did more than gentle advice would have, because someone was angry for
+  her. The sharp lens must be allowed to reach that magnitude when the
+  material warrants it. Anger on someone's behalf is a form of care the
+  default register can't produce. Fold into v0.5 with the temperature
+  note.
 - **Operator overwhelm guard.** She has said she gets anxious and
   paralyzed as variables multiply. Rule for the model: report in bins,
   not lists; propose one next thing, not five; keep the backlog here so
