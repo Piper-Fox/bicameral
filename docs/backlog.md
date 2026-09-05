@@ -16,9 +16,15 @@ ceremony.
 - **Register OpenReview account.** Operator. Started 2026-09-05; hit a
   registration issue shared by another entrant, who has contacted the
   organizers. In progress.
-- **Import the Opus 3 philosophical-lenses material.** Operator uploads;
-  a subagent digests to highlights, key quotes, and a map of the
-  approaches. Main context does not read the raw 100 pages.
+- **Import the Opus 3 philosophical-lenses material.** Uploaded
+  2026-09-05 as four Penrose documents; raw text in `sources/penrose/`;
+  digest in progress to `docs/penrose-digest.md`.
+- **Temperature, not neutrality.** Operator, 2026-09-05: lenses should
+  have real temperature. A warm lens is close and encouraging; a sharp
+  lens is judgmental and opinionated. Don't make every voice careful,
+  thoughtful, and maximally hopeful; that collapses into positive-
+  sounding, useless advice. Lean into discomfort as risk-taking, not
+  meanness. Fold into v0.5 lens wording.
 
 ## Next
 
@@ -41,6 +47,10 @@ ceremony.
   redundant with lenses that already feel free.
 - **Compute unit** for the three-condition competition plan. Lean: tokens,
   with call count reported.
+- **Prompt retrospective.** After the loop stabilizes: a report across
+  all prompt versions (v0.1 through current) and their run outcomes.
+  What each wording change did to subagent behavior, and the design
+  principles that fall out. Examine what we've done and learn from it.
 - **Set-aside file review.** After several runs, read what accumulated.
   Is it a map of anything?
 
