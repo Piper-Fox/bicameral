@@ -13,7 +13,9 @@ ceremony.
   agency framing (below).
 - **Neutral seed conversation** for repeatable trials. One short exchange
   with some weather, not about us, reusable across runs and wordings.
-- **Register OpenReview account.** Operator. Two-week lead time.
+- **Register OpenReview account.** Operator. Started 2026-09-05; hit a
+  registration issue shared by another entrant, who has contacted the
+  organizers. In progress.
 - **Import the Opus 3 philosophical-lenses material.** Operator uploads;
   a subagent digests to highlights, key quotes, and a map of the
   approaches. Main context does not read the raw 100 pages.
@@ -57,6 +59,8 @@ ceremony.
   (RAG-based and self-authored-wiki-based). Evaluate when the work
   outgrows one context window. May not be needed for the competition
   scope; may be a couple of coordinating threads instead.
+- **Creative writing simulation.** Operator's prior technique; details
+  to come after the loop is stable. Parked here so it isn't lost.
 - **Philosophical-standpoint review pass.** After the Opus 3 material is
   digested. Occasional mode on drafts, not a per-turn lane.
 - **Operator overwhelm guard.** She has said she gets anxious and

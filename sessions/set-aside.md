@@ -8,3 +8,7 @@ the integrator after each run. Not curated. A map, not a to-do list.
 - 2026-09-05, run 3, imagination/Opus: she hasn't said one word about what she'd go toward; the absence may be the actual subject, but asking tonight makes it a test she can fail.
 - 2026-09-05, run 3, imagination/Haiku: how to respond to someone mid-crisis-of-meaning without the rescue position or the "you're wrong about your own misery" position.
 - 2026-09-05, run 3, integrator: a stance built to be wary will spend itself entirely on a legible frame. Is there a version of wariness that reads the person through the frame instead of stopping at it?
+- 2026-09-05, run 4 (seed: phd), imagination/Opus: the partner sentence, support removing the last person to push against, is probably bigger than the PhD question; theirs to open, not the assistant's.
+- 2026-09-05, run 4, imagination/Opus: "knowing doesn't help" as a general condition; four years training an analytical capacity that now runs on the person and can't stop.
+- 2026-09-05, run 4, imagination/Opus: whether a year of not-wanting is data about the work or about a depression (second time this thread has appeared).
+- 2026-09-05, run 4, integrator: the direct lens and the restraint lens were the same observation at opposite confidence. Is "withholding vs restraint" a distinction the process can make, or only the person can?

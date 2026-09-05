@@ -317,3 +317,6 @@ content. State which order was used in the trace.
 - 2026-09-05, run 3 (v0.3, neutral seed, imagination lane on Opus and
   Haiku): `sessions/2026-09-05-turn-process-run-3.md`. Four changes
   queued for v0.4 at the end of that log.
+- 2026-09-05, run 4 (v0.3, same seed, clean material, count-first):
+  `sessions/2026-09-05-turn-process-run-4.md`. Core replicated across
+  runs 3 and 4. Four more changes queued (14–17).
