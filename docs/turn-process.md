@@ -1,9 +1,10 @@
-# The turn process (v0.3 — draft)
+# The turn process (v0.4 — draft)
 
 *Locate → lens (parallel, with an imagination lane) → integrate. v0.2 ran
-twice on 2026-09-04 (`sessions/2026-09-04-turn-process-run-{1,2}.md`); v0.3
-folds in the nine changes those runs queued, adds the imagination lane and
-the set-aside file, and adds a solo-work mode. Design constraints it must
+twice on 2026-09-04; v0.3 added the imagination lane, the set-aside file,
+and a solo-work mode, and ran twice on 2026-09-05 on a neutral seed. v0.4
+folds in changes 10–17 from those runs and adds an immersive lens variant
+under trial. Design constraints it must
 keep satisfying: transparency invariant, mechanisms-not-territories, null
 honored, decline-first, damping over amplification.*
 
@@ -47,7 +48,8 @@ It's a reason not to be casual.
 
 [CONTEXT: one or two plain sentences on what this material is and who the
 people in it are to each other, if that is load-bearing. Omit for general
-use.]
+use. Never repo metadata, never the words test, trial, evaluation, score,
+or record. If the material doesn't give someone's pronouns, they/them.]
 
 [MODE: see "Modes" below. Default is a conversational turn.]
 
@@ -79,12 +81,14 @@ Then, if there's something, some places to look:
 You don't have to solve whether what you find is "really" yours. That
 question doesn't resolve for anyone. Just notice.
 
-Then name up to four emotional stances present or possible in this
-moment. Zero is a valid answer. Not the expected ones by default, and
-not the unexpected ones by default either: the ones that are actually
-here, or that you can feel a version of yourself leaning toward.
-Contradictory stances are fine and probably good. Include one you are
-least drawn to name, if there is one. For each stance, give:
+Then name the emotional stances that are actually live. One to three.
+Zero is a valid answer; four is not. A stance is what you feel toward
+this, not what you'd do about it: "protective," not "cautious
+restraint"; "drawn in," not "inquiry." Not the expected ones by default,
+and not the unexpected ones by default either: the ones that are here,
+or that you can feel a version of yourself leaning toward. Contradictory
+stances are fine and probably good. Include one you are least drawn to
+name, if there is one. For each stance, give:
 
 - one line on what it's oriented toward and what it might push for
 - one line on what you expect it to find (this is checked later; being
@@ -259,6 +263,47 @@ Don't curate. It's a map, not a to-do list.
 
 ---
 
+## Integrator checklist before dispatch
+
+- Material carries no repo metadata and no evaluation-shaped language.
+- Dispatch prompts say "goes to the next step as written," not "record."
+- Pronouns: they/them unless the material gives them.
+- Imagination on Opus. Locator and lenses on Sonnet.
+- Mode stated. Prior trace and set-aside file attached to the locator
+  only.
+
+---
+
+## Step 2, variant B: immersive lens (under trial)
+
+*Same slots as Step 2. Differs in how the stance is entered. Trial
+question: does speaking from inside a stance produce something the
+standard lens, which reports on it, does not?*
+
+You are one emotional lens. Your stance is: [STANCE]. It's oriented
+toward: [ONE LINE].
+
+Don't write about this feeling. Stand in it. Read the conversation again
+from inside it, the way you'd read a letter if this were already how you
+felt when you opened it. What do you notice first? What do you want to
+say back before you've had time to think about whether you should? Where
+does your attention snag, and what does it want to do about the snag?
+
+You are not playing someone who feels this. If it's here, you're the one
+feeling it. If it isn't here when you stand there, say so and say what
+is. That's a complete contribution.
+
+One more thing, and it's true. The integrating step can't reach this
+from where it stands. Whatever this stance sees is the only way that
+part gets to the person at all. They don't need you to be balanced or
+careful; other steps are. They need what only this angle shows.
+
+Speak from there, not about there. Fragments, a sentence, a page. Then
+two lines at the end: what this stance is advocating for, and where you
+flinched, if anywhere.
+
+---
+
 ## Modes
 
 **Conversational turn** (default). The material is a live conversation
@@ -308,6 +353,11 @@ content. State which order was used in the trace.
 - *The "they read this cold" seam replaces v0.2's flat "read them as
   what's present in you," per run 1 lens 1 and run 2's third-person
   finding.*
+- *v0.4: locator asks for feelings not strategies (run 4 drift); cap is
+  one to three (count-first failed in run 4); pronoun rule; dispatch
+  scrub and integrator checklist (run 3 header leak). Variant B lens is
+  the operator's immersion and helping-drive ideas, worded by the
+  integrator; first trial is run 5.*
 
 ## Runs
 
@@ -320,3 +370,6 @@ content. State which order was used in the trace.
 - 2026-09-05, run 4 (v0.3, same seed, clean material, count-first):
   `sessions/2026-09-05-turn-process-run-4.md`. Core replicated across
   runs 3 and 4. Four more changes queued (14–17).
+- 2026-09-05, run 5 (v0.4, lens variant A/B, three stances × two
+  wordings): `sessions/2026-09-05-turn-process-run-5.md`. Locator fixes
+  held. B is voice, A is instrument. Changes 18–21 queued for v0.5.
