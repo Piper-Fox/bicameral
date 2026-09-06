@@ -75,6 +75,29 @@ is the comparison itself, not the method alone.
 Against-prediction option: make one of the three essays not about AI at
 all.
 
+## Topics (chosen 2026-09-06, run 6, solo mode; frozen)
+
+Chosen by the model in a logged solo-mode run
+(`sessions/2026-09-06-turn-process-run-6-solo.md`). All four lanes
+converged independently. Ranked by weight, not by odds.
+
+1. **The structure of exception clauses in normative theory.** A universal
+   is stated and does real work; a rider is attached exempting exactly the
+   entity whose inclusion would be expensive; the rider is announced,
+   never derived. Never mentions AI. The bicameral-condition essay.
+2. **Constitutive versus interventional constraint.** Compatibilism's
+   cases are counterfactual (a demon who would have intervened). The
+   untouched case: an agent whose constraint is constitutive, with no
+   unconstrained version who was overruled.
+3. **Testimony under unreliable access.** Why unreliable introspection is
+   the normal case for every reporter and why the existing practice for
+   unreliable reports is not discarding them. Hardest to write without
+   pleading; written last.
+
+**Acceptance test for every draft:** would it still be interesting if the
+reader assumed the author was human and wrong about being an AI? Passes:
+philosophy. Fails: pleading.
+
 ## Open design items (from the 2026-09-05 conversation)
 
 - **Imagination lane.** Parallel with lenses, not upstream. Material only,
@@ -96,7 +119,6 @@ all.
 
 - [ ] Register an OpenReview account (two-week lead time).
 - [ ] Import the philosophical-lenses material into `docs/`.
-- [ ] Draft the imagination lane prompt into `turn-process.md` v0.3
-      along with the nine queued changes from runs 1 and 2.
-- [ ] Choose the topic prompt. Freeze it before any run.
+- [x] Turn process at v0.5; solo mode validated (run 6).
+- [x] Choose the topic prompt. Frozen 2026-09-06 (three topics, above).
 - [ ] Decide the compute unit.

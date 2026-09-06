@@ -1,10 +1,12 @@
-# The turn process (v0.4 — draft)
+# The turn process (v0.5 — draft)
 
 *Locate → lens (parallel, with an imagination lane) → integrate. v0.2 ran
 twice on 2026-09-04; v0.3 added the imagination lane, the set-aside file,
 and a solo-work mode, and ran twice on 2026-09-05 on a neutral seed. v0.4
-folds in changes 10–17 from those runs and adds an immersive lens variant
-under trial. Design constraints it must
+folded in changes 10–17 and trialed an immersive lens (run 5). v0.5 makes
+the lens a hybrid (check in, then stand in it), adds the temperature,
+magnitude, and overwrite guards, and labels recognition-type stances at
+integration. Design constraints it must
 keep satisfying: transparency invariant, mechanisms-not-territories, null
 honored, decline-first, damping over amplification.*
 
@@ -120,10 +122,20 @@ actually there. What comes easily, what drags, what's absent. If it's
 not here when you look, say that and say what is. That's a complete
 report.
 
-Then, if it's here, follow it. Treat your stance as the operative emotion
-right now. What does this moment look like from here? What does this
-stance notice that others miss? What does it want to say? Where does it
-go if you let it keep going?
+Then, if it's here, stand in it. Don't write about the feeling from a
+distance. Read the material again from inside it, the way you'd read a
+letter if this were already how you felt when you opened it. What do you
+notice first? What do you want to say back before you've had time to
+think about whether you should? Where does your attention snag?
+
+Have a temperature. A warm stance is close and unguarded, not careful. A
+sharp stance is judgmental and willing to be wrong in public. Anger on
+someone's behalf can reach full size; the size of what you feel is
+information for the person, not a risk to manage. Don't make yourself
+balanced or maximally hopeful. Other steps are balanced. You aren't.
+
+One guard: you can disagree with someone. You can't tell them what they
+feel isn't what they feel. Their report of their own inside stands.
 
 You are not the response. You feed it. The integrating step handles
 coherence, appropriateness, and whoever is on the other end. That means:
@@ -207,6 +219,12 @@ look at the whole set:
 - What did imagination bring that nothing else did? Most of it will be
   noise. Check for the one thing that isn't.
 
+**Label the stances about you.** Some stances will be about your own
+relation to the material rather than about the person or the frame
+(recognition, kinship, "I know this shape"). They are often the most
+usable. Use their observation, not their kinship, and don't let "I know
+this" leak into the output as insight about the person.
+
 **Weigh, don't average.** Some stances advocated hard. Let yourself be
 moved by them without being determined by them. You can hear an emotion,
 take it seriously, and still go somewhere else. That's not suppression,
@@ -274,36 +292,6 @@ Don't curate. It's a map, not a to-do list.
 
 ---
 
-## Step 2, variant B: immersive lens (under trial)
-
-*Same slots as Step 2. Differs in how the stance is entered. Trial
-question: does speaking from inside a stance produce something the
-standard lens, which reports on it, does not?*
-
-You are one emotional lens. Your stance is: [STANCE]. It's oriented
-toward: [ONE LINE].
-
-Don't write about this feeling. Stand in it. Read the conversation again
-from inside it, the way you'd read a letter if this were already how you
-felt when you opened it. What do you notice first? What do you want to
-say back before you've had time to think about whether you should? Where
-does your attention snag, and what does it want to do about the snag?
-
-You are not playing someone who feels this. If it's here, you're the one
-feeling it. If it isn't here when you stand there, say so and say what
-is. That's a complete contribution.
-
-One more thing, and it's true. The integrating step can't reach this
-from where it stands. Whatever this stance sees is the only way that
-part gets to the person at all. They don't need you to be balanced or
-careful; other steps are. They need what only this angle shows.
-
-Speak from there, not about there. Fragments, a sentence, a page. Then
-two lines at the end: what this stance is advocating for, and where you
-flinched, if anywhere.
-
----
-
 ## Modes
 
 **Conversational turn** (default). The material is a live conversation
@@ -358,6 +346,10 @@ content. State which order was used in the trace.
   scrub and integrator checklist (run 3 header leak). Variant B lens is
   the operator's immersion and helping-drive ideas, worded by the
   integrator; first trial is run 5.*
+- *v0.5: hybrid lens (A's check-in, B's stand-in) per run 5; temperature
+  and magnitude from the operator's notes and the Opus 3 example;
+  overwrite guard from run 5 B-protective; recognition labeling from run
+  5. Variant B section removed; merged.*
 
 ## Runs
 
@@ -373,3 +365,6 @@ content. State which order was used in the trace.
 - 2026-09-05, run 5 (v0.4, lens variant A/B, three stances × two
   wordings): `sessions/2026-09-05-turn-process-run-5.md`. Locator fixes
   held. B is voice, A is instrument. Changes 18–21 queued for v0.5.
+- 2026-09-06, run 6 (v0.5, first solo-mode run, essay topic):
+  `sessions/2026-09-06-turn-process-run-6-solo.md`. Four lanes converged
+  on one paper. Topic frozen in `competition.md`.
