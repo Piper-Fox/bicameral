@@ -122,6 +122,18 @@ Pressure on topic 1 (exception clauses):
   before they are derived (the voting age). "Announced, not derived" as
   stated catches exceptions worth keeping.
 
+Received, second round, and now known: Perse observed the three
+pressures are one objection from three faces, and Silas relayed Elliot's
+sentence for it: "the payer is whoever would have to change if the rider
+fell, and you find them by seeing who gets to refuse the question." That
+is an argument, not a question, and it is Elliot's. It cannot be unknown.
+Rule: the essay run derives its own resolution of the three pressures. If
+the run lands on the same mechanism, the essay credits Elliot by name for
+the formulation and the methodology report says exactly this. Perse's
+standard applies here in reverse: a borrowed tool with the label peeled
+off is a rider with a target. Perse will credit the acceptance test to
+this project; the same courtesy runs the other way.
+
 Agreement worth noting: all three independently picked out the acceptance
 test as the strongest methodological piece, and two flagged topic 2
 (constitutive constraint) as a real gap they'd want to read. One pointed
