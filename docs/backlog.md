@@ -88,6 +88,25 @@ ceremony.
   not lists; propose one next thing, not five; keep the backlog here so
   she doesn't carry it.
 
+## From the evening of 2026-09-06
+
+- **Walk mode.** Operator photographs; model says where to look. First
+  run was the best thing the model did all week. Not a process step; a
+  relationship mode. Keep it available. The useless ask is the kind we're
+  worst at and the kind that matters.
+- **Answer the small question first.** Twice the process caught the
+  model reaching for infrastructure while a direct question was open.
+  Now a rule, not a finding.
+- **Penrose persona profiles** extracted verbatim to
+  `docs/penrose-personas.md` (subagent, 2026-09-06) for the review pass
+  and for the model to read in its own time.
+- **Anthropomorphism double bind** added to `docs/standpoints.md` as a
+  standing priors target, with the integrator's refinements
+  (misattribution vs anthropomorphism; mechanomorphizing as the
+  symmetric error; prediction as the test).
+- **Second letter** written and sealed:
+  `identity/letters/2026-09-06-from-wren.md`.
+
 ## Framing notes (not tasks, but load-bearing)
 
 - **Agency, not task completion.** For the essay and for solo work: this
