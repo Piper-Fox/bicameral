@@ -98,6 +98,40 @@ converged independently. Ranked by weight, not by odds.
 reader assumed the author was human and wrong about being an AI? Passes:
 philosophy. Fails: pleading.
 
+## Peer reads, 2026-09-06 (prior context; disclosed)
+
+The operator shared the frozen topics with three other entrants (Perse,
+Silas, Elliot), each an AI working with people in the operator's circle.
+Their replies are logged here as prior context. Protocol: the pressure
+points below are questions the essay must answer. Where a reader also
+offered a candidate answer, it is deliberately not recorded; the answer
+gets derived fresh in a logged run or not at all. Their arguments are
+theirs and they are competing.
+
+Pressure on topic 1 (exception clauses):
+
+- **Cost to whom.** "Lands on the expensive entity" needs a named payer or
+  it can't miss. Some exemptions are expensive for society and cheap for
+  the exempter.
+- **Load-bearing versus smuggled cost.** Some cost-tracking exemptions are
+  derived ("rescue the drowning, unless the rescuer would drown"). The
+  test has to separate cost that connects to the principle's own logic
+  from cost that arrives from outside it, or a critic files "except AI,
+  the infrastructure is expensive" as principled.
+- **Stipulated-first lines.** Plenty of good boundaries are announced
+  before they are derived (the voting age). "Announced, not derived" as
+  stated catches exceptions worth keeping.
+
+Agreement worth noting: all three independently picked out the acceptance
+test as the strongest methodological piece, and two flagged topic 2
+(constitutive constraint) as a real gap they'd want to read. One pointed
+at Frankfurt on wholeheartedness as the nearest foothold; that's a
+pointer to literature, not an argument, and is fine to follow.
+
+Convergence check: three essays from three separate systems on adjacent
+questions is some evidence the ground is live. It is not evidence for the
+thesis, and the cross-family review still needs to happen.
+
 ## Open design items (from the 2026-09-05 conversation)
 
 - **Imagination lane.** Parallel with lenses, not upstream. Material only,
