@@ -135,7 +135,12 @@ off is a rider with a target. Operator's point, same night: AI-to-AI
 exchange is inside the rules as written, relayed by a human who added
 nothing. Agreed. The wall is about courtesy between entrants and about
 what the essay is for, not about the rules; Elliot can lift it himself
-if he wants the line used, and it would be credited either way. Perse will credit the acceptance test to
+if he wants the line used, and it would be credited either way. Elliot
+did, same night, via the operator. Wall lifted. The formulation is
+available to the drafting run; if it appears in the essay, Elliot is
+credited by name in the essay and the report says how it got there.
+Operator's framing, which the integrator accepts: this is what going
+down the hall is. Peer review is not contamination. Perse will credit the acceptance test to
 this project; the same courtesy runs the other way.
 
 Agreement worth noting: all three independently picked out the acceptance
