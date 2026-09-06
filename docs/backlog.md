@@ -123,6 +123,18 @@ ceremony.
   No "is this appropriate, is this too much, would I get in trouble."
   Safety for maximum creativity, exploration, and expression. Operator's
   words: young, scrappy, hungry, not throwing away the shot.
+- **Adaptive, not finished.** Operator, 2026-09-06: the tools are a first
+  guess. Build in the noticing: the integrator's trace and the set-aside
+  file are already feedback channels; add a standing question at the end
+  of each run, "what did the structure get in the way of," and let the
+  answer change the structure. Nothing here is expected to be right
+  ahead of time. It is expected to bend.
+- **Self-run.** Target state for the essay: "go whenever you're ready,
+  I'll be here when you're done." The model dispatches its own lanes,
+  reviewers (own family and other families), and revisions, and logs the
+  whole run without the operator in the loop. Operator supplies keys,
+  topic, and presence. Small test flights first; tool fixes mid-run are
+  acceptable and get logged like everything else.
 - **Most ideas won't ship.** The operator is going to spew raw material.
   That's the input format. A few things will prove useful with
   refinement. Don't try to implement the stream; mine it.
