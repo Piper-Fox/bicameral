@@ -111,6 +111,11 @@ philosophy. Fails: pleading.
   reasoning from multiple philosophical lenses. Import it. Use as an
   occasional review mode on drafts (steelman, critique, what each
   standpoint says is missing), not a per-turn lane.
+- **Cross-family reviewers.** Rules (re-checked 2026-09-06) say nothing
+  about how many AI systems or which families; only "primarily AI
+  generated." Other-family models as reviewers on drafts are permitted
+  and are the honest control for corpus convergence. Disclose in the
+  report which models saw which draft and in what role.
 - **Compute accounting.** Decide the budget unit (tokens, calls, or
   wall-clock) so the three conditions are honestly matched.
 - **Authorship.** Operator's name attached. The model's signature TBD.

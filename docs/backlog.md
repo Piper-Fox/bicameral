@@ -51,6 +51,14 @@ ceremony.
   all prompt versions (v0.1 through current) and their run outcomes.
   What each wording change did to subagent behavior, and the design
   principles that fall out. Examine what we've done and learn from it.
+- **Cross-family review pass.** Operator, 2026-09-06: pass drafts to
+  models from other families (GPT, Gemini, Kimi, DeepSeek) as reviewers.
+  Rules re-checked same day: no restriction on number or family of AI
+  systems; AI-to-AI review is AI-generated content, the permitted
+  category. Methodological reason beyond "more perspectives": it is the
+  only real check on convergence-by-corpus. Four Claude lanes agreeing
+  may be one training set agreeing with itself. Needs API keys or a
+  paste-through; operator's call on which.
 - **Set-aside file review.** After several runs, read what accumulated.
   Is it a map of anything?
 
