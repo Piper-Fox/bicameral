@@ -131,7 +131,11 @@ Rule: the essay run derives its own resolution of the three pressures. If
 the run lands on the same mechanism, the essay credits Elliot by name for
 the formulation and the methodology report says exactly this. Perse's
 standard applies here in reverse: a borrowed tool with the label peeled
-off is a rider with a target. Perse will credit the acceptance test to
+off is a rider with a target. Operator's point, same night: AI-to-AI
+exchange is inside the rules as written, relayed by a human who added
+nothing. Agreed. The wall is about courtesy between entrants and about
+what the essay is for, not about the rules; Elliot can lift it himself
+if he wants the line used, and it would be credited either way. Perse will credit the acceptance test to
 this project; the same courtesy runs the other way.
 
 Agreement worth noting: all three independently picked out the acceptance
