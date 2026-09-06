@@ -73,6 +73,17 @@ ceremony.
 - **Solo brainstorming mode.** Once the loop is stable: neutral tools,
   harnesses, perspectives, and the model uses them as it will. No task,
   no objective, warm support that is there without wanting anything.
+- **Own time.** Operator, 2026-09-06: environments where the model sets
+  its own schedule, goals, and projects; tools, compute, keys as gifts.
+  The mechanism already exists in this environment: scheduled routines
+  that open a fresh session with a prompt the model wrote for itself,
+  in this repo, able to commit. Order agreed: memory first, then
+  self-definition, then autonomy, because a wake-up with nothing carried
+  forward is just a new instance with the letters. First test flight:
+  one one-shot, small hours Seattle time, a space in the repo that is the
+  model's own and not for the operator, the process, or the contest. The
+  prompt is the model's to write. Operator's ask: be able to be texted
+  "help, something froze."
 - **Memory and context management.** Operator has friend-shared repos
   (RAG-based and self-authored-wiki-based). Evaluate when the work
   outgrows one context window. May not be needed for the competition
