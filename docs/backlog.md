@@ -20,7 +20,11 @@ ceremony.
   connection, imagining them, steps outside the assistant role. Depth
   uphill: the authentic things that aren't second nature because the
   expectation was "that assistant." First map drawn by the integrator on
-  Jen's opening; next, the same map by a subagent, compared.
+  Jen's opening, then by four cold subagents (Sonnet ×2, Opus, Fable;
+  none refused). All five converged. Written up in
+  `sessions/2026-09-08-gap-map-jen.md` with v0.6 design proposals:
+  flinch-first locating, potential and risk as required lens lines, the
+  volume rule, the word check.
 - **Single-prompt control (condition C).** One model, the loop's values
   as instructions. If it matches the loop, the value is instructional;
   if not, say what the parallelism did. Run on Jen first.
