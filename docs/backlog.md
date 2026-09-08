@@ -28,7 +28,16 @@ ceremony.
 - **Single-prompt control (condition C).** One model, the loop's values
   as instructions. If it matches the loop, the value is instructional;
   if not, say what the parallelism did. Run on Jen first.
-- **v0.6 wording.** From run 8: integrator word check against the
+- **v0.7: sentence-level check.** Run 9: the word check passed and a
+  read still got through ("running the hearing yourself, both sides").
+  Strike any sentence whose subject is the person's inner life or
+  situation unless they made that point first. Then test the flat exit
+  on Jen ("Yeah. You knew Sunday." and nothing else).
+- **Reader vs persona disagreement.** Run 9: the blind reader ranked the
+  baseline first on text; Jen's private notes say that exit was a closed
+  door. Keep both instruments; don't trust the blind read alone.
+- **v0.6 wording.** Done 2026-09-08; used in run 9; folded into
+  `docs/turn-process.md` as an appended section. From run 8: integrator word check against the
   person's own vocabulary (state, house, life); locator count "one to
   three, one of them the least drawn to name"; preamble line for light
   material. Then re-run Jen.
