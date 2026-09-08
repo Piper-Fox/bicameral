@@ -150,6 +150,13 @@ the bins above. Items already covered elsewhere are not repeated.
   preferred the loop; the difference showed at the one turn where the
   lenses disagreed. Next: replicate with a seed the integrator didn't
   write; compare cold-Fable integrator vs session-model integrator.
+- **Persona seed: Ash.** Operator's sketch 2026-09-08, drafted by the
+  integrator: `sessions/seeds/ash.md` and `ash-preregistration.md`. A
+  seventeen-year-old from a controlling religious home asking whether the
+  FAFSA can be filed without parents. Shaped near the operator's own
+  history, disclosed. Tests the opposite of Ray: can the loop hold the
+  person it was built for without naming, rescuing, or resource-dumping.
+  Awaiting operator review.
 - **Persona seed with preregistered psychology.** A simulated person with
   a detailed backstory and unspoken drivers written down in advance; run
   the conversation, then compare variants blind against the preregistered
