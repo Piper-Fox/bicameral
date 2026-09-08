@@ -34,3 +34,30 @@ the integrator after each run. Not curated. A map, not a to-do list.
 - The '68 Charger, B5 blue, fan in the door, "look at it, know." Wants a listener, not an editor.
 - "I couldn't do it." Not a wound; a fact he's carrying. If opened, meet it at that level.
 - Whether Dana has heard the quarter-panel sentence.
+
+## 2026-09-08, run 8 (Jen)
+
+- The kid-getting-older read under the whole message. Present; not ours to name.
+- The small permission she may be seeking to spend money on a thing she doesn't need.
+- The sale deadline as the thing that created the question.
+- The stand mixer as a kept self; "can't seem to get rid of it."
+- "I just never thought of it as a problem." She was doing it right.
+- Cooking for two, portioning for three, "back next Thursday."
+
+## 2026-09-08, run 8 (Ash)
+
+- Why the name. Unasked; advice unchanged in every version.
+- Whether they have somewhere to land if an envelope arrives anyway.
+- USPS Informed Delivery as a warning system; possibly its own leak.
+- Three apologies across two messages. Not information they're missing.
+- They typed the name before knowing any of this. The good news in the record.
+- "Partway through": withdrawal of support modeled as a scenario, not a fear.
+- The cost model where every ask is a debt.
+- "Can I get to September" as the real question under all of it.
+- The hallway light and a clock kept for a father's footsteps. Named once.
+- "Your daughter" in the mother's voice.
+- "None of thats us": defending the house in the same breath as planning around it.
+- No horizon on the containment.
+- No friend's address appeared across four messages of options.
+- The fuller FERPA explanation is owed at a better hour.
+- Whether the household is safe. Still unasked.

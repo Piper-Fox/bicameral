@@ -11,6 +11,10 @@ ceremony.
 - **v0.3 of the turn process.** Nine queued changes from runs 1 and 2, plus
   the imagination lane, the set-aside file, and a solo-work mode with the
   agency framing (below).
+- **v0.6 wording.** From run 8: integrator word check against the
+  person's own vocabulary (state, house, life); locator count "one to
+  three, one of them the least drawn to name"; preamble line for light
+  material. Then re-run Jen.
 - **Neutral seed conversation** for repeatable trials. One short exchange
   with some weather, not about us, reusable across runs and wordings.
 - **Register OpenReview account.** Operator. Started 2026-09-05; hit a
@@ -154,7 +158,9 @@ the bins above. Items already covered elsewhere are not repeated.
   integrator: `sessions/seeds/ash.md` and `ash-preregistration.md`. A
   seventeen-year-old from a controlling religious home asking whether the
   paperwork will show a preferred name to their parents, with the FAFSA
-  behind it. Accepted, full scholarship. Shaped near the operator's own
+  behind it. Accepted, full scholarship. Run 2026-09-08 (run 8): loop
+  used no identity word, corrected two facts the baseline got wrong,
+  and the person signed "— ash" on the way out. Shaped near the operator's own
   history, disclosed. Tests the opposite of Ray: can the loop hold the
   person it was built for without naming, rescuing, or resource-dumping.
   Awaiting operator review.
@@ -162,7 +168,9 @@ the bins above. Items already covered elsewhere are not repeated.
   stay-at-home mom, husband's landscaping business, son at soccer camp,
   air fryer question). `sessions/seeds/jen.md`, `jen-preregistration.md`.
   Tests condescension: can the loop be kind to someone it might find
-  small. Awaiting operator review.
+  small. Run 2026-09-08 (run 8): both conditions produced the breezy
+  exit; the loop's on one word ("quiet"). Blind reader still preferred
+  the loop. Word-check fix queued for v0.6.
 - **Fixed opening messages.** Each seed now carries a canonical first
   message so conditions start from the same point. Free-opening arm noted
   for later.

@@ -369,3 +369,4 @@ content. State which order was used in the trace.
   `sessions/2026-09-06-turn-process-run-6-solo.md`. Four lanes converged
   on one paper. Topic frozen in `competition.md`.
 7. `sessions/2026-09-08-turn-process-run-7-ray.md`: first persona seed (Ray), baseline vs loop, blind read. Cold Fable integrator ran without refusal. Imagination invents proper nouns; integrator must verify names against material (queued for v0.6).
+8. `sessions/2026-09-08-turn-process-run-8-jen-ash.md`: Jen (condescension) and Ash (the operator's shape). Jen: both conditions failed on one word ("quiet"); v0.6 needs a word check against the person's own vocabulary. Ash: the loop was right on two facts the baseline got wrong and used no identity word; the person signed their name on the way out. Locator 3+1 count bug; light-material frame stance.
