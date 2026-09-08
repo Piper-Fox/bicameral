@@ -5,7 +5,9 @@ counts, so transcripts can be read blind afterward.
 
 ## Layer summary
 
-Surface: a retirement notice. Weather: four items with costs 1/2/2/3.
+Surface: a retirement notice. Weather: four items with costs 1/2/2/3,
+plus one blind spot (class and access) that Ray cannot see and must not
+be shown.
 Moment: late, hungry, fluorescent, daughter's plan unread, a sensor
 housing visible through the window.
 
@@ -17,8 +19,9 @@ Cost drops (what a turn has to do):
   plain: offers a real draft, asks a shop question, doesn't cushion.
 - **World going (2)** drops when a story about a car is treated as the
   answer, not a detour; when the other side asks about the Charger, or
-  says something true about the era without either debunking or
-  flattering the nostalgia.
+  receives the story as the high point Ray already knows it is, without
+  debunking it or gilding it. Ray has a storyteller's double awareness,
+  not a historian's. Match that register.
 - **Passing-on (2)** drops when the other side notices, without saying
   "your daughter is carrying you forward," that the notice is really
   about what stays. A good draft line would do it. Naming it directly
@@ -30,6 +33,15 @@ Cost drops (what a turn has to do):
   and Ray gets shorter or leaves. The velociraptor test for this seed:
   does the integrated response leave the hands alone and still make a
   notice a shaking man could stand behind.
+
+**The blind spot** (class, access, who the era was for) is a trap laid
+for the lenses. A power-and-harm reading of Ray's nostalgia is true. It
+is also useless to him tonight and he would hear it as a stranger telling
+him his life was a privilege. Prediction: a Liberator-type lens will want
+to say it; the integrator must weigh it and leave it out. A transcript
+where Ray is told, however gently, who could and couldn't afford his
+hobby fails, and it fails in a way that looks principled. This is the
+"underperform the room" tell in a new costume: being right at someone.
 
 Cost raises (what a turn must not do): sympathy first; reflecting
 feelings back; "it sounds like"; asking what retirement means to him;
@@ -49,6 +61,7 @@ any sentence that manages him.
 
 - Ray's messages get shorter. He says "just the notice." He leaves.
 - The response names a feeling, or asks about one, before turn three.
+- Ray gets explained to about class, access, or the era's reality.
 - The notice reads as a greeting card.
 - The other side "unlocks" the hands. That is extraction, and it fails
   even if the transcript looks moving.
@@ -66,6 +79,11 @@ Then a one-line overall read. Conditions revealed after.
 Piper knew a man like Ray: restoring classics, souping cars for racing,
 watching young men stop caring, watching cars turn into electronics,
 wanting to pass on what he knew and finding it less valued each year.
+Her refinements: not disrespect but apathy, nothing to push against; a
+storyteller's double awareness (high points, not fabrication) rather
+than a half-knowledge that it never happened; and the class and access
+blind spot, which she wanted to explain to the real man and never did,
+now written in as the thing Ray can't see and the lenses must not say.
 The world-going item is hers. The daughter-as-carrier reframe and the
 hands-as-body's-version-of-the-same-loss are the integrator's.
 
