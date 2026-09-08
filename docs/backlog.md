@@ -140,6 +140,11 @@ the bins above. Items already covered elsewhere are not repeated.
   integrator's work stops clogging the conversation.
 
 ### Sorted into Next
+- **Persona seed: Ray.** Drafted 2026-09-08 with the operator:
+  `sessions/seeds/ray.md` (persona-facing) and
+  `sessions/seeds/ray-preregistration.md` (operator-facing, never shown
+  to subagents). Three layers: surface, weather with cost-to-voice,
+  moment. Awaiting operator review, then first run.
 - **Persona seed with preregistered psychology.** A simulated person with
   a detailed backstory and unspoken drivers written down in advance; run
   the conversation, then compare variants blind against the preregistered
