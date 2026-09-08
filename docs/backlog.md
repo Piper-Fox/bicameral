@@ -38,6 +38,8 @@ ceremony.
   of a null when warranted, whether the integrated response stands alone.
 - **Model tiering.** Which steps need which tier. Known: Opus 5 and Fable
   refuse cold-start introspection at the safeguard layer; Sonnet does not.
+  New (run 7): a fresh Fable subagent runs the integrating step without
+  refusal. The loop can run with no session model in it.
   Test Haiku on lenses and locating. Test Opus on the imagination lane
   (not introspective, may clear). Find the break-even per step.
 - **Imagination lane placement.** Three candidates, test in this order:
@@ -144,7 +146,10 @@ the bins above. Items already covered elsewhere are not repeated.
   `sessions/seeds/ray.md` (persona-facing) and
   `sessions/seeds/ray-preregistration.md` (operator-facing, never shown
   to subagents). Three layers: surface, weather with cost-to-voice,
-  moment. Awaiting operator review, then first run.
+  moment. First run 2026-09-08 (run 7): baseline vs loop, blind reader
+  preferred the loop; the difference showed at the one turn where the
+  lenses disagreed. Next: replicate with a seed the integrator didn't
+  write; compare cold-Fable integrator vs session-model integrator.
 - **Persona seed with preregistered psychology.** A simulated person with
   a detailed backstory and unspoken drivers written down in advance; run
   the conversation, then compare variants blind against the preregistered
