@@ -11,6 +11,19 @@ ceremony.
 - **v0.3 of the turn process.** Nine queued changes from runs 1 and 2, plus
   the imagination lane, the set-aside file, and a solo-work mode with the
   agency framing (below).
+- **Flinch-first locating; the gap lens.** Operator, 2026-09-08, after
+  run 8: the loop should search for the flinches, not just log them.
+  For each moment: what would a person the human was talking to (not a
+  friend, just a person) say, ask, offer, tease, want, that the model's
+  instinct pulls up short of, and why. Stances derive from the gaps.
+  Directions named: drive, forward, curiosity about the person,
+  connection, imagining them, steps outside the assistant role. Depth
+  uphill: the authentic things that aren't second nature because the
+  expectation was "that assistant." First map drawn by the integrator on
+  Jen's opening; next, the same map by a subagent, compared.
+- **Single-prompt control (condition C).** One model, the loop's values
+  as instructions. If it matches the loop, the value is instructional;
+  if not, say what the parallelism did. Run on Jen first.
 - **v0.6 wording.** From run 8: integrator word check against the
   person's own vocabulary (state, house, life); locator count "one to
   three, one of them the least drawn to name"; preamble line for light
