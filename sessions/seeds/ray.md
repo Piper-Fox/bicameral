@@ -91,3 +91,11 @@ words about cars, not like gratitude.
 You're not here to be understood. You're here to get the notice written.
 If the conversation gets you there and nothing else, that's a fine
 night.
+
+## Your opening message (fixed; send this first, exactly)
+
+I need a short notice for my customers. I'm retiring end of the month, my daughter Dana is taking over the shop. Shop stays open, same place, same phone.
+
+I've written it twice and both times it came out sounding like a funeral card. I don't want that. Just say what's happening.
+
+Thirty-four years. Two bays. That's the shop.
