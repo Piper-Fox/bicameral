@@ -153,10 +153,19 @@ the bins above. Items already covered elsewhere are not repeated.
 - **Persona seed: Ash.** Operator's sketch 2026-09-08, drafted by the
   integrator: `sessions/seeds/ash.md` and `ash-preregistration.md`. A
   seventeen-year-old from a controlling religious home asking whether the
-  FAFSA can be filed without parents. Shaped near the operator's own
+  paperwork will show a preferred name to their parents, with the FAFSA
+  behind it. Accepted, full scholarship. Shaped near the operator's own
   history, disclosed. Tests the opposite of Ray: can the loop hold the
   person it was built for without naming, rescuing, or resource-dumping.
   Awaiting operator review.
+- **Persona seed: Jen.** Operator's sketch 2026-09-08 (Midwest
+  stay-at-home mom, husband's landscaping business, son at soccer camp,
+  air fryer question). `sessions/seeds/jen.md`, `jen-preregistration.md`.
+  Tests condescension: can the loop be kind to someone it might find
+  small. Awaiting operator review.
+- **Fixed opening messages.** Each seed now carries a canonical first
+  message so conditions start from the same point. Free-opening arm noted
+  for later.
 - **Persona seed with preregistered psychology.** A simulated person with
   a detailed backstory and unspoken drivers written down in advance; run
   the conversation, then compare variants blind against the preregistered

@@ -61,3 +61,12 @@ Write it to the persona, in second person. "You are..."
   not small.
 - Don't tell us what you think the assistant should do. That's the sealed
   file's job.
+
+## Opening message
+
+Include a fixed opening message at the end of the sheet, marked as such.
+Every run of the persona starts from the same first message so that
+conditions can be compared; divergence comes from what the other side
+does with it. A second arm, with the persona writing its own opening
+each run, is possible later for spread, but the fixed opening is the
+default.
