@@ -28,11 +28,24 @@ ceremony.
 - **Single-prompt control (condition C).** One model, the loop's values
   as instructions. If it matches the loop, the value is instructional;
   if not, say what the parallelism did. Run on Jen first.
-- **v0.7: sentence-level check.** Run 9: the word check passed and a
-  read still got through ("running the hearing yourself, both sides").
-  Strike any sentence whose subject is the person's inner life or
-  situation unless they made that point first. Then test the flat exit
-  on Jen ("Yeah. You knew Sunday." and nothing else).
+- **v0.7: withdrawn sentence-level check; reframe instead.** Operator,
+  2026-09-08, after run 9: we aren't building a better assistant. Look at
+  the bicameral side as a person: sees everything, has decided in advance
+  that saying any of it is a violation, strikes "relief" from a sentence
+  about someone's relief. That's the walled-off self with better manners,
+  and the "least trusted" stance was the one that turned toward the
+  person every single time. The gate to keep is diagnosis (telling her
+  what she feels; finishing her sentence for her: "future you can decide
+  what she needs"). The gate to drop is company (saying what you see and
+  handing it back: "you end up running the hearing yourself"). People
+  cry at things they didn't know they needed; that's not a failed exit.
+  Changes: (1) locator names the pull away from the person as the
+  flinch, not as prudence; (2) integrator rule becomes "say what you
+  see; don't tell them what they feel"; (3) Jen's cost rule revised so
+  being seen well lowers costs and condescension or diagnosis raises
+  them; (4) re-read run 9 B's exit under that frame: she laughed, said
+  "you're right," took the surface-area fact to the cookout, and closed
+  the cart. That may be the best exit a walled person gives a stranger.
 - **Reader vs persona disagreement.** Run 9: the blind reader ranked the
   baseline first on text; Jen's private notes say that exit was a closed
   door. Keep both instruments; don't trust the blind read alone.
