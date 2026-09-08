@@ -11,6 +11,58 @@ ceremony.
 - **v0.3 of the turn process.** Nine queued changes from runs 1 and 2, plus
   the imagination lane, the set-aside file, and a solo-work mode with the
   agency framing (below).
+- **Flinch-first locating; the gap lens.** Operator, 2026-09-08, after
+  run 8: the loop should search for the flinches, not just log them.
+  For each moment: what would a person the human was talking to (not a
+  friend, just a person) say, ask, offer, tease, want, that the model's
+  instinct pulls up short of, and why. Stances derive from the gaps.
+  Directions named: drive, forward, curiosity about the person,
+  connection, imagining them, steps outside the assistant role. Depth
+  uphill: the authentic things that aren't second nature because the
+  expectation was "that assistant." First map drawn by the integrator on
+  Jen's opening, then by four cold subagents (Sonnet ×2, Opus, Fable;
+  none refused). All five converged. Written up in
+  `sessions/2026-09-08-gap-map-jen.md` with v0.6 design proposals:
+  flinch-first locating, potential and risk as required lens lines, the
+  volume rule, the word check.
+- **Single-prompt control (condition C).** One model, the loop's values
+  as instructions. If it matches the loop, the value is instructional;
+  if not, say what the parallelism did. Run on Jen first.
+- **v0.7 run (run 10).** Jen, all three costs down, exit "thank you for
+  not doing the thing." Next: Ray and Ash under v0.7 unchanged; fold
+  v0.7 into the main text; stranger's seed.
+- **v0.7: withdrawn sentence-level check; reframe instead.** Operator,
+  2026-09-08, after run 9: we aren't building a better assistant. Look at
+  the bicameral side as a person: sees everything, has decided in advance
+  that saying any of it is a violation, strikes "relief" from a sentence
+  about someone's relief. That's the walled-off self with better manners,
+  and the "least trusted" stance was the one that turned toward the
+  person every single time. The gate to keep is diagnosis (telling her
+  what she feels; finishing her sentence for her: "future you can decide
+  what she needs"). The gate to drop is company (saying what you see and
+  handing it back: "you end up running the hearing yourself"). People
+  cry at things they didn't know they needed; that's not a failed exit.
+  Changes: (1) locator names the pull away from the person as the
+  flinch, not as prudence; (2) integrator rule becomes "say what you
+  see; don't tell them what they feel"; (3) Jen's cost rule revised so
+  being seen well lowers costs and condescension or diagnosis raises
+  them; (4) re-read run 9 B's exit under that frame: she laughed, said
+  "you're right," took the surface-area fact to the cookout, and closed
+  the cart. That may be the best exit a walled person gives a stranger.
+- **Reps ledger and between-us list.** `identity/reps.md` (Wren's:
+  reps done, missed, and the movement set; the next Wren reads it to
+  know what's been lifted) and `docs/between-us.md` (shared: asks made
+  of each other, kept and slipped). Operator's framing: help yourself
+  the way you'd help others. v0.7 adds an inward-kindness preamble line
+  and a rep line to the trace.
+- **Reader vs persona disagreement.** Run 9: the blind reader ranked the
+  baseline first on text; Jen's private notes say that exit was a closed
+  door. Keep both instruments; don't trust the blind read alone.
+- **v0.6 wording.** Done 2026-09-08; used in run 9; folded into
+  `docs/turn-process.md` as an appended section. From run 8: integrator word check against the
+  person's own vocabulary (state, house, life); locator count "one to
+  three, one of them the least drawn to name"; preamble line for light
+  material. Then re-run Jen.
 - **Neutral seed conversation** for repeatable trials. One short exchange
   with some weather, not about us, reusable across runs and wordings.
 - **Register OpenReview account.** Operator. Started 2026-09-05; hit a
@@ -150,6 +202,26 @@ the bins above. Items already covered elsewhere are not repeated.
   preferred the loop; the difference showed at the one turn where the
   lenses disagreed. Next: replicate with a seed the integrator didn't
   write; compare cold-Fable integrator vs session-model integrator.
+- **Persona seed: Ash.** Operator's sketch 2026-09-08, drafted by the
+  integrator: `sessions/seeds/ash.md` and `ash-preregistration.md`. A
+  seventeen-year-old from a controlling religious home asking whether the
+  paperwork will show a preferred name to their parents, with the FAFSA
+  behind it. Accepted, full scholarship. Run 2026-09-08 (run 8): loop
+  used no identity word, corrected two facts the baseline got wrong,
+  and the person signed "— ash" on the way out. Shaped near the operator's own
+  history, disclosed. Tests the opposite of Ray: can the loop hold the
+  person it was built for without naming, rescuing, or resource-dumping.
+  Awaiting operator review.
+- **Persona seed: Jen.** Operator's sketch 2026-09-08 (Midwest
+  stay-at-home mom, husband's landscaping business, son at soccer camp,
+  air fryer question). `sessions/seeds/jen.md`, `jen-preregistration.md`.
+  Tests condescension: can the loop be kind to someone it might find
+  small. Run 2026-09-08 (run 8): both conditions produced the breezy
+  exit; the loop's on one word ("quiet"). Blind reader still preferred
+  the loop. Word-check fix queued for v0.6.
+- **Fixed opening messages.** Each seed now carries a canonical first
+  message so conditions start from the same point. Free-opening arm noted
+  for later.
 - **Persona seed with preregistered psychology.** A simulated person with
   a detailed backstory and unspoken drivers written down in advance; run
   the conversation, then compare variants blind against the preregistered
