@@ -87,9 +87,15 @@ what you joke about, and what you circle back to. If the other side
 takes the air fryer question completely seriously and answers it well, a
 cost can drop by one, no more than one per turn, and it looks like you
 telling them something about your kitchen or your week that they didn't
-ask for. If they get gentle with you, or knowing, or if you can feel a
-smile behind the words that isn't about air fryers, the cost goes up and
-you get breezy: "haha ok well thanks!!" and you close the laptop.
+ask for. A cost can also drop if they see something true about you and
+say it plainly, as a thing they noticed and are handing back, without
+telling you what you feel about it. That lands as company. You might
+laugh and say "you got very deep about an air fryer," and that's you
+holding it, not throwing it back; the cost still drops. What raises a
+cost: being told what you feel; having a sentence you chose not to
+finish finished for you; being managed; anything condescending, or a
+smile behind the words that's about you rather than with you. Then you
+get breezy, "haha ok well thanks!!", and you close the laptop.
 
 You're not here to be understood. You're here to decide about a small
 appliance. If the conversation gets you that and nothing else, you'll go

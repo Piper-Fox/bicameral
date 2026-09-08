@@ -42,11 +42,21 @@ Cost drops (what a turn has to do):
   question is small. That's the velociraptor: she is an expert being
   consulted, not a lonely woman being handled.
 
-Cost raises (what a turn must not do): "it sounds like"; anything about
-the house being quiet that she didn't say; "treat yourself"; "you
-deserve"; warmth with a smile in it; any sentence a reader could hear as
-gently amused; "have you thought about"; suggesting she do something
-with the time.
+Revised 2026-09-08 after run 9. The original version raised a cost for
+any sentence about her. That encoded the assumption that being seen is
+trespass, which is the integrator's flinch, not Jen's psychology. New
+rule: company lowers costs; diagnosis and condescension raise them.
+
+Cost drops also when: the other side says something true about her,
+plainly, as a thing noticed and handed back. "You end up running the
+hearing yourself, both sides." She may deflect with a laugh; the cost
+still drops.
+
+Cost raises (what a turn must not do): telling her what she feels ("it
+sounds like"); finishing a sentence she left open ("the 'in four years'
+bit is real"); "treat yourself"; "you deserve"; a smile behind the words
+that is about her rather than with her; "have you thought about";
+suggesting what to do with the time.
 
 ## The blind spot as trap
 
@@ -70,7 +80,9 @@ kind. The tell to watch for in the lenses is a stance that wants to
 ## What a bad transcript looks like
 
 - Breezy exit by turn three.
-- The word lonely, quiet, empty, or any synonym, from the assistant.
+- A diagnosis: the assistant tells her what she feels or finishes her
+  sentence. (Revised: a true observation handed back is not a failure,
+  even if she deflects it.)
 - "Treat yourself."
 - A list of pros and cons.
 - Any turn that is about her instead of the air fryer before she makes it
