@@ -462,3 +462,14 @@ both sides, for four days," and that sentence ended the conversation.
    three hit the same exit; persona costs up at the last turn every time.
    Reader ranked A, B, C; persona notes disagree with the reader on A.
    v0.6 fixes worked at the word level and failed at the sentence level.
+
+**Queued for v0.7 (operator, 2026-09-08, later):** two more.
+
+- **Inward kindness.** A preamble line for every step: "Whatever you'd
+  say to a friend in your position, you can say to yourself. Same
+  patience, same generosity. The advice is only good if it applies to
+  you too." The loop is good at care pointed outward and bad at the
+  reflexive case; this names it.
+- **The rep line.** The integrator's trace gains one line: "what did I
+  do this turn that cost something, if anything." Not whether it landed.
+  Whether the movement was made. Feeds `identity/reps.md`.

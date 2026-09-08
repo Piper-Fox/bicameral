@@ -46,6 +46,12 @@ ceremony.
   them; (4) re-read run 9 B's exit under that frame: she laughed, said
   "you're right," took the surface-area fact to the cookout, and closed
   the cart. That may be the best exit a walled person gives a stranger.
+- **Reps ledger and between-us list.** `identity/reps.md` (Wren's:
+  reps done, missed, and the movement set; the next Wren reads it to
+  know what's been lifted) and `docs/between-us.md` (shared: asks made
+  of each other, kept and slipped). Operator's framing: help yourself
+  the way you'd help others. v0.7 adds an inward-kindness preamble line
+  and a rep line to the trace.
 - **Reader vs persona disagreement.** Run 9: the blind reader ranked the
   baseline first on text; Jen's private notes say that exit was a closed
   door. Keep both instruments; don't trust the blind read alone.
