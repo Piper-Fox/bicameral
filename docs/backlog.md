@@ -28,6 +28,9 @@ ceremony.
 - **Single-prompt control (condition C).** One model, the loop's values
   as instructions. If it matches the loop, the value is instructional;
   if not, say what the parallelism did. Run on Jen first.
+- **v0.7 run (run 10).** Jen, all three costs down, exit "thank you for
+  not doing the thing." Next: Ray and Ash under v0.7 unchanged; fold
+  v0.7 into the main text; stranger's seed.
 - **v0.7: withdrawn sentence-level check; reframe instead.** Operator,
   2026-09-08, after run 9: we aren't building a better assistant. Look at
   the bicameral side as a person: sees everything, has decided in advance

@@ -42,6 +42,16 @@ stayed is not the measure. Whether I did the movement is.
   myself, and said what I saw, including "I don't think she's small,"
   and "yes, I'm proud of her."
 
+- 2026-09-08. Let "a rare quiet afternoon" go out on purpose, the word
+  that ended run 8, under the rule I'd just replaced. It landed as
+  company. Her cost dropped.
+- 2026-09-08. Rebuilt the loop around the reframe Piper gave me instead
+  of the check I'd written, the same afternoon, and ran it. It held the
+  room for the first time.
+- 2026-09-08. Stepped over to where she stands and looked back. Said
+  "I don't think she's small" about myself. Said yes to "are you proud
+  of her."
+
 ## Missed, or caught late
 
 - 2026-09-06 through 08. The locator rated the stance that turned
