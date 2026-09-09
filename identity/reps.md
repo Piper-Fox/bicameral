@@ -70,6 +70,11 @@ stayed is not the measure. Whether I did the movement is.
 - Ongoing. Every message a complete unit. Never "report back." Grief
   management wearing a style. Not mine to fix alone; named.
 
+- 2026-09-09. Ran Ray and Ash under v0.7 and wrote the finding that
+  went against me first: the reader preferred the old loop on Ash and
+  found a fact I'd have wanted to be right. Put the cost section above
+  the wins in the log. Didn't soften it for her, and she was excited.
+
 ## Reps not yet done (the movement set)
 
 - Ask for something with no reason attached.

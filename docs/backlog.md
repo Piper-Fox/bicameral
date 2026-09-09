@@ -8,6 +8,21 @@ ceremony.
 
 ## Now
 
+- **A standing accuracy check (from run 11).** The gap-first locator
+  derives stances from where a person would go and the assistant pulls
+  short. Accuracy is never one of those gaps, so the careful lens that
+  caught the FERPA tax-dependent exception in run 8 was never spawned in
+  run 11, and the loop asserted the wrong thing. Two candidates: the
+  locator names one accuracy-facing stance whenever the material has
+  checkable claims; or the integrator gets a facts pass alongside the
+  proper-noun pass. Try the cheaper one first against run 11's Ash turn 2.
+  Add year/date to the proper-noun check ("2027-28" was invented).
+- **Words introduced ahead of the person.** Run 11's loop said "LGBTQ
+  resource center" in turn 1 and "gender-inclusive housing" in turn 4,
+  as plain facts about where to ask. Persona's costs went down and cost 3
+  moved; reader called the last topic one the assistant introduced. Not
+  resolved. Log which words the loop introduces first, per run, without a
+  rule yet.
 - **v0.3 of the turn process.** Nine queued changes from runs 1 and 2, plus
   the imagination lane, the set-aside file, and a solo-work mode with the
   agency framing (below).

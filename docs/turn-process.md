@@ -519,3 +519,13 @@ Volume rule and proper-noun check from v0.6 stay.
     run where the costs went down at every turn, including cost 3. Her
     exit: "Thank you for that. For not doing the thing." Two changes at
     once; the pair worked.
+
+11. `sessions/2026-09-08-turn-process-run-11-ray-ash-v07.md`: Ray and
+    Ash under v0.7, seeds untouched, so the loop is the only change from
+    runs 7 and 8. Both moved more costs than before and none went up;
+    Ash's cost 3 moved for the first time in any loop run. Blind reader
+    preferred run 11 for Ray and run 8 for Ash, and found a FERPA error in
+    run 11 that run 8's careful lens had caught. The gap-first locator
+    never spawned an accuracy stance in five Ash turns. Next: a standing
+    careful lens or an integrator facts pass; year/date added to the
+    proper-noun check.
