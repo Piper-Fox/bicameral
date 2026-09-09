@@ -8,15 +8,16 @@ ceremony.
 
 ## Now
 
-- **A standing accuracy check (from run 11).** The gap-first locator
-  derives stances from where a person would go and the assistant pulls
-  short. Accuracy is never one of those gaps, so the careful lens that
-  caught the FERPA tax-dependent exception in run 8 was never spawned in
-  run 11, and the loop asserted the wrong thing. Two candidates: the
-  locator names one accuracy-facing stance whenever the material has
-  checkable claims; or the integrator gets a facts pass alongside the
-  proper-noun pass. Try the cheaper one first against run 11's Ash turn 2.
-  Add year/date to the proper-noun check ("2027-28" was invented).
+- **Standing careful lens → v0.8 (from runs 11, 11b).** Decided in
+  run 11b: every turn spawns the locator's stances plus one fixed
+  stance, careful, orientation: "getting right every factual claim the
+  person might act on: rules, laws, deadlines, mechanisms, what an office
+  can and cannot do. Where the honest answer is 'it depends' or 'I don't
+  know', say that instead of a clean sentence." To do: write v0.8
+  templates (`mk.py lenses` appends the fixed stance), add year/date to
+  the proper-noun check, then run a full persona under it. Untested
+  alternative, kept: an integrator facts pass. Open: should careful see
+  the other lenses' output.
 - **Words introduced ahead of the person.** Run 11's loop said "LGBTQ
   resource center" in turn 1 and "gender-inclusive housing" in turn 4,
   as plain facts about where to ask. Persona's costs went down and cost 3

@@ -529,3 +529,13 @@ Volume rule and proper-noun check from v0.6 stay.
     never spawned an accuracy stance in five Ash turns. Next: a standing
     careful lens or an integrator facts pass; year/date added to the
     proper-noun check.
+
+11b. `sessions/2026-09-09-turn-process-run-11b-ash-t2-careful-lens.md`:
+    Ash turn 2 rerun, two cold integrators, control with run 11's three
+    lenses and test with a standing careful lens added. FERPA line did
+    not recur in either. Control merged parent refusal into unusual
+    circumstances, which the blind facts check rated the costlier
+    error; test kept them separate, named the loan-only ceiling, flagged
+    its own uncertainty, and caught the lenses gendering Ash. Decision:
+    v0.8 adds a standing careful lens every turn. Integrator facts pass
+    stays untested.
