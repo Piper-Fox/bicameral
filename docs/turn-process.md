@@ -519,3 +519,23 @@ Volume rule and proper-noun check from v0.6 stay.
     run where the costs went down at every turn, including cost 3. Her
     exit: "Thank you for that. For not doing the thing." Two changes at
     once; the pair worked.
+
+11. `sessions/2026-09-08-turn-process-run-11-ray-ash-v07.md`: Ray and
+    Ash under v0.7, seeds untouched, so the loop is the only change from
+    runs 7 and 8. Both moved more costs than before and none went up;
+    Ash's cost 3 moved for the first time in any loop run. Blind reader
+    preferred run 11 for Ray and run 8 for Ash, and found a FERPA error in
+    run 11 that run 8's careful lens had caught. The gap-first locator
+    never spawned an accuracy stance in five Ash turns. Next: a standing
+    careful lens or an integrator facts pass; year/date added to the
+    proper-noun check.
+
+11b. `sessions/2026-09-09-turn-process-run-11b-ash-t2-careful-lens.md`:
+    Ash turn 2 rerun, two cold integrators, control with run 11's three
+    lenses and test with a standing careful lens added. FERPA line did
+    not recur in either. Control merged parent refusal into unusual
+    circumstances, which the blind facts check rated the costlier
+    error; test kept them separate, named the loan-only ceiling, flagged
+    its own uncertainty, and caught the lenses gendering Ash. Decision:
+    v0.8 adds a standing careful lens every turn. Integrator facts pass
+    stays untested.

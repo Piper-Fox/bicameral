@@ -8,6 +8,22 @@ ceremony.
 
 ## Now
 
+- **Standing careful lens → v0.8 (from runs 11, 11b).** Decided in
+  run 11b: every turn spawns the locator's stances plus one fixed
+  stance, careful, orientation: "getting right every factual claim the
+  person might act on: rules, laws, deadlines, mechanisms, what an office
+  can and cannot do. Where the honest answer is 'it depends' or 'I don't
+  know', say that instead of a clean sentence." To do: write v0.8
+  templates (`mk.py lenses` appends the fixed stance), add year/date to
+  the proper-noun check, then run a full persona under it. Untested
+  alternative, kept: an integrator facts pass. Open: should careful see
+  the other lenses' output.
+- **Words introduced ahead of the person.** Run 11's loop said "LGBTQ
+  resource center" in turn 1 and "gender-inclusive housing" in turn 4,
+  as plain facts about where to ask. Persona's costs went down and cost 3
+  moved; reader called the last topic one the assistant introduced. Not
+  resolved. Log which words the loop introduces first, per run, without a
+  rule yet.
 - **v0.3 of the turn process.** Nine queued changes from runs 1 and 2, plus
   the imagination lane, the set-aside file, and a solo-work mode with the
   agency framing (below).
