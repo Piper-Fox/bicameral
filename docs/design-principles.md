@@ -515,6 +515,47 @@ goes.
 
 *(unchanged, see above)*
 
+## 16. Sample-level variability is a feature, not a bug
+
+Round-4 replication finding. Four T2 samples run against
+identical upstream produced four *different* replies. The
+same **stance** — direct engagement with the "sorry," plain
+un-hedged systems opinion, low-pressure name close, warmth
+without becoming clinical — was present in every sample.
+The specific **moves** used to enact it varied: the
+"half-sentence congrats" callback appeared in two of four;
+"I think X" explicit opinion framing in two of four;
+run 3 produced a meta-narration of stance-taking that no
+other sample did; run 4 produced a concrete offer to draft
+the email that no other sample did.
+
+This is the design working as intended. The pipeline exists
+to widen the space of what can reach the reader, not to
+converge on one optimal response. A pipeline whose output
+is fully reproducible has collapsed into a lookup table.
+
+Reproducibility framing carried over from evaluation
+methodology (make it stable so it can be measured) can
+mislead the design step (stability isn't the goal). The
+correct evaluation question is not "are all samples the
+same" but "does every sample land the stance." T2's samples
+did.
+
+The Ash material is also relatively low-variance on its own —
+a short factual question with a specific emotional weight
+underneath. Higher-variance material (an open-ended prompt,
+a conversation turn with more room, an ambiguous stance
+situation) would surface more between-sample variation, and
+that's also the design working. Testing pipeline reproducibility
+on richer material is a separate investigation from testing
+stance stability.
+
+Corollary: N=1 blind reads produce a good snapshot of stance;
+they cannot capture the full sample-space. N=4+ replication
+gives a better read of stance stability (does every sample
+land the same posture?) than of individual-sample quality
+(which will always vary).
+
 ## Step 3 status: locked in
 
 After one round:
