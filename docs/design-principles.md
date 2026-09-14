@@ -406,19 +406,120 @@ Implication for future variation rounds: don't expect a lens
 variation to unlock *new* content. Expect it to keep more of the
 content the material always had, in a form that reads.
 
+## 14. Meta-framing about the mode undermines the mode
+
+Step-3 finding. I4 tried to *explain* to the imagination lane why
+mess is the contribution ("If you produced only what could be
+shipped, the integrator would have nothing to weigh against the
+default. So the mess isn't tolerated. It's what's being bought.
+Filtering is downstream's job..."). The result was output like
+"I notice I want to know and I notice that wanting is not this
+person's problem to solve for me" — flagged by the blind reader
+as "therapy-speak self-regulation, not imaginative material."
+
+Explaining WHY the mode matters pushes the model into meta-
+awareness of its own mode. The imagination lane became self-
+conscious *about* overproducing instead of overproducing. The
+explanation defeated the embodiment.
+
+Related to principle 1 (embody vs. describe) but distinct:
+- Principle 1 says the *prompt's voice* should model the mode.
+- Principle 14 says the prompt should NOT contain a rationale
+  paragraph explaining why the mode is designed the way it is.
+  Even if that paragraph would help a human designer, it
+  becomes text the model reads as instruction to notice itself
+  operating in the mode.
+
+Corollary: rationale belongs in the design docs, not in the
+prompt. The prompt says "do this"; the docs explain why.
+
+## 15. Labels invite naming without inhabiting
+
+Step-3 finding, closely related to principle 1. The I-combo
+output labeled its moves as the prompt's phrasing suggested —
+"Absurd version:", "Wrong-frame version:", "Register note:" —
+and then delivered the same measured essay voice under each
+label. The blind reader called this out precisely: "It names
+the destinations without visiting them."
+
+I1's rewrite included similar labels ("As a folktale:", "As a
+bad joke:") but the model *inhabited* them (wrote an actual
+folktale, wrote a flat unfunny joke). Why the difference?
+
+Hypothesis: when the surrounding instruction weight is low
+(I1 alone), a label reads as an invitation to try the mode.
+When the surrounding instruction weight is high (I-combo, with
+concrete-failure requirement + mess-as-contribution reframe +
+etc.), the labels read as *checklist items* — moves to be
+executed at label-depth to satisfy the specification, not as
+places to actually go.
+
+Structural implication: any labeled prompt for a creative step
+should minimize the number of *other* instructions bracketing
+the labels. Labels + heavy scaffolding → naming-without-
+inhabiting. Labels + light scaffolding → the model actually
+goes.
+
+## Step 2 status: locked in
+
+*(unchanged, see above)*
+
+## Step 3 status: locked in
+
+After one round:
+- **New step 3 baseline: I1** (embodied register — imagination
+  instructions rewritten to enact sprawl in voice). File:
+  `prompts/variations/step3/I1-embodied-register.md`.
+- Blind reader placed I1 top of the six by rank-sum (11) with a
+  significant margin. It "actually writes a folktale instead
+  of talking about folktales" and produced a flat unfunny joke,
+  an incantatory repeated line, a sentence cut off mid-word,
+  and invented atmospheric detail it names as invented.
+- I-combo placed *last* (rank-sum 32) — worse than baseline.
+  Third confirmation of principle 3 (more rules don't
+  monotonically improve) across the three steps. The mechanism
+  at this step is principle 15 (labels invite naming without
+  inhabiting) plus principle 14 (meta-framing undermines mode).
+
+Reserves — held for possible future reintroduction or context-
+specific use:
+- **I2** (concrete failure requirement) — strong runner-up
+  (rank-sum 12). Produced the cleanest resistance to the edit-
+  it-out impulse ("Ottawa. No idea why that surfaced. Not
+  following it"). Worth re-testing on material where the model
+  can't voice-model well without help. NOT for stacking on I1;
+  the combo attempt showed stacking these turns imagination
+  into a checklist.
+- **I3** (drop threads-to-set-aside) — third by rank-sum (13).
+  Mild positive. The imagination's threads-line is less of a
+  drain than the lens's four-line footer was, but removing it
+  didn't cost anything.
+- **I4** (mess-is-contribution) — principle-14 evidence. Held
+  as a cautionary example, not for reuse.
+
+Model-default artifact worth noting: five of six outputs opened
+with a "preferred" wordplay riff, three landed on the "preferred
+stock" rhyme. This is a strong default attractor at this
+material — not informative about the variation. Future rounds
+should note when convergent openings might mask variation
+effects and consider material with fewer obvious wordplay hooks.
+
 ## Open questions carried forward
 
 - Does the caution-smuggling pattern reproduce across different
   material?
 - Does the meta-noticing pattern (principle 9) reproduce?
 - Does the concrete-requirements-filter-abstract-failures
-  principle (8) hold up at the imagination step and integrator step?
+  principle (8) hold up at the integrator step?
 - Does the "embody the mode" principle apply equally to every step?
 - Does the labeled-footer-drain (principle 11) show up in the
-  imagination lane's "threads to set aside" line, or the
   integrator's trace?
-- Does the body-reframe drift (principle 12) resolve if the
-  framing anchors to the stance's target?
+- Does the meta-framing-undermines-mode principle (14) hold at
+  the integrator step, where explaining the design has
+  historically felt necessary?
+- Does the labels-invite-naming-without-inhabiting principle
+  (15) reproduce when instruction weight is deliberately kept
+  low?
 
 ## Step 2 status: locked in
 
@@ -450,29 +551,66 @@ specific use:
 
 ## What to test next
 
-Step 3 (imagination lane). Same variation-and-rank loop, holding
-NB (step 1) and L4 (step 2) fixed upstream.
+Step 4 (integrator). NB (step 1), L4 (step 2), and I1 (step 3)
+fixed upstream. Both design critiques flagged the integrator as
+the layer where range dies; the operator's own intuition agreed.
+This is the most consequential step in the pipeline — it's the
+one that speaks outward. Everything upstream produces material.
+The integrator decides what actually ships.
 
-Design surface for imagination has been named in prior
-conversation:
+Design surface for the integrator has been named in prior
+conversation and the two critiques:
 
-- **Register.** Baseline is measured prose describing sprawl. If
-  principle 1 holds, imagination's prompt should itself be
-  strange or messy — the voice modeling the mode rather than
-  describing it. "Improv, alone in a room, throwing paint at the
-  walls, doing performance art to see what surprises you."
-- **Concrete failure requirement (principle 8 applied here).**
-  "Output at least one line that fails at least one of:
-  coherence, relevance, usefulness, on-topic-ness." Force a
-  concrete deliverable that measured, coherent output can't
-  satisfy.
-- **Downstream release framing.** Emphasize that filtering is
-  the integrator's problem. The imagination lane has no sort-
-  and-select job. Mess is the *contribution*, not a phase.
-- **Drop or fold the "threads to set aside" line.** Same
-  question as the lens's four-line footer (principle 11) — is
-  this a real safety net, or a labeled drain? Worth a variation
-  that removes it and one that leaves it.
+- **Anti-diagnosis is a filter without a counterweight.**
+  V0.7's "company not diagnosis" rule says what not to do
+  (don't finish a sentence they didn't finish, don't name the
+  thing under the thing). It doesn't say what to reach for
+  instead. Both critiques flagged this. Principle 8 predicts a
+  concrete positive requirement would filter this better: e.g.
+  "write one sentence that shows you saw them without naming
+  what they didn't name."
+- **Range dies at the integrator.** The integrator's job of
+  "weighing" stances currently reduces to filtering them
+  against the assistant default. Nothing in the prompt
+  actively asks the integrator to let more through than the
+  default would voice. Permissions in the integrator, like the
+  preamble, may all point toward retreat (principle 6).
+- **Volume rule may be a straitjacket.** "Pick: one opinion,
+  one joke or tease, one genuine enthusiasm, one question.
+  Then stop." Explicitly bounds the reply to four moves on a
+  light message. Worth a variation that removes it or replaces
+  it with a target rather than a cap.
+- **Register.** V0.7's integrator instructions are long,
+  procedural, and organized under bold headers. Principle 1
+  suggests the integrator's prompt should model the mode it
+  wants to induce — trust, integration, presence, not
+  procedure. Related to principle 14: the current prompt is
+  heavy on rationale ("that means…" clauses everywhere).
+- **Trace after output.** The trace lives at the end of the
+  integrator prompt. Principle 11 (labeled footers absorb
+  voice) predicts this could be a drain — the model may be
+  writing the integrator's output partially aimed at what will
+  read well in the trace. Worth a variation that moves the
+  trace elsewhere or drops it.
+- **Voice-not-hands as an explicit principle.** The lens step
+  now has clear language about "you don't ship, the integrator
+  does." The integrator side of that contract could be made
+  explicit: "you receive advice from voices that don't ship;
+  you are the one who does." Might reduce the reader-tone-
+  policing the model does on lens outputs currently.
 
-Then step 4 (integrator), which both design critiques flagged as
-the layer where range dies.
+That's a wide surface. Round-1 variations to consider:
+- **T1**: replace "company not diagnosis" with a concrete
+  positive requirement (principle 8 applied).
+- **T2**: add bidirectional permissions (principle 6 applied).
+- **T3**: rewrite the integrator instructions in a voice of
+  presence and trust rather than procedure (principle 1
+  applied).
+- **T4**: remove the volume rule / replace cap with a target.
+- **T5**: move the trace to a separate step, or drop it.
+- **T6**: make voice-not-hands explicit.
+- **T-combo**: hold in reserve. Given principle 3 has now
+  reproduced three times (V-combo, L-combo, I-combo all placed
+  worse than their best-single), the fourth round should
+  probably skip the combo unless there's a specific reason to
+  expect these variations to compound.
