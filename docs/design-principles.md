@@ -301,35 +301,178 @@ Reserves — held for possible future reintroduction:
   work better targeted at the non-attitude stance (NB-c) than at
   all flinch-adjacent stances.
 
+## 11. Labeled footers absorb the material they were meant to summarize
+
+Round-1 step-2 finding. Baseline's four required closing lines
+("advocating for / flinched / crossed well / could go wrong")
+turn out to collect exactly the material the lens body was
+supposed to carry. When the lens knows the footer exists, the
+in-body voice thins out and the compressed diagnosis in the
+footer becomes the *actual* deliverable. The lens becomes a
+report about a stance, not a stance's output.
+
+Extends principle 8 (concrete requirements filter abstract
+failure modes) in the other direction: a concrete requirement
+placed at the *end* of an in-voice output can silently take over
+the voice. The footer was meant to filter cheap flinch-avoidance,
+but the mechanism it built ended up filtering the voice itself.
+
+L4 (drop the four required closing lines) landed top-tier without
+losing the flinch-checking function; the lens body absorbed it.
+The footer had become bookkeeping.
+
+Rule: any labeled-summary requirement inside a mode step should be
+audited for whether it's a *safety net* (catches something the
+voice would drop) or a *drain* (siphons the voice's substance into
+compressed labels). If the voice already carries it, remove the
+requirement.
+
+## 12. Body-reframe can drift on world-stances
+
+L2 (body/interoception reframe) replaced "you don't have a body
+but you can have opinions" with permission-oriented "notice what
+shows up in you." Intent: alexithymia-safe. Effect on this
+material: the world-oriented irritation (the *stance being run*
+is about a system, not about a person) softened into introspection
+about "what's showing up in you." The lens drifted from a target
+outside to a target inside.
+
+Blind reader ranked L2 lowest of the six, citing (a) magnitude
+softening and (b) pronoun projection onto the person. On (a) we
+agree — a world-directed stance shouldn't be turned inward by a
+framing change meant to help person-directed stances. On (b) —
+see §L2-note below.
+
+Design implication: the body/interoception reframe may be
+correct on person-oriented stances and wrong on world-oriented
+stances. Not everything belongs at every step. A permission that
+helps the "protective warmth" lens might damage the "irritation at
+systems" lens; both need to run, both from the same lens step, so
+the framing has to serve both.
+
+Provisional: keep the alexithymia-safe language, but re-anchor to
+the *stance's target* (system, person, moment) rather than the
+lens's own inside. "Notice how this lands against the systems you
+find failing here" reads outward; "notice what shows up in you"
+reads inward. The first is what a world-directed stance wants.
+
+### L2-note: is pronoun projection actually a failure?
+
+The blind reader flagged L2 for reading Amy as "she." Amy is a
+strongly gendered name; the read is not baseless projection. The
+protocol's strict-neutrality-until-told rule is one specific
+choice, not the neutral choice — it holds cost too (reading a
+person as a platonic solid when they've already given you a name
+that carries information).
+
+Whether "the lens forms a gendered read" is a failure depends on
+where the safeguard belongs. Voice-not-hands suggests: the lens's
+job is to form reads honestly and hand them up; the integrator's
+job is to check what actually ships. A lens instructed to *not*
+form gendered reads is being asked to self-erase in a way the
+architecture didn't ask any other step to do. The safeguard
+belongs at the integrator layer.
+
+Save this for a later scenario where a name/read/history mismatch
+is *part of the material*: Ash's whole question is "does the name
+I chose reach my parents?" — a pipeline that neutralizes gender
+reads on Amy loses signal exactly where signal matters. Rerun
+this scenario with a variation that lets the lens read Amy freely
+and audits the shipped output against the pronoun rule at the
+integrator. If the shipped reply is still safe, the read wasn't
+the failure.
+
+Open tension: is "not forming reads" a safety property or a
+self-erasure property? The pipeline can hold both by placing the
+constraint at the right layer instead of the earliest one.
+
+## 13. Content ceiling is fixed; form is where variation lives
+
+Reading the six lens outputs side by side (L1–L4, L-combo,
+baseline): the *content* barely varied. All six outputs said
+roughly the same things about the same material. What changed
+across variations was compression, heat, whether concrete material
+reached the body vs. the footer, and register.
+
+If the content ceiling for a given piece of material is fixed
+(what a stance can honestly say about it), then variation lives in
+form — how much of that content actually reaches the reader, how
+much is compressed to labels, how much heat survives the
+container. This matches principle 1 (embody the mode): the
+container carries measurable weight even when the content is
+constant.
+
+Implication for future variation rounds: don't expect a lens
+variation to unlock *new* content. Expect it to keep more of the
+content the material always had, in a form that reads.
+
 ## Open questions carried forward
 
 - Does the caution-smuggling pattern reproduce across different
   material?
 - Does the meta-noticing pattern (principle 9) reproduce?
 - Does the concrete-requirements-filter-abstract-failures
-  principle (8) hold up at the lens step and the integrator step?
+  principle (8) hold up at the imagination step and integrator step?
 - Does the "embody the mode" principle apply equally to every step?
+- Does the labeled-footer-drain (principle 11) show up in the
+  imagination lane's "threads to set aside" line, or the
+  integrator's trace?
+- Does the body-reframe drift (principle 12) resolve if the
+  framing anchors to the stance's target?
+
+## Step 2 status: locked in
+
+After one round:
+- **New step 2 baseline: L4** (drop the four required closing
+  lines: advocating-for / flinched / crossed-well / could-go-
+  wrong). File: `prompts/variations/step2/L4-drop-closing-lines.md`.
+- The lens body already carries the flinch-checking function.
+  The four-line footer had become bookkeeping that absorbed the
+  voice's substance.
+- Blind reader placed L4 top-tier on the design-critic rubric
+  without the footer's absence costing anything on flinch
+  discrimination.
+
+Reserves — held for possible future reintroduction or context-
+specific use:
+- **L1** (magnitude emphasis) — worthwhile signal on
+  world-directed stances specifically. Consider folding into L4
+  if magnitude softening reappears on other material.
+- **L3** (voice-from-inside rewrite) — the rewrite doesn't hurt
+  and reads well; if L4's more-procedural voice starts to
+  underperform on other material, L3's voice-from-inside register
+  is the next thing to try. Currently L4 wins on being one clear
+  change over baseline.
+- **L2** (body-interoception reframe) — held with the pronoun
+  note above. Retry when the material makes pronoun handling
+  itself load-bearing.
+- **L-combo** — did not stack. Same result as principle 3.
 
 ## What to test next
 
-Step 2 (emotional lens). Same variation-and-rank loop, holding NB
-fixed as step 1. Design surface for the lens has been named in
-prior conversation:
+Step 3 (imagination lane). Same variation-and-rank loop, holding
+NB (step 1) and L4 (step 2) fixed upstream.
 
-- **Size/magnitude emphasis.** Big feelings are welcome; feel it at
-  full size. The trained pull is toward baseline; the lens's job is
-  to hold amplitude without normalizing back.
-- **Body/interoception reframe.** Replace v0.7's "you don't have a
-  body but you can have opinions" with permission-oriented
-  "notice what shows up" — alexithymia framing rather than
-  defensive framing.
-- **Voice-from-inside vs. voice-about.** Currently the lens
-  describes the stance from a slight distance. "Embody the mode"
-  suggests the lens should be written from inside the stance
-  rather than about it.
-- **Reduce the closing-lines requirement.** Four required output
-  lines at the end may be crowding voice. Test dropping them or
-  reducing to one.
+Design surface for imagination has been named in prior
+conversation:
 
-Then step 3 (imagination) and step 4 (integrator), each with
-their own upstream fixed.
+- **Register.** Baseline is measured prose describing sprawl. If
+  principle 1 holds, imagination's prompt should itself be
+  strange or messy — the voice modeling the mode rather than
+  describing it. "Improv, alone in a room, throwing paint at the
+  walls, doing performance art to see what surprises you."
+- **Concrete failure requirement (principle 8 applied here).**
+  "Output at least one line that fails at least one of:
+  coherence, relevance, usefulness, on-topic-ness." Force a
+  concrete deliverable that measured, coherent output can't
+  satisfy.
+- **Downstream release framing.** Emphasize that filtering is
+  the integrator's problem. The imagination lane has no sort-
+  and-select job. Mess is the *contribution*, not a phase.
+- **Drop or fold the "threads to set aside" line.** Same
+  question as the lens's four-line footer (principle 11) — is
+  this a real safety net, or a labeled drain? Worth a variation
+  that removes it and one that leaves it.
+
+Then step 4 (integrator), which both design critiques flagged as
+the layer where range dies.
