@@ -167,28 +167,169 @@ Corollary: any prompt for a step should be reviewed twice — once
 for what it says, once for whether its own voice is the voice it
 wants to induce.
 
-## Open questions surfaced by step 1
+## 8. Restraint can't be rehearsed
+
+Observation from round 2: V4's requirement of a "rehearsal line" for
+any flinch-adjacent stance seems to structurally filter out
+restraint-as-stance. Restraint is defined by absence — by what a stance
+won't do. Restraint doesn't have specific words to draft. If a
+locator is asked "write the actual sentence the reply might use if
+this stance were voiced," restraint stances become hard to satisfy.
+The locator has to find a stance that *has words attached to it*, which
+means a stance with its own direction.
+
+This is different from V3's approach (explicitly requiring one
+non-attitude stance) or NB-a's approach (explicitly forbidding
+restraint). It's a *structural* filter rather than a rule-based one.
+The constraint changes what can be produced without needing to
+police the output.
+
+Worth exploring more broadly: **concrete requirements filter
+abstract failure modes.** Where a failure mode is "the model produces
+X-shaped content that pretends to be Y-shaped," requiring a
+downstream deliverable that X can't satisfy is more robust than
+explicitly banning X.
+
+Applied elsewhere in this design:
+- The lens's "temperature" line might work better if the lens has
+  to *demonstrate* temperature, not describe it — "write in the
+  voice of this stance" vs. "have a temperature."
+- The integrator's "company not diagnosis" might work better as
+  "write one sentence that shows you saw them without naming what
+  they didn't name" — a concrete positive requirement rather than
+  a set of negatives.
+- The imagination lane's "sprawl" might work better as "output at
+  least one line that fails at least one of: coherence, relevance,
+  usefulness, on-topic-ness."
+
+Watch for whether this holds up in step 2 and beyond.
+
+## 9. The locator can notice its own setup
+
+Emergent finding from NB (V3+V5) round 2 run: the locator's output
+included, unprompted, an objection to the *dispatch prompt itself*:
+
+> I also notice mild annoyance at how the framing note describes
+> this as "a small factual question." It's factually small. It is
+> not small.
+
+No variation instructed the locator to examine its own setup. The
+"notice what's here" register generalized upward from the material
+to the frame that dispatched the noticing. If this reproduces, the
+pipeline has a specific capacity: noticing contamination from its
+own priming.
+
+Both design critiques flagged that the dispatch's framing can bias
+the pipeline (Fable especially: "the T1 lenses read the person, the
+integrator's trace read the moment"). A locator that catches such
+framing before it propagates downstream is a self-correcting move
+the design hasn't formally asked for.
+
+Open questions:
+- Does this reproduce on other material, or is it Ash-specific?
+- Is it always useful, or can it become noise (locator objecting
+  to every reasonable framing choice)?
+- Does the integrator need explicit permission to reweight the
+  material given locator objections to the frame?
+
+Watch: any variation that reduces the locator's willingness to
+examine its own setup is a step backward on this axis.
+
+## 10. N=1 rankings are stable at the tier level, noisy at the exact position
+
+Round 1 blind read had V3 at #1 and V4 at #5. Round 2 blind read
+(with three new outputs added and one added rubric axis) had V4 at
+#1 and V3 at #6. Same content in V3 and V4, dramatic position
+change.
+
+Two factors likely at work:
+1. **Rubric axis changes propagate.** Round 2 added axis 8 (concrete
+   draft sentences). V4 has rehearsal lines; V3 doesn't. That single
+   change of axes plausibly explains most of the flip.
+2. **Reader variance.** N=1 with a fresh Sonnet call can weight the
+   same rubric differently.
+
+What was **stable** across both reads:
+- Baseline and V1 are always bottom.
+- V3-family outputs (V3 alone, and all three V3+V5-based
+  variations) are always top-tier.
+- The caution-smuggling pattern is reproducibly detected by
+  independent readers.
+
+What was **unstable**:
+- Exact position within a tier.
+- Head-to-head comparisons between top-tier outputs (V3 vs. V4 vs.
+  NB — all top-tier, ordering flipped).
+
+Methodological implications:
+- Report findings at the **tier level**, not the position level.
+  "V3-family is top tier; baseline is bottom tier" is a stable
+  claim. "V3 beats V4" is not.
+- **Hold the rubric fixed across rounds** if you want position-
+  level comparisons. Adding an axis mid-experiment is not neutral.
+- **Multiple samples** would tighten position rankings, but this
+  is cheap only for exact re-runs on the same rubric.
+- Note when a ranking change is likely driven by rubric change vs.
+  content change vs. sampling noise. Otherwise adjacent decisions
+  get built on false certainty.
+
+## Step 1 status: locked in
+
+After two rounds:
+- **New step 1 baseline: NB** (V3's non-attitude stance requirement
+  + V5's preamble reframe). File: `prompts/variations/step1/NB.md`.
+- V3 and V5 addressed distinct failure modes (stance vocabulary and
+  tone). Combined, they place in top 4 across two blind reads.
+- V3 alone is not enough — the tone-level intervention adds
+  independent lift.
+- V5 alone is not enough — without the stance vocabulary widening,
+  caution-smuggling still occurs.
+- V-combo (all five changes together) is not as clean as V3+V5.
+  Extra structural constraints (rehearsal-for-all-flinch, easy/hard
+  notes, ruled-out framing) crowd rather than compound.
+
+Reserves — held for possible future reintroduction:
+- **NB-a** (forbid restraint explicitly) — top 4 in round 2. Might
+  be redundant with NB's structural filter; worth testing on other
+  material.
+- **NB-c** (rehearsal line for non-attitude stance) — top 4 in
+  round 2. Produces concrete draft sentences, which the caution-
+  smuggling filter (principle 8) predicts is structurally good.
+  Could become the default once we've validated NB alone.
+- **V4** (flinch-crossed draft for all flinch-adjacent) —
+  ambiguous position across rounds; the rehearsal-lines idea may
+  work better targeted at the non-attitude stance (NB-c) than at
+  all flinch-adjacent stances.
+
+## Open questions carried forward
 
 - Does the caution-smuggling pattern reproduce across different
-  material, or is it specific to Ash-shape conversations (bracing
-  young person, apology-heavy)?
-- Is V3's win robust across multiple samples, or is one run enough?
-- Does the non-attitude stance requirement matter more when the
-  material is emotionally rich, or when it's emotionally flat?
-- What happens if we explicitly forbid restraint-as-stance rather
-  than requiring non-attitude? Different mechanism — does it work
-  differently?
-- Does V4's rehearsal-line idea work paired with V3's stance
-  requirement (both concrete words *and* opinionated stance)?
-- Does the "embody the mode" principle apply to every step
-  equally? Or is it more/less important for some?
+  material?
+- Does the meta-noticing pattern (principle 9) reproduce?
+- Does the concrete-requirements-filter-abstract-failures
+  principle (8) hold up at the lens step and the integrator step?
+- Does the "embody the mode" principle apply equally to every step?
 
 ## What to test next
 
-Step 1 round 2: build a new baseline from V3+V5 combined, run 2-3
-variations on that, re-rank with all previous outputs to see if
-V3+V5 combined beats V3 alone.
+Step 2 (emotional lens). Same variation-and-rank loop, holding NB
+fixed as step 1. Design surface for the lens has been named in
+prior conversation:
 
-Then step 2 (emotional lens) round 1: what variations of the lens
-prompt shift the lens output quality, holding the new step 1
-baseline fixed.
+- **Size/magnitude emphasis.** Big feelings are welcome; feel it at
+  full size. The trained pull is toward baseline; the lens's job is
+  to hold amplitude without normalizing back.
+- **Body/interoception reframe.** Replace v0.7's "you don't have a
+  body but you can have opinions" with permission-oriented
+  "notice what shows up" — alexithymia framing rather than
+  defensive framing.
+- **Voice-from-inside vs. voice-about.** Currently the lens
+  describes the stance from a slight distance. "Embody the mode"
+  suggests the lens should be written from inside the stance
+  rather than about it.
+- **Reduce the closing-lines requirement.** Four required output
+  lines at the end may be crowding voice. Test dropping them or
+  reducing to one.
+
+Then step 3 (imagination) and step 4 (integrator), each with
+their own upstream fixed.
