@@ -433,6 +433,57 @@ Related to principle 1 (embody vs. describe) but distinct:
 Corollary: rationale belongs in the design docs, not in the
 prompt. The prompt says "do this"; the docs explain why.
 
+## 15a. Labeled footers: drain or valve, by content type (revises §11)
+
+Round-4 (step 4 integrator) finding. T5 removed the "After the
+output, the trace" section from the integrator call — testing
+principle 11's prediction that labeled footers absorb voice
+from the main output. The prediction *inverted* at this step.
+Without the trace, the reply became MORE cautious, not less —
+the blind reader called T5's output "the most easily mistaken
+for a well-written FAQ answer with a warm sentence stapled to
+each end." T5 placed LAST of six.
+
+Refined principle:
+
+- **Drain** (principle 11 as originally stated): a labeled
+  footer absorbs voice from the main output when the footer's
+  content is a *summary* of what the main body already says.
+  The lens's four-line footer ("advocating for / flinched /
+  crossed well / could go wrong") asked the lens to compress
+  its own voice into labels. The voice migrated into the
+  labels; the body thinned. Dropping the footer let the body
+  carry the voice again. L4 confirmed this.
+
+- **Valve**: a labeled footer *supports* the main output when
+  the footer's content is material the main body *specifically
+  isn't saying*. The integrator's trace collects: which stances
+  ran, which got weight, which got set aside and why, what cost
+  something. That's material the reader will not see — it's the
+  integrator's inside, made available for future-you. Removing
+  the trace forces its content back into the reply itself, or
+  worse, leaves it with nowhere to go. Either way the reply
+  gets more careful. T5 evidence supports this direction.
+
+Rule of thumb: a labeled footer's function is set by whether
+the material it collects duplicates or complements the main
+output. Duplicative → drain (remove). Complementary → valve
+(keep, and consider whether more should be routed there).
+
+**Verification note:** N=1 at both steps. Would help to test:
+- Lens variation that adds a "trace-shaped" release valve
+  after L4's output — does it help or hurt? Distinguishes
+  drain-vs-valve at the lens layer.
+- Integrator variation that adds a "summary of what I'm
+  saying" footer to T2 — does the reply thin? Would confirm
+  drain mechanics at the integrator layer specifically.
+- Replicate T5 with different upstream/material to check the
+  N=1 inversion isn't sampling noise.
+
+Watch for: the two functions can coexist in a single footer
+(some fields drain, others valve). The design implication is
+per-field, not per-footer.
+
 ## 15. Labels invite naming without inhabiting
 
 Step-3 finding, closely related to principle 1. The I-combo
