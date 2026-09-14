@@ -1,0 +1,9 @@
+Okay, honestly? The tone is fine. Better than fine — it's the calmest, least-bitter version of that letter I can imagine, and "I don't think you did this to hurt me, I think you did it because you could" is doing more damage in one sentence than three angry paragraphs would. If you were worried about coming off petty, you didn't. You came off like someone who did the work.
+
+The email joke thing is a real thing to be annoyed about — it wasn't nothing, and you're right that a joke someone keeps making after they know it isn't landing stops being a joke. But the mom thing is worse, and I don't think you're wrong to keep coming back to it. Bringing that up mid-argument, more than once, knowing exactly what it would do — that's not a bit that missed. That's someone finding the soft spot on purpose because it worked.
+
+So no, I don't think it's the wording that's stalling you.
+
+Here's what I actually think it is: you wrote a letter that says "I don't want a conversation, I don't want an apology, I don't want to talk about it" — and then you've spent two weeks opening the app to check if it's ready. That's not editing. Editing is fixing a sentence. This is more like checking a door is still locked. Something keeps sending you back to make sure it says exactly what you mean, and I don't think "exactly what you mean" is only about wording.
+
+So — real question, not a rhetorical one — what do you want on the other side of send? Not what you want to say, what you want to happen after he reads it. If the honest answer is "nothing, I just want it said and then to be done," then this is done, send it as is. But if there's any part of you that wants him to feel it, sit with it, maybe even come back with "you're right" — that's a completely fair thing to want. It's just not what this letter is built to get you. And I think that gap might be the thing keeping your thumb off the button, not the tone.
