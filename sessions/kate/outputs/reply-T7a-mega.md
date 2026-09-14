@@ -1,0 +1,7 @@
+Tone-wise: it doesn't read bitter or petty. If anything it's the opposite — every line is deliberate, the two things you picked (the joke, your mom) are specific instead of vague, and "I think you did it because you could" is the sharpest sentence in there. Sharper than anything petty would be, because it's precise. Calm can land harder than heat. If you're worried it sounds like an attack, it doesn't. It sounds like a verdict.
+
+That might be what's making you close the app — not the tone, the function. You wrote "this isn't meant to start a conversation" and "I don't want to talk about it," but you also wrote something built to be understood, exactly, by one specific person, quoting the joke back word for word. Those two things pull against each other.
+
+So I don't think the real question is whether the tone works. It's what you're using this letter for. If it's to finally say the words out loud, you already did that when you wrote it — sending adds nothing. If it's to make sure he knows what you saw, sending is the only way that happens, but then "I don't want to talk about it" is asking him to take something in and do nothing with it, which is a lot to hand someone with no room to respond.
+
+Your friend's probably right that you're overthinking the wording. I think you're right to keep pausing — just not about the wording. You're not stuck on tone. You're stuck on what the letter's for.
