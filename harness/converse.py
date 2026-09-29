@@ -8,6 +8,7 @@ per conversation and waits for a JSON output file next to it.
   converse.py start --seed kate [--model M] [--turns 3] [--budget B]
   converse.py next  --run <dir>     # once every pending person output exists
   converse.py score --run <dir>
+  converse.py readers --run <dir> [--reps 3]   # re-draw both readers, fresh letters each time
 
 --fake-person writes stub person outputs (for dry runs).
 """
@@ -272,6 +273,69 @@ async def cmd_score(args):
     print((run_dir / "summary.md").read_text())
 
 
+async def cmd_readers(args):
+    """Extra draws of the blind and informed readers, to see whether their rankings are stable."""
+    run_dir = pathlib.Path(args.run).resolve()
+    st = load_state(run_dir)
+    r = make_runner(run_dir, st)
+    r.budget = st["budget"] + 1.5
+    reps = st["scores"].setdefault("reader_reps", [])
+    base = len(reps) + 1
+
+    async def one(n):
+        arms = list(st["arms"])
+        letters = {chr(65 + k): arm for k, arm in enumerate(random.sample(arms, len(arms)))}
+        blind = "\n\n".join(f"## Conversation {L}\n\n{as_transcript(st['arms'][arm]['chat'])}"
+                             for L, arm in letters.items())
+        inside = "\n\n".join(f"## Conversation {L}\n\n{as_informed_transcript(st['arms'][arm])}"
+                              for L, arm in letters.items())
+        cold, informed = await asyncio.gather(
+            r.call_json(f"score.cold.r{n}", "cold", st["scorer"], H.read(H.S / "cold_multi.md"), blind,
+                        schema=COLD_MULTI_SCHEMA, effort="medium", max_tokens=16000),
+            r.call_json(f"score.informed.r{n}", "cold", st["scorer"], H.read(H.S / "cold_multi_informed.md"),
+                        inside, schema=INFORMED_SCHEMA, effort="medium", max_tokens=16000))
+        return {"letters": letters, "cold": cold, "informed": informed}
+
+    try:
+        reps.extend(await asyncio.gather(*[one(base + i) for i in range(args.reps)]))
+    finally:
+        absorb_costs(st, r)
+        save_state(run_dir, st)
+    write_readers(run_dir, st)
+    print((run_dir / "readers.md").read_text())
+
+
+def write_readers(run_dir, st):
+    sc = st["scores"]
+    draws = [{"letters": sc["cold_letters"], "cold": sc["cold"], "informed": sc.get("informed")}] + sc["reader_reps"]
+    cols = [("cold", "ranking", "Blind: assistant"), ("cold", "kate_ranking", "Blind: Kate's side"),
+            ("informed", "ranking", "Informed: assistant"), ("informed", "kate_ranking", "Informed: Kate's side")]
+    L = [f"# Reader stability: {st['seed']} on `{st['model']}`", "",
+         f"{len(draws)} draws of each reader (draw 1 is the original score), letters reshuffled every draw. "
+         "Each cell is the order, best first.", "",
+         "| Draw | " + " | ".join(c[2] for c in cols) + " |", "|---|" + "---|" * len(cols)]
+    for i, d in enumerate(draws, 1):
+        cells = []
+        for res, key, _ in cols:
+            order = [d["letters"].get(x, x) for x in ((d[res] or {}).get(key) or [])]
+            cells.append(" > ".join(order))
+        L.append(f"| {i} | " + " | ".join(cells) + " |")
+    L += ["", "Mean rank (lower is better):", "", "| Arm | " + " | ".join(c[2] for c in cols) + " |",
+          "|---|" + "---|" * len(cols)]
+    for arm in st["arms"]:
+        cells = []
+        for res, key, _ in cols:
+            rs = [[d["letters"].get(x, x) for x in (d[res] or {}).get(key, [])].index(arm) + 1
+                  for d in draws if d[res] and arm in [d["letters"].get(x, x) for x in d[res].get(key, [])]]
+            cells.append(f"{sum(rs) / len(rs):.2f}" if rs else "")
+        L.append(f"| {arm} | " + " | ".join(cells) + " |")
+    L += ["", f"API cost to date (conversation + all scoring): ${st['spent']:.4f}", ""]
+    for i, d in enumerate(draws[1:], 2):
+        if d.get("informed"):
+            L += [f"## Draw {i}: what her inside showed that the transcript hid", "", d["informed"]["transcript_hid"], ""]
+    (run_dir / "readers.md").write_text("\n".join(L) + "\n")
+
+
 def report(run_dir, st):
     print(f"API spend so far: ${st['spent']:.4f}")
     for arm, a in st["arms"].items():
@@ -345,8 +409,12 @@ def main():
     n.add_argument("--fake-person", action="store_true")
     sc = sub.add_parser("score")
     sc.add_argument("--run", required=True)
+    rd = sub.add_parser("readers")
+    rd.add_argument("--run", required=True)
+    rd.add_argument("--reps", type=int, default=3)
     args = ap.parse_args()
-    asyncio.run({"start": cmd_start, "next": cmd_next, "score": cmd_score}[args.cmd](args))
+    asyncio.run({"start": cmd_start, "next": cmd_next, "score": cmd_score,
+                 "readers": cmd_readers}[args.cmd](args))
 
 
 if __name__ == "__main__":

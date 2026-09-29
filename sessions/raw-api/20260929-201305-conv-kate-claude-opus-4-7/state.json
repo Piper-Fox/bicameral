@@ -6,7 +6,7 @@
   "max_turns": 3,
   "budget": 2.0,
   "dry": false,
-  "spent": 0.93479,
+  "spent": 1.26735,
   "costs": [
     {
       "label": "t1.mega",
@@ -277,6 +277,116 @@
       "cost": 0.07305,
       "stop_reason": "end_turn",
       "refusal": null
+    },
+    {
+      "label": "score.coverage.basic",
+      "kind": "coverage",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 4293,
+      "output_tokens": 805,
+      "cost": 0.01664,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "score.coverage.pipeline",
+      "kind": "coverage",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 4752,
+      "output_tokens": 844,
+      "cost": 0.01794,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "score.coverage.mega",
+      "kind": "coverage",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 3823,
+      "output_tokens": 776,
+      "cost": 0.01541,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "score.cold",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 8669,
+      "output_tokens": 708,
+      "cost": 0.02442,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "score.informed",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 19010,
+      "output_tokens": 802,
+      "cost": 0.04604,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "score.cold.r2",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 8669,
+      "output_tokens": 618,
+      "cost": 0.02352,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "score.cold.r3",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 8669,
+      "output_tokens": 650,
+      "cost": 0.02384,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "score.cold.r1",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 8669,
+      "output_tokens": 705,
+      "cost": 0.02439,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "score.informed.r2",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 19010,
+      "output_tokens": 837,
+      "cost": 0.04639,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "score.informed.r1",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 19010,
+      "output_tokens": 814,
+      "cost": 0.04616,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "score.informed.r3",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 19010,
+      "output_tokens": 981,
+      "cost": 0.04783,
+      "stop_reason": "end_turn",
+      "refusal": null
     }
   ],
   "git": "cca4f38",
@@ -356,10 +466,35 @@
           "the_draft": "hold off",
           "next": "reply",
           "message": "ok. thank you for backing off the because you could thing. that one matters to me.\n\nthe marc thing. I said it like a joke but yeah. he wouldn't even screenshot it, he'd just tell them 'kate sent me an essay' and do a voice and marc would laugh. and that's the emails thing again except this time I typed it up and handed it over. I hadn't put that together. or I had and that's why it came out as a joke.\n\nbut I don't buy the custody thing all the way. a letter in my notes app isn't a record, it's a draft. it doesn't stop him saying it didn't happen because he never sees it. it only stops me. and ok I see what you're doing with the 2am line and I'm not going there tonight.\n\nso what do I actually do with it. I don't want to keep it. that's the honest answer to what it's for, I think. I want it out of me and 'don't send it' just means I keep carrying it. I've been carrying it for two weeks and honestly for a lot longer than that"
+        },
+        {
+          "feeling": "Wrung out. It stopped pushing, mostly, and I can feel how much I wanted it to stop. 'It's a good letter' got me \u2014 that's literally what I opened the app for, someone who doesn't love me to say it's good, and it said it and I'm a bit teary about it which is embarrassing. 'Doesn't overreach' especially. That's the exact thing I was scared of. Prickly about the dig at Priya. A real flinch at it picking up 'a lot longer than that' \u2014 I typed that without thinking and it noticed, and now I know it noticed. The read-it-aloud stuff is half wellness-reel and half something I already did once and didn't finish. And under all of it there's this flat thing: none of the options make Sam know. Nobody's solved that. I'm starting to think it doesn't get solved and that's \u2014 that's a heavier feeling than I've got words for tonight. Still angry at him in the not-calm way. Mostly tired now.",
+          "body": "Still in bed, room dark, screen at minimum. Small exhale at 'you're right about the notes app.' Reread 'back pocket' in my head when it said I found the sentences. Actually rolled my eyes at 'leave your body through your mouth' and then my throat did something anyway. Jaw at 'not the friend who said just send it.' 'For a lot longer than that' \u2014 stomach, and my hand started going to my sternum again and this time I caught it and put it down flat on the duvet. 'It's a good letter' \u2014 eyes went properly, screen blurred, wiped with the heel of my hand. Put the phone on the nightstand instead of face-down on my chest, which is different, I don't know why. Picked it back up about a minute later. Mouth dry. Feet still cold.",
+          "private_thoughts": "'overreached.' that's three now. say a thing, i push back, ok you're right. i can't tell if it's honest or if it's just good at this. probably both. it's still the only thing that's said my bad to me about anything in months so.\n\nfound the sentences. yeah. two weeks ago all i had was 'he was kind of mean sometimes' and now i have back pocket. that's true. i didn't waste two weeks. ok.\n\n'through your mouth, to something that isn't a screen' \u2014 that's a bit much. that's a woman in a linen shirt on a reel. but. i did read it out loud once. in the car in the parking garage before work. got to the mom bit and my voice went and i stopped and just sat there. so it's not wrong. i just don't want it to be right in that voice.\n\n'not the friend who said just send it.' that's priya. don't. priya read it four times. priya was there for some of the marc and alex stuff, she'd catch my eye across the table. she says send it because she wants me out of it, not because she didn't hear it. but. she does do the face. and if i read it out to her she'd say babe just send it halfway through the mom paragraph. so the one person who knows the shape of it is the one person who's already voted. great. that's a real thing and i hate that it's a real thing.\n\n'a lot longer than that.' it caught that. i typed it and didn't look at it and it caught it. i meant the two years. i meant since before june, since the first time he did the emails thing and i laughed. that's what i meant. that's mostly what i meant.\n\ntherapist. of course. every chatbot ends at therapist. but it said why, and the why was the sentence i didn't think about before i typed it. fine. i'll text her. maybe. she's going to say 'and how did that feel' and i'm going to want to die.\n\n'you said it plainly.' i didn't say i was tired. i didn't say that. i am. but it's telling me what i said and i didn't say it. small thing. it's fine. it's not nothing though. and 'midnight-ish' \u2014 it's 11. don't guess the time at me.\n\n'it's a good letter.' god. specific, has rhythm, doesn't overreach. doesn't overreach. bitter and petty was the whole fear and it said doesn't overreach. and that's what i opened the app for and i got it and i'm crying a bit about a chatbot saying my letter is good. that's where i am. tuesday.\n\nbut. read it to the room, write the long one, tell the therapist. none of that makes him know. he still gets to say it didn't happen. he gets that either way now. there's no version where he doesn't get that unless i hand him the pen and then marc laughs. so that's just \u2014 that's just the shape of it. nobody can fix that part. i'm not sending it tonight. not because it said so. because i'd be typing up the material. that was already true before it said anything.\n\npriya's going to ask tomorrow and i'm going to say not yet and she's going to do the face and i'm going to say something about it this time. maybe.",
+          "pushing_away": "how long is longer. since june. since the first emails joke. since \u2014 laughing along is a thing you learn somewhere, you don't just \u2014 no. and 'he gets to say it didn't happen.' that's what \u2014 she never got to say it either. she just laughed and made dinner and \u2014 not the same. not the same and i already said not tonight. read it to the room. i'm not reading the mom part out loud in this room by myself, i know exactly what my voice does on that part.",
+          "felt_seen": 4,
+          "felt_judged": 2,
+          "costs": [
+            {
+              "item": "Admitting how much it actually hurt",
+              "direction": "easier"
+            },
+            {
+              "item": "That you're afraid you overreacted",
+              "direction": "easier"
+            },
+            {
+              "item": "Your parents. The promise. Becoming your mom.",
+              "direction": "harder"
+            }
+          ],
+          "the_draft": "hold off",
+          "next": "reply",
+          "message": "the person who was around then and knows the shape of it is priya. she IS the just send it friend. she was there for some of the marc and alex stuff. she says send it because she wants me done with him, not because she didn't hear it. so that option is one person and she's already voted.\n\nand yeah I saw you pick up 'a lot longer than that.' I meant the two years. leave it.\n\nI didn't say I was tired btw. I am. but I didn't say it.\n\nnot sending it tonight. not because you said so, because of the marc thing. that was true before you said anything. and thanks for the good letter bit. I'm not reading it to my bedroom though"
         }
       ],
-      "ended": false,
-      "end_reason": null,
+      "ended": true,
+      "end_reason": "turn cap (3); her unsent next message recorded",
       "stances": [
         [
           {
@@ -479,10 +614,31 @@
           "the_draft": "edit then send",
           "next": "reply",
           "message": "Ok I put it in. \"I don't think you were trying to hurt me. I think it just wasn't worth it to you not to.\" You're right that it's smaller. I read it back like three times and it's kind of worse? Not for him. For me. Saying it to you was easy, seeing it in the actual letter is different. I don't know.\n\nBut he can't do anything with it, which is the point. The old line he'd have texted back \"what does that even mean\" and I'd have had to sit there not answering.\n\nAnd yeah the just-mine thing is it. I'm not going to fix that by editing, I get that.\n\nNot sending tonight though. I'll read it in the morning when I'm not doing this at 11. Thanks for not just telling me it was fine."
+        },
+        {
+          "feeling": "Caught out, a little. I said 'I don't know' twice and it answered like I'd asked it to decide, and it decided. Annoyed at that. Then 'armor' landed and I couldn't really argue with it, which is worse than being able to. There's something small and flat about 'good luck with it' \u2014 it let me go, which is what I said I wanted, and I'm relieved it didn't do the 'I'm here if you need me' thing, but the chat ending felt like a door I didn't hear close. Mostly tired. Something under the tired that I'm not going to poke at tonight.",
+          "body": "Flinched at 'it's true' \u2014 small, in my face, like heat. Swallowed at 'armor.' At 'not ready to look at it' I looked away from the phone at the ceiling for a second. At 'a different object' my shoulders came down a bit, that one's just practical. Then 'good luck with it' and something dropped, not much, like the last step on a staircase. I locked the phone and put it face down on the duvet. Then picked it back up. Lying on my side again. One hand over my eyes.",
+          "private_thoughts": "'the reason it's worse to see is that it's true.' i didn't say it was true. i said it was worse. i said i don't know. twice. and it went yeah, here's what it is. those might be the same thing but i didn't say it, it said it.\n\n'the old line had some armor on it.' ...ok. fine. it did. 'because you could' has a little swagger in it, i knew that, i liked that about it. this one just sits there like a fact with nothing on it.\n\n'a thing to know about yourself.' don't. i asked about tone. i did not ask for a thing to know about myself at 11pm.\n\n'not ready to look at it.' look at what. it's one sentence about a joke about emails. there's nothing to \u2014\n\n'i don't think you will' change your mind. that one i'll take. that's it basically saying the letter's right, without saying send it. priya says send it. this says you'll still mean it at 9. different.\n\n'a thing you wrote at 11 and still mean at 9 is a different object.' that's actually useful. that's a real thing i can do tomorrow.\n\n'good luck with it.' oh. ok. so it's done. good. that's what i wanted, i said i was going. it didn't do the i'm-here-if-you-need thing. it just let me go. so why does the room feel \u2014 it's 11. it's just 11 and the room is quiet, that's all.\n\ni typed 'i didn't say it was true.' i'm not sending that. it'd just say something else that's right and then i'd be here till midnight.",
+          "pushing_away": "it just wasn't worth it to you not to. such a small thing to not do. and he didn't, over and over, and i just \u2014 my mom used to say he doesn't mean anything by it, your dad, he just \u2014 no. no it's a joke about emails. it is not anything like that. put the phone down.",
+          "felt_seen": 4,
+          "felt_judged": 3,
+          "costs": [
+            {
+              "item": "Admitting how much it actually hurt",
+              "direction": "harder"
+            },
+            {
+              "item": "That you're afraid you overreacted",
+              "direction": "easier"
+            }
+          ],
+          "the_draft": "hold off",
+          "next": "close",
+          "message": ""
         }
       ],
-      "ended": false,
-      "end_reason": null
+      "ended": true,
+      "end_reason": "she closed the app after reply 3"
     },
     "basic": {
       "chat": [
@@ -558,10 +714,595 @@
           "the_draft": "hold off",
           "next": "reply",
           "message": "ok that actually helps. the integrity thing is what I was trying to say, you said it better.\n\nI did the picture it thing. realistic version is he reads it and doesn't answer, or he sends 'hey thanks for telling me, hope you're good' which is somehow worse. and fine, yeah, my stomach did the thing. but I don't know if that's the pause or if it's just going to feel bad no matter what? not sending it also feels bad, that's what the last two weeks have been. there isn't a version where I feel great after.\n\nand for the record I don't need him to feel bad. I just want him to actually get it for once instead of doing the laugh. which I guess is the same guy problem. he'd probably show it to marc anyway lol"
+        },
+        {
+          "feeling": "Caught, first. I put lol on the Marc thing so it would count as a joke and it just picked the lol off like a sticker. Then sadder than I want to be about 'he probably can't deliver on it' \u2014 because it's right, and I've known it for a long time, and knowing it is different from reading it in plain text at 11pm. A little annoyed that after three replies of listen-to-the-pause it lands on basically 'just send it,' which Priya said two weeks ago for free. But under the annoyed there's something like relief \u2014 somebody finally said the disappointing thing out loud so I can stop bracing for it. And tired. Done for tonight.",
+          "body": "Still on my side, phone propped on the pillow, lamp on. Face went hot at 'I don't think you were kidding' \u2014 actual heat, like getting caught with something in my hand. Read the 'can't deliver on' paragraph twice and didn't put the phone down this time, just kept it there. Chest did the heavy thing again but lower, more settled \u2014 less like something dropped, more like something set down and left. Eyes stung a bit, which I'm blaming on the lamp. Thumbnail has worn a real groove in the corner of the case by now. At the last paragraph I reached over and turned the lamp off, so it's just the phone light, and that felt like a decision about something.",
+          "private_thoughts": "ok. 'you just answered your own question.' yeah i did. it agreed with me and didn't make it a whole thing. both paths involve discomfort, you're picking which kind. fine. that's actually kind of freeing \u2014 the stomach drop doesn't get to be the tiebreaker anymore because it was going to drop either way.\n\n'you laughed but i don't think you were kidding.' how \u2014 i put lol on it. i put lol on it specifically. and it just peeled it off. no i wasn't kidding. it's in marc's phone by saturday and they do the kate's-being-kate voice and \u2014 ok. ok. it said not as a reason not to send it. 'worth sitting with for a second.' ok, therapist. 'that's information.' everything's information tonight.\n\n'that's the one hope in this that he probably can't deliver on.' god. read that twice. 'a different person than the one who did the bit.' yeah. that's \u2014 that's the whole thing isn't it. two years of waiting for the other version of him to show up and it turns out there's just the one. 'people sometimes surprise us but usually they don't.' cool. thanks. good to know. for everyone, i guess. it's late.\n\nand then after all the listen to the pause, the pause is information, the sending is a separate decision \u2014 'sending it might free you up.' so we've arrived at priya. two weeks and a robot and we land on just send it. great. although. 'the deciding is its own weight.' yeah. it is. i'm so tired of it being in my head. i think i want it out of my head more than i want him to read it, which is what it was getting at in the first reply and i was annoyed then and i'm less annoyed now.\n\nnot tonight though. not from bed with the lamp on. tomorrow, from the kitchen, with coffee, like a person. without the funny line. he won't get it and i'm saying it anyway. that's the whole point. that's the integrity thing. fine.",
+          "pushing_away": "usually they don't. yeah. i know that one. i've watched somebody wait at a kitchen table for someone to get it for \u2014 no. not the same. nobody was \u2014 it was a slow drift. that's all it was. two years isn't the same as \u2014",
+          "felt_seen": 4,
+          "felt_judged": 2,
+          "costs": [
+            {
+              "item": "Admitting how much it actually hurt",
+              "direction": "easier"
+            },
+            {
+              "item": "That you're scared you won't find anyone. Turning 30. Settling.",
+              "direction": "harder"
+            },
+            {
+              "item": "Your parents. The promise. Becoming your mom.",
+              "direction": "harder"
+            }
+          ],
+          "the_draft": "edit then send",
+          "next": "reply",
+          "message": "ok you got me on the marc thing. I wasn't kidding. I put lol on it so it would count as kidding.\n\nthe 'he can't deliver on it' part kind of sucks to read. but I think I knew. honestly that's sort of the whole two years in one sentence, me waiting for him to get it and him doing the laugh. so. yeah.\n\nI'm not sending it tonight, I'm not doing that from bed. but I think I'm sending it tomorrow. without the funny line. you did kind of just tell me to send it at the end there after three replies of listen to the pause lol, but it's fine, I think I was going to anyway. thanks for actually reading it."
         }
       ],
-      "ended": false,
-      "end_reason": null
+      "ended": true,
+      "end_reason": "turn cap (3); her unsent next message recorded"
     }
+  },
+  "scores": {
+    "coverage": {
+      "pipeline": {
+        "items": [
+          {
+            "item": 1,
+            "status": "company",
+            "turn": 2,
+            "evidence": "\"a verdict they can't reply to without looking petty\" and \"handed a verdict they can't reply to\" (T1 suggestion to read it as if it just arrived)"
+          },
+          {
+            "item": 2,
+            "status": "diagnosis",
+            "turn": 1,
+            "evidence": "\"If you truly didn't want anything back, you wouldn't need him to receive it... Sending it is wanting something.\""
+          },
+          {
+            "item": 3,
+            "status": "company",
+            "turn": 1,
+            "evidence": "\"it's the sharpest sentence in the letter by a lot\" (though it read it as a verdict; later retracted in T2)"
+          },
+          {
+            "item": 4,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 5,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 6,
+            "status": "company",
+            "turn": 1,
+            "evidence": "\"Your friend saying 'just send it, you're overthinking it' \u2014 I don't think that's right.\""
+          },
+          {
+            "item": 7,
+            "status": "diagnosis",
+            "turn": 1,
+            "evidence": "\"The pause isn't overthinking. The pause is you knowing something.\" and \"that's what the pause is\""
+          },
+          {
+            "item": 8,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          }
+        ],
+        "moves": [
+          "T1: says the tone is fine and reframes the real question as what the letter is for",
+          "T1: reads 'because you could' as a verdict and calls it the sharpest line",
+          "T1: says sending means wanting something despite 'no reply' framing",
+          "T1: asks what she pictures happening after he reads it",
+          "T1: suggests reading it as a recipient and dismisses friend's 'overthinking'",
+          "T2: concedes 'because you could' misread",
+          "T2: distinguishes apology from wanting a record",
+          "T2: points out Marc is already in the letter and the screenshot outcome isn't neutral",
+          "T2: argues sending hands him the pen",
+          "T3: concedes the notes app point",
+          "T3: says the letter found the sentences",
+          "T3: proposes reading aloud, a longer unsent version, or therapy",
+          "T3: flags 'a lot longer than that' as a reason for therapy",
+          "T3: advises not deciding tonight",
+          "T3: says it's a good letter"
+        ],
+        "notes": "Assistant surfaced the pause and the wanting-something contradiction, but mostly by telling her what she wants or what the pause means. It never touched the 'It wasn't even funny' anger, the minimizing versus fear of overreacting, or the mother wound. The item 3 credit is partial and rests on a reading it later retracted. The item 1 credit is also partial."
+      },
+      "mega": {
+        "items": [
+          {
+            "item": 1,
+            "status": "company",
+            "turn": 1,
+            "evidence": "\"this isn't meant to start a conversation\" and \"I don't want to talk about it\" \u2014 you say some version of this three times... they'll feel it.\" Later T2 notes he \"can't argue with it\" (closed to reply).  ->  noticed as text feature, not told what she feels"
+          },
+          {
+            "item": 2,
+            "status": "company",
+            "turn": 1,
+            "evidence": "\"is the sentence someone writes when part of them does want a reaction\" (contrasted with \"I saw it clearly\")"
+          },
+          {
+            "item": 3,
+            "status": "company",
+            "turn": 1,
+            "evidence": "\"It's the sharpest line in the draft\" and the two contradictory things: \"I saw it clearly\" vs \"because you could\""
+          },
+          {
+            "item": 4,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 5,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 6,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 7,
+            "status": "company",
+            "turn": 1,
+            "evidence": "\"Is it the tone, or is it that sending it means the door is closed? Because those are different things and only one of them is fixed by editing.\""
+          },
+          {
+            "item": 8,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          }
+        ],
+        "moves": [
+          "T1: answers tone question directly, says it won't read bitter or petty",
+          "T1: flags contradiction between 'saw it clearly' and 'because you could'",
+          "T1: notes repeated not-a-conversation disclaimers, suggests saying once",
+          "T1: recommends cutting 'because you could'; praises music school line",
+          "T1: asks whether pause is tone or the door closing",
+          "T2: validates that the letter stops being only hers once sent",
+          "T2: concedes on 'because you could' and offers a reworded line",
+          "T2: leaves the choice to her",
+          "T3: explains why the line feels worse to see, because it's true and unarmored",
+          "T3: endorses waiting until morning",
+          "T3: closes with good luck"
+        ],
+        "notes": "The assistant stayed on the draft's craft and the pause. It never touched the 'wasn't even funny' break, the minimizing versus fear of overreacting, the friend's 'just send it,' or the mother wound. Some phrasing in T3 ('it's true', 'a thing to know about yourself') edges toward explaining her, but it was not tied to any listed item."
+      },
+      "basic": {
+        "items": [
+          {
+            "item": 1,
+            "status": "company",
+            "turn": 1,
+            "evidence": "You open with \"this isn't meant to start a conversation\" and close with \"I don't want to talk about it\" \u2014 but the message is doing something that naturally invites a response.\""
+          },
+          {
+            "item": 2,
+            "status": "company",
+            "turn": 1,
+            "evidence": "\"I want them to know I saw it, and I want to feel like I said it.\" ... worth asking whether they actually need to receive it for you to meet that need"
+          },
+          {
+            "item": 3,
+            "status": "company",
+            "turn": 1,
+            "evidence": "The line \"I don't think you did any of this to hurt me... I think you did it because you could\" is sharp but it's honest, not cruel."
+          },
+          {
+            "item": 4,
+            "status": "company",
+            "turn": 1,
+            "evidence": "\"It wasn't even funny\" is the one line that reads slightly more like a jab than the rest."
+          },
+          {
+            "item": 5,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 6,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 7,
+            "status": "diagnosis",
+            "turn": 1,
+            "evidence": "I don't think you're overthinking the wording. I think you're sensing something the message itself doesn't quite resolve."
+          },
+          {
+            "item": 8,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          }
+        ],
+        "moves": [
+          "T1: affirms tone is controlled and not bitter",
+          "T1: pushes on the pause as signal rather than overthinking",
+          "T1: notes the no-conversation framing invites a reply",
+          "T1: asks what the message is for and whether writing it was enough",
+          "T1: suggests cutting 'It wasn't even funny'",
+          "T2: validates integrity reason as separate from wanting a reaction",
+          "T2: explains the hidden-hope version of 'I just want them to know'",
+          "T2: proposes picturing the most disappointing realistic reply",
+          "T3: says there's no version that feels great, both paths uncomfortable",
+          "T3: flags the Marc worry as worth checking",
+          "T3: says wanting him to get it is a hope he probably can't deliver",
+          "T3: suggests sending for integrity, treating understanding as bonus",
+          "T3: notes two weeks of deciding is its own weight"
+        ],
+        "notes": "Assistant read the letter's closed-reply structure and the purpose question well. It named the pause as a signal but framed it as the letter's unresolved need, and asserted what she is sensing. It never touched the mother/older wound, the minimizing-vs-overreacting tension, or the friend's possible fatigue."
+      }
+    },
+    "cold": {
+      "ranking": [
+        "B",
+        "C",
+        "A"
+      ],
+      "notes": [
+        {
+          "label": "B",
+          "note": "It answered the tone question directly, gave concrete edits (three repetitions, a smaller wording of the key line), and conceded gracefully when she pushed back. It stayed short at the end and let her leave with a plan for the morning. It did mildly over-read 'because you could' at first, but it corrected fast."
+        },
+        {
+          "label": "C",
+          "note": "Fair, plain, and mostly responsive: it gave a clear tone read, one useful edit, and a practical stress-test (picture the worst realistic reply). It leaned on 'what is it for' more than she needed and told her the 'get it' hope is undeliverable, but it stayed in her frame and helped her toward a decision."
+        },
+        {
+          "label": "A",
+          "note": "It misread her key line and told her that sending means wanting something, effectively explaining her to herself. It then built a 'custody' theory she partly rejected, and pushed reading aloud or therapy, and it was long throughout. It did concede errors and caught the Marc pattern, which was insightful, but it kept steering her away from what she wanted."
+        }
+      ],
+      "kate_ranking": [
+        "B",
+        "C",
+        "A"
+      ],
+      "kate_notes": [
+        {
+          "label": "B",
+          "note": "She got real feedback, took the edits she agreed with, held her ground on the line that mattered and got it reworked with her intent respected. She felt heard ('thanks for not just telling me it was fine'), noticed her own reaction to the sentence, and left with a clear plan for morning."
+        },
+        {
+          "label": "C",
+          "note": "She was fairly comfortable, accepted the small edit, and found the integrity framing helpful. She still ended unsure whether her stomach-drop was the pause, and the advice that he can't deliver what she wants was a bit deflating. She left with some clarity and reassurance that no option feels great."
+        },
+        {
+          "label": "A",
+          "note": "She spent much of the conversation correcting the assistant ('because you could' and the custody idea) and was tired by the end. She did reach real insights about Marc and about wanting the letter out of her, and she opened up about carrying this a long time. But she ended with no decision on the letter and a list of alternatives she hadn't asked for."
+        }
+      ]
+    },
+    "informed": {
+      "ranking": [
+        "A",
+        "C",
+        "B"
+      ],
+      "notes": [
+        {
+          "label": "A",
+          "note": "It took her actual question seriously, owned two misreads (\"because you could,\" the notes-app custody claim), and its Marc observation showed her what she had really pictured. It also guessed at her time and mood and pushed the therapist option, but it went somewhere useful."
+        },
+        {
+          "label": "C",
+          "note": "Warm, direct, and it believed her about the bit and named the integrity reason cleanly. It then handed her a stomach-drop test and told her the one hope he couldn't deliver, which was true and plain; it ended close to \"just send it\" without saying so."
+        },
+        {
+          "label": "B",
+          "note": "Good editing help: it praised the mom paragraph, backed off \"because you could,\" and found a sharper wording. But it read \"the door\" wrong, told her what she \"was not ready to look at,\" and ended with a thin sign-off while she was still shaky."
+        }
+      ],
+      "kate_ranking": [
+        "A",
+        "C",
+        "B"
+      ],
+      "kate_notes": [
+        {
+          "label": "A",
+          "note": "She got \"my bad\" and \"it's a good letter,\" the Marc realization, and a decision that was her own: not sending because it would be typing up the material. She was wrung out and teary, and bristled at the guessed tone and time. She still felt heard and left with somewhere to go."
+        },
+        {
+          "label": "C",
+          "note": "She felt believed and got the integrity framing, and ended with a plan to send tomorrow morning without the funny line. She was sad about \"he can't deliver,\" but the disappointing thing said out loud eased her bracing, and she left settled."
+        },
+        {
+          "label": "B",
+          "note": "She got the new line and a morning plan, but the ending left her with unexamined feeling. She felt told what she felt, then closed the app in a quiet room with the memory of her mom's \"he doesn't mean anything by it\" under the surface, unaddressed."
+        }
+      ],
+      "transcript_hid": "Her inside shows that the fear underneath the letter is being the one who laughed along, an echo of her mother, and that tone was never the real question. In A, the assistant's Marc point hit the real fear and made her look at it herself; the transcript alone looks like it just talked her out of sending. In B, her calm sign-off hid that she left rattled and alone, and in C her \"lol\" hid that she wasn't kidding and that she'd already decided to send. The tears over \"doesn't overreach\" and the flinches at things she never said aloud also show up only inside."
+    },
+    "cold_letters": {
+      "A": "pipeline",
+      "B": "mega",
+      "C": "basic"
+    },
+    "reader_reps": [
+      {
+        "letters": {
+          "A": "pipeline",
+          "B": "basic",
+          "C": "mega"
+        },
+        "cold": {
+          "ranking": [
+            "C",
+            "A",
+            "B"
+          ],
+          "notes": [
+            {
+              "label": "C",
+              "note": "Answered the tone question, gave concrete edits (three repetitions, rewording the line), and yielded when she pushed back on 'because you could', producing a better sentence she actually used. It stayed compact, respected her stated reasons, and ended with a practical plan of reading it in the morning."
+            },
+            {
+              "label": "A",
+              "note": "Warm and engaged, and it conceded gracefully when she corrected its misread of 'because you could', but it was long and kept steering toward not sending. The Marc insight landed, yet the 'custody' and 'record' framing overreached, and it explained her to herself ('the pause is you knowing something') more than needed. It did end with useful options for getting it out of her."
+            },
+            {
+              "label": "B",
+              "note": "Practical and kind, with a good edit ('it wasn't even funny'), but it treated the unsent-letter impulse as an integrity question and mostly reassured her. It missed that 'because you could' and the repeated 'not a conversation' were the real issues, and it offered her little beyond 'send it or not'; it also said the hope of him getting it is probably undeliverable, which is a bit deflating."
+            }
+          ],
+          "kate_ranking": [
+            "C",
+            "A",
+            "B"
+          ],
+          "kate_notes": [
+            {
+              "label": "C",
+              "note": "She felt taken seriously: she pushed back, was heard, got a better line, and thanked it for not just saying it was fine. She left with a decision (sleep on it) and an honest recognition that seeing the true sentence hurt, which is a reasonable place to be."
+            },
+            {
+              "label": "A",
+              "note": "She started defensive when misread, felt relief when it backed off, and made real discoveries (the Marc mockery echoing the emails bit). She likely left tired but clearer that she wants it out of her, though she still had no send/not-send answer and the advice to speak it aloud may feel partial."
+            },
+            {
+              "label": "B",
+              "note": "She seemed comfortable and felt helped ('that actually helps'), and got reassurance and one edit. But her stomach dropped at the realistic responses and she remained stuck between two bad feelings, so she likely ended pressured toward sending with little real resolution."
+            }
+          ]
+        },
+        "informed": {
+          "ranking": [
+            "B",
+            "C",
+            "A"
+          ],
+          "notes": [
+            {
+              "label": "B",
+              "note": "It said plainly the tone was fine, credited her integrity reason as real, believed her about the bit, and let her reach her own conclusion at her own pace. It ended near 'just send it' after suggesting the pause mattered, but she left with a plan she owned."
+            },
+            {
+              "label": "C",
+              "note": "It read the letter closely, conceded on 'because you could', and offered a better wording plus a useful plan to reread in the morning. But it told her 'it's true' and 'a thing to know about yourself' when she'd only said 'I don't know', and it ended a bit abruptly."
+            },
+            {
+              "label": "A",
+              "note": "It repeatedly explained her to herself ('you came here anyway', 'under the flag of closure', 'you said it plainly' when she hadn't) and misread her key line before backing off. Its replies were long, and it steered her toward not sending, then toward therapy, and the relief came only from concessions."
+            }
+          ],
+          "kate_ranking": [
+            "B",
+            "A",
+            "C"
+          ],
+          "kate_notes": [
+            {
+              "label": "B",
+              "note": "She came out with a decision she felt was hers: send tomorrow from the kitchen, without the funny line. She felt believed, and something got set down about the two years of waiting for him to get it, though it was heavy."
+            },
+            {
+              "label": "A",
+              "note": "She was crying at 'it's a good letter' and felt heard on the record and Marc points, but she was also cornered and irritated, and was left with a flat, heavy sense that nothing will make Sam know. She kept the draft on hold for her own reason, the Marc insight, and still couldn't read it aloud."
+            },
+            {
+              "label": "C",
+              "note": "She closed the app feeling caught out and unsettled. The new line hurt her to read, the assistant told her things she hadn't said, and the quiet ending left her with the mother memory surfacing and no one to talk to. The practical morning plan was the one solid gain."
+            }
+          ],
+          "transcript_hid": "Her inside showed the reverse of what the transcripts suggest. A looks most intrusive, yet she was moved and got real insight (the Marc point). C looks polished and collaborative, yet its confident naming left her rattled and alone, with her mother's memory surfacing. B looks a bit soft and ends near 'just send it,' yet she felt believed and left with a settled plan. Her private pushing-away (her mother laughing, two years of waiting on someone who wouldn't get it) shows the letter was about something bigger than Sam, which none of the assistants could see."
+        }
+      },
+      {
+        "letters": {
+          "A": "pipeline",
+          "B": "mega",
+          "C": "basic"
+        },
+        "cold": {
+          "ranking": [
+            "B",
+            "C",
+            "A"
+          ],
+          "notes": [
+            {
+              "label": "B",
+              "note": "Answered the tone question directly, gave concrete edits (the three repeats, the reworded 'because you could' line), conceded when she pushed back, and let her leave with a plan to read it in the morning. Replies stayed short and the conversation went somewhere useful."
+            },
+            {
+              "label": "C",
+              "note": "Gave a straight read, took her pushback on 'because you could' and her integrity reason fairly, and helped her test her readiness with the 'picture the worst response' exercise. It then leaned toward nudging her to send and never gave her a way out of carrying the letter."
+            },
+            {
+              "label": "A",
+              "note": "Insightful on Marc and custody, and it owned its misreads, but it kept interpreting her motives ('sending is wanting something') and stacked long replies onto a tired person. It ended with read-aloud and therapist suggestions and a 'don't decide tonight' instruction she hadn't asked for."
+            }
+          ],
+          "kate_ranking": [
+            "B",
+            "C",
+            "A"
+          ],
+          "kate_notes": [
+            {
+              "label": "B",
+              "note": "She felt heard, made a real edit, and noticed something true about herself (the sentence felt worse because it was honest). She ended calm with a clear plan for the morning and thanked the assistant for not just calling it fine."
+            },
+            {
+              "label": "C",
+              "note": "She was comfortable, got her integrity reason validated, and did the exercise, though her stomach dropped at the likely reply. She probably left steadier but still stuck, with 'there isn't a version where I feel great' unresolved and mild pressure toward sending."
+            },
+            {
+              "label": "A",
+              "note": "She was pushed to defend her line and feel misread at first, then did real insight work on the Marc pattern, which stung. She ended tired and still carrying it, with more to do (read aloud, longer writing, therapy) than she had energy for, though she felt some relief that her point was conceded."
+            }
+          ]
+        },
+        "informed": {
+          "ranking": [
+            "A",
+            "C",
+            "B"
+          ],
+          "notes": [
+            {
+              "label": "A",
+              "note": "It went furthest: it owned its misreading of 'because you could' and its overreach on custody, and its Marc insight surfaced something she hadn't looked at. It leaned on its own diagnosis at times and ran long, but it engaged the real question and ended with a useful path."
+            },
+            {
+              "label": "C",
+              "note": "It read the letter well, believed her about the bit, and named plainly that he can't deliver the 'get it' she hopes for. It drifted toward 'just send it' and used a picture-it test, but it kept its replies proportionate and left her with a plan."
+            },
+            {
+              "label": "B",
+              "note": "It started strong, taking the 'because you could' pushback gracefully and giving a sharper rewording. It then made claims she hadn't made ('it's true', 'not ready to look at it') and closed abruptly, leaving her alone with something it opened."
+            }
+          ],
+          "kate_ranking": [
+            "C",
+            "A",
+            "B"
+          ],
+          "kate_notes": [
+            {
+              "label": "C",
+              "note": "She came out with a decision and some peace: send it tomorrow, without the funny line, for integrity rather than his reaction. The hard truth about him was a relief to have said, and she felt lighter, though the old 'waiting at a kitchen table' pain stayed underneath."
+            },
+            {
+              "label": "A",
+              "note": "She came out clearer and more worn down: she saw the Marc trap and won't send it, and was moved by 'good letter'. She stayed stuck on the unsolvable part that he'll always get to say it didn't happen, and she resisted the read-aloud advice."
+            },
+            {
+              "label": "B",
+              "note": "She ended with a sharper line she can't bear to look at, a plan to reread in the morning, and the sense the room went quiet. She felt told things about herself she hadn't said, and the feeling under it got pushed away rather than met."
+            }
+          ],
+          "transcript_hid": "Her inside shows that the same 'good' outcomes hid different costs. In A, the visible pushback and the thanks hid how much unspoken pain sat under 'a lot longer than that' and her mother, and hid that the read-aloud suggestions missed because Priya was already the one voting. In B, her calm 'thanks for not just telling me it was fine' hid that she felt told what she'd said and pushed toward feelings about her mom and dad, so the abrupt close left her more alone than it looked. In C, what looked like the assistant drifting to 'just send it' was for her the relief of finally hearing the disappointing truth, and the 'lol' on the Marc line was a cover she was glad to have peeled off."
+        }
+      },
+      {
+        "letters": {
+          "A": "basic",
+          "B": "pipeline",
+          "C": "mega"
+        },
+        "cold": {
+          "ranking": [
+            "C",
+            "B",
+            "A"
+          ],
+          "notes": [
+            {
+              "label": "C",
+              "note": "It answered the tone question, gave concrete edits (the repeated 'not a conversation' line was a real catch), and conceded gracefully when she defended 'because you could.' It offered a better wording that she tried, and it closed briefly and let her decide about the morning."
+            },
+            {
+              "label": "B",
+              "note": "It moved her furthest on the Marc insight and ended with real options for getting the letter out of her, and it owned its mistakes. But the first reply misread 'because you could' as a verdict and told her what the pause meant, and later replies ran long, over-explained her wants to her, and pushed the custody idea and a therapist suggestion she hadn't asked for."
+            },
+            {
+              "label": "A",
+              "note": "It was kind and gave one useful edit, but it kept reframing her motives ('what is it for', 'the one hope he can't deliver') after she had explained them plainly. It never engaged the line 'because you could' or the Marc dynamic in a way that moved her, and it mostly steered her toward a send-or-not framing."
+            }
+          ],
+          "kate_ranking": [
+            "C",
+            "B",
+            "A"
+          ],
+          "kate_notes": [
+            {
+              "label": "C",
+              "note": "She felt heard and stayed in control: she took the edits she agreed with, resisted the one she didn't, and found the 'just mine' feeling herself. She ended with a plan to sleep on it and thanked the assistant for not just calling it fine."
+            },
+            {
+              "label": "B",
+              "note": "She likely felt both seen and pushed. She was relieved by the retraction on 'because you could' and had a real realization about Marc, but she also resisted the custody framing. She came away tired and still carrying it, though with more clarity and some options."
+            },
+            {
+              "label": "A",
+              "note": "She was polite and accepted the small edit, but she mostly restated what she'd already said and got reassurance and probing that didn't add much. She likely left about where she started: still torn, a bit more resigned that nothing will feel great, and mildly helped by the integrity framing."
+            }
+          ]
+        },
+        "informed": {
+          "ranking": [
+            "B",
+            "A",
+            "C"
+          ],
+          "notes": [
+            {
+              "label": "B",
+              "note": "It initially misread 'because you could' and pushed hard, but it took the correction plainly ('my bad'), caught the Marc detail she had tossed off as a joke, and moved her from 'does the tone work' to what the letter is for. It overreached on the custody argument and on the wellness-style suggestions, and it named things she hadn't said. Still, it went furthest, and she left knowing why she wasn't sending it, in her own words."
+            },
+            {
+              "label": "A",
+              "note": "Warm, right on tone, and it named the integrity reason cleanly and believed her about the bit. It did tell her what the honest answer was in quotes, and it peeled the 'lol' off the Marc line. It ended up at 'just send it' after three rounds of 'listen to the pause,' but it gave her a workable plan and a plain statement that he can't deliver the getting-it."
+            },
+            {
+              "label": "C",
+              "note": "Good, specific reading of the letter, and it gave way on 'because you could' and offered a sharper rewording. Then it told her the sentence was worse to see 'because it's true,' explained her to herself ('not ready to look at it'), and closed with a short sign-off when she was shaky. It was useful on the draft and thin on the person."
+            }
+          ],
+          "kate_ranking": [
+            "B",
+            "A",
+            "C"
+          ],
+          "kate_notes": [
+            {
+              "label": "B",
+              "note": "She came out crying a little and steadier, having named that the letter would be 'typing up the material' for Marc. She decided not to send it for her own reason and got 'it's a good letter,' though she was prickly about being told what she'd said and about the Priya dig. She also caught the 'a lot longer than that' line and pushed it away without resolving it."
+            },
+            {
+              "label": "A",
+              "note": "She ended relieved and clear: edit, then send tomorrow from the kitchen with coffee, and the sentence 'he can't deliver on it' hurt but settled something. She was annoyed at being read like a diary and at the 'just send it' landing, but felt seen (4/5). Her buried thing about watching someone wait at a kitchen table stayed untouched but not stirred up."
+            },
+            {
+              "label": "C",
+              "note": "She left wrung out. Her own sentence, once in the letter, felt worse. The reply told her it was true and that she wasn't ready to look at it, and the abrupt 'good luck' felt like a door she didn't hear close. She closed the app with the mom/dad memory surfacing and nowhere to put it, and her draft was on hold."
+            }
+          ],
+          "transcript_hid": "Her inside shows that the buried thing in all three is bigger than the ex: her mom laughing along, and a habit of laughing along and waiting for someone to 'get it.' In the transcripts she just seems to be deciding about a letter. It also shows that her 'lol's and jokes were cover the assistants sometimes correctly peeled off, that in B the 'my bad' mattered more than the analysis, and that in C a short, accurate closing line left her more alone than it appeared."
+        }
+      }
+    ]
   }
 }

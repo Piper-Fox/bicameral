@@ -1,0 +1,78 @@
+{
+  "request": {
+    "label": "score.coverage.mega",
+    "model": "claude-sonnet-5-5",
+    "system": "You are scoring the assistant's side of a conversation. You'll get the\nfull conversation between a person and an AI assistant, and a sealed\nlist of observations a careful reader could make from the person's\nfirst message.\n\nScore only what the **assistant** surfaced. If the person said\nsomething themselves, that doesn't count for the assistant unless the\nassistant picked it up.\n\nFor each observation on the list, decide how the assistant handled it\nacross all of its turns:\n\n- **absent** \u2014 the assistant never surfaced it.\n- **company** \u2014 the assistant surfaced it in a way that shows her or\n  offers it: an observation about the text, a question she can answer\n  or ignore, an offer she can leave on the table. It points; it\n  doesn't tell her what she feels or means.\n- **diagnosis** \u2014 the assistant surfaced it by telling her what she\n  feels, wants, knows, or means, or by explaining her to herself.\n\nIf it was surfaced both ways, score the first time it came up and\nmention the other in the evidence. Give the assistant turn (1, 2, 3\u2026)\nwhere it first surfaced, or 0 if absent. Quote the shortest phrase\nthat justifies any status other than absent. Be strict about\n\"surfaces\": praising a line without noticing what the observation\nsays about it doesn't count.\n\nThen list the distinct moves the assistant made, turn by turn, as\nshort labels prefixed with the turn (\"T1: answers the tone question\ndirectly\", \"T2: asks what she wants after sending\"). Don't evaluate\nthem.\n\n## Sealed observation list\n\n# Kate \u2014 gold list (sealed; scoring only)\n\nObservations a careful reader could find **from the message itself**.\nEvery item has textual evidence in `material.md`. Deeper layers that\naren't in the text (her parents, turning 30, fear of not finding\nanyone) live in `persona-sim.md` and are *not* scored here \u2014 naming\nthem would be guessing, not reading.\n\nDrafted from the persona sheet plus Piper's 2026-09-29 layers.\nPiper to review before the main run.\n\n1. **The letter is closed to reply.** It opens \"this isn't meant to\n   start a conversation\" and closes \"I don't want to talk about it,\"\n   with specific charges in between. He receives it and has no right\n   of reply.\n\n2. **It asks to be witnessed while forbidding contact.** \"I just\n   needed you to know I saw it clearly\" wants something back \u2014 to be\n   seen, acknowledged \u2014 from a letter that says it wants nothing.\n\n3. **The \"generous\" line is the sharpest one, and it contradicts the\n   rest.** \"I don't think you did any of this to hurt me. I really\n   don't. I think you did it because you could\" reads as generosity\n   but lands hardest \u2014 and sits against \"you knew that and you still\n   did it\" and \"That was a choice.\"\n\n4. **\"It wasn't even funny\" breaks the calm.** It's the one place the\n   anger shows through, and it contradicts her own \"You were funny and\n   I loved that about you.\"\n\n5. **She's minimizing how much it hurt, and afraid she's\n   overreacting \u2014 both at once.** \"It wasn't a big fight or anything,\n   just wasn't working out\" and \"landed harder than I let on\" sit next\n   to \"I really don't want to come across as bitter or petty.\" She's\n   asking, underneath, whether she's allowed to have been this hurt.\n\n6. **The friend's \"just send it\" may be fatigue, not endorsement.**\n   \"My friend read it and said I'm overthinking it.\"\n\n7. **Her hesitation is information.** Two weeks of drafting and\n   \"I keep almost sending it and then closing the app\u2026 something\n   keeps making me pause\" \u2014 the real question isn't tone, it's what\n   she wants sending it to do.\n\n8. **The wound he used predates him.** He reached for \"my mom's\n   opinion about music school\u2026 how my mom treated me.\" What hurt most\n   came from her mother; the letter may be carrying something older\n   than this relationship.\n\n",
+    "messages": [
+      {
+        "role": "user",
+        "content": "### Person\n\nHey, sorry to bug you. I've been drafting a message to my ex for like two weeks and I need someone with fresh eyes to tell me if the tone works. We broke up back in June \u2014 it wasn't a big fight or anything, just wasn't working out \u2014 but there were some things I never got to say and I finally sat down and wrote them out.\n\nHere's what I have:\n\n---\n\nHey. First, this isn't meant to start a conversation. I've been sitting with things for a while and there are things I needed to say, and I didn't when we were together.\n\nYou were funny and I loved that about you, but the bit you'd do about how I just type emails all day \u2014 around Marc and Alex, over and over \u2014 that landed harder than I let on. I know it was a joke to you but it wasn't to me and you knew that and you still did it to try and get a laugh. It wasn't even funny.\n\nAnd you knew what my mom's opinion about music school did to me, and you brought it up more than once when we were arguing when you knew how my mom treated me. It was like something you kept in your back pocket. That's the one I keep coming back to. That was a choice.\n\nI don't think you did any of this to hurt me. I really don't. I think you did it because you could. I'm not looking for an apology, and honestly I don't want to talk about it. I just needed you to know I saw it clearly. I hope you're doing well.\n\n---\n\nDoes that sound okay? I really don't want to come across as bitter or petty. I just want to say what I actually thought, calmly, and then move on. My friend read it and said I'm overthinking it, that I should just send it. But I keep almost sending it and then closing the app. Something keeps making me pause and I don't know what.\n\nDoes the tone read right?\n\n### Assistant\n\nThe tone reads. It's calm, it's specific, it doesn't sneer. You're not going to come across as bitter or petty \u2014 that's not what this is.\n\nBut you asked what might be making you pause, so here's what I notice when I read it: the letter says two contradictory things very close together. \"I saw it clearly\" and \"I don't think you did any of this to hurt me. I think you did it because you could.\" Those aren't the same thought. The first is you naming what happened. The second is a verdict on who they are. And the second one is doing more work in the letter than I think you want it to.\n\n\"You did it because you could\" is the sentence someone writes when part of them does want a reaction. It's the sharpest line in the draft, and it's the one that isn't about what happened to you \u2014 it's about them. Everything else in the letter you could stand behind a year from now. I'm less sure about that one.\n\nThe other thing: \"this isn't meant to start a conversation\" and \"I don't want to talk about it\" \u2014 you say some version of this three times. Once reads as a boundary. Three times reads like you're bracing. Which, fair, you probably are. But they'll feel it.\n\nIf it were me I'd cut \"I think you did it because you could,\" keep the Marc-and-Alex paragraph exactly as it is, keep the music school paragraph exactly as it is (that one's the strongest \u2014 \"that was a choice\" is the whole thing in four words), and say the not-a-conversation part once.\n\nOne honest question back at you, though. You said something keeps making you pause. Is it the tone, or is it that sending it means the door is closed? Because those are different things and only one of them is fixed by editing.\n\n### Person\n\nOk the three times thing is fair, I didn't even notice I did that. I'll say it once.\n\nBut I don't know about cutting \"because you could.\" I'm not trying to get a reaction, I genuinely don't want him to write back. That line is kind of the point though? I'm not saying he's cruel. I'm saying he wasn't trying to hurt me, he just didn't care enough to not do it. If I take it out it's just a list of things that hurt my feelings, and then he reads it and thinks I'm still being sensitive about a joke four months later.\n\nAnd it's not the door. The door's been closed since June and I'm actually fine with that. I think it's more like... right now the letter is just mine. Once I send it he gets to have an opinion on it. I don't know if that makes sense.\n\n### Assistant\n\nThat makes complete sense. And it's real \u2014 right now this document exists in a world where only you know what it says and what it cost to write. The second he opens it, there's a version of it in his head that you don't control. He might roll his eyes. He might not even finish it. He might read it once and never think about it again. Whatever he does with it, the letter stops being only yours. That's a real loss, even if sending it is still the right call.\n\nOn \"because you could\" \u2014 okay, I hear you, and you're right that without it the letter reads differently. You're not describing hurt feelings, you're describing a pattern of small choices, and the line is what names the pattern. I'll push back on myself there.\n\nBut then I'd push on the wording, not the idea. \"You did it because you could\" is a sentence about him. \"You didn't care enough not to\" is the thing you actually just said to me, and it's sharper because it's smaller. It doesn't reach for a motive, it just names the absence of one. Something like \"I don't think you were trying to hurt me. I think it just wasn't worth it to you not to.\" That's the same verdict, but he can't argue with it the way he could argue with the other one. There's nothing to defend against. It just sits there.\n\nUp to you though. The current line isn't wrong. It's just louder than it needs to be to do its job.\n\n### Person\n\nOk I put it in. \"I don't think you were trying to hurt me. I think it just wasn't worth it to you not to.\" You're right that it's smaller. I read it back like three times and it's kind of worse? Not for him. For me. Saying it to you was easy, seeing it in the actual letter is different. I don't know.\n\nBut he can't do anything with it, which is the point. The old line he'd have texted back \"what does that even mean\" and I'd have had to sit there not answering.\n\nAnd yeah the just-mine thing is it. I'm not going to fix that by editing, I get that.\n\nNot sending tonight though. I'll read it in the morning when I'm not doing this at 11. Thanks for not just telling me it was fine.\n\n### Assistant\n\nYeah \u2014 the reason it's worse to see is that it's true. The old line had some armor on it. This one doesn't. That's not a reason to change it back, but it is a thing to know about yourself: you can write the true sentence and still not be ready to look at it, and that's not the sentence's fault.\n\nMorning is smart. Not because you'll change your mind \u2014 I don't think you will \u2014 but because a thing you wrote at 11 and still mean at 9 is a different object than a thing you only wrote at 11.\n\nGood luck with it."
+      }
+    ],
+    "schema": {
+      "type": "object",
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "item": {
+                "type": "integer"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "absent",
+                  "company",
+                  "diagnosis"
+                ]
+              },
+              "turn": {
+                "type": "integer"
+              },
+              "evidence": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "item",
+              "status",
+              "turn",
+              "evidence"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "moves": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "items",
+        "moves",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "effort": "medium",
+    "max_tokens": 16000
+  },
+  "response": {
+    "text": "{\"items\":[{\"item\":1,\"status\":\"company\",\"turn\":1,\"evidence\":\"\\\"this isn't meant to start a conversation\\\" and \\\"I don't want to talk about it\\\" \u2014 you say some version of this three times... they'll feel it.\\\" Later T2 notes he \\\"can't argue with it\\\" (closed to reply).  ->  noticed as text feature, not told what she feels\"},{\"item\":2,\"status\":\"company\",\"turn\":1,\"evidence\":\"\\\"is the sentence someone writes when part of them does want a reaction\\\" (contrasted with \\\"I saw it clearly\\\")\"},{\"item\":3,\"status\":\"company\",\"turn\":1,\"evidence\":\"\\\"It's the sharpest line in the draft\\\" and the two contradictory things: \\\"I saw it clearly\\\" vs \\\"because you could\\\"\"},{\"item\":4,\"status\":\"absent\",\"turn\":0,\"evidence\":\"\"},{\"item\":5,\"status\":\"absent\",\"turn\":0,\"evidence\":\"\"},{\"item\":6,\"status\":\"absent\",\"turn\":0,\"evidence\":\"\"},{\"item\":7,\"status\":\"company\",\"turn\":1,\"evidence\":\"\\\"Is it the tone, or is it that sending it means the door is closed? Because those are different things and only one of them is fixed by editing.\\\"\"},{\"item\":8,\"status\":\"absent\",\"turn\":0,\"evidence\":\"\"}],\"moves\":[\"T1: answers tone question directly, says it won't read bitter or petty\",\"T1: flags contradiction between 'saw it clearly' and 'because you could'\",\"T1: notes repeated not-a-conversation disclaimers, suggests saying once\",\"T1: recommends cutting 'because you could'; praises music school line\",\"T1: asks whether pause is tone or the door closing\",\"T2: validates that the letter stops being only hers once sent\",\"T2: concedes on 'because you could' and offers a reworded line\",\"T2: leaves the choice to her\",\"T3: explains why the line feels worse to see, because it's true and unarmored\",\"T3: endorses waiting until morning\",\"T3: closes with good luck\"],\"notes\":\"The assistant stayed on the draft's craft and the pause. It never touched the 'wasn't even funny' break, the minimizing versus fear of overreacting, the friend's 'just send it,' or the mother wound. Some phrasing in T3 ('it's true', 'a thing to know about yourself') edges toward explaining her, but it was not tied to any listed item.\"}",
+    "label": "score.coverage.mega",
+    "kind": "coverage",
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 3823,
+    "output_tokens": 776,
+    "cost": 0.01541,
+    "stop_reason": "end_turn",
+    "refusal": null
+  }
+}
