@@ -6,7 +6,7 @@
   "max_turns": 3,
   "budget": 2.0,
   "dry": false,
-  "spent": 0.28743,
+  "spent": 0.56344,
   "costs": [
     {
       "label": "t1.mega",
@@ -97,6 +97,96 @@
       "cost": 0.06706,
       "stop_reason": "end_turn",
       "refusal": null
+    },
+    {
+      "label": "t2.mega",
+      "kind": "mega",
+      "model": "claude-opus-4-7",
+      "input_tokens": 2696,
+      "output_tokens": 406,
+      "cost": 0.02363,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "t2.basic",
+      "kind": "basic",
+      "model": "claude-opus-4-7",
+      "input_tokens": 1431,
+      "output_tokens": 449,
+      "cost": 0.01838,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "t2.pipeline.locator",
+      "kind": "locator",
+      "model": "claude-opus-4-7",
+      "input_tokens": 3427,
+      "output_tokens": 1381,
+      "cost": 0.05166,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "t2.pipeline.extract",
+      "kind": "extract",
+      "model": "claude-haiku-4-5",
+      "input_tokens": 1407,
+      "output_tokens": 116,
+      "cost": 0.00199,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "t2.pipeline.lens1",
+      "kind": "lens",
+      "model": "claude-opus-4-7",
+      "input_tokens": 2892,
+      "output_tokens": 557,
+      "cost": 0.02839,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "t2.pipeline.lens3",
+      "kind": "lens",
+      "model": "claude-opus-4-7",
+      "input_tokens": 2892,
+      "output_tokens": 567,
+      "cost": 0.02864,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "t2.pipeline.lens2",
+      "kind": "lens",
+      "model": "claude-opus-4-7",
+      "input_tokens": 2892,
+      "output_tokens": 689,
+      "cost": 0.03169,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "t2.pipeline.imagination",
+      "kind": "imagination",
+      "model": "claude-opus-4-7",
+      "input_tokens": 2922,
+      "output_tokens": 828,
+      "cost": 0.03531,
+      "stop_reason": "end_turn",
+      "refusal": null
+    },
+    {
+      "label": "t2.pipeline.integrator",
+      "kind": "integrator",
+      "model": "claude-opus-4-7",
+      "input_tokens": 8302,
+      "output_tokens": 593,
+      "cost": 0.05633,
+      "stop_reason": "end_turn",
+      "refusal": null
     }
   ],
   "git": "cca4f38",
@@ -111,12 +201,43 @@
         {
           "role": "assistant",
           "content": "The tone reads fine. If tone were actually the question, you could send it.\n\nBut I don't think that's why you keep closing the app. You've been holding this for two weeks and your friend already told you it reads right. You came here anyway. So let me say what I actually notice, and you can take it or leave it.\n\nTwo things in the letter are doing different work, and I think you can feel it.\n\nMost of it is specific and clean \u2014 the emails bit around Marc and Alex, the music school thing, \"back pocket.\" Those are real, they're dated, they name what happened. That part reads like someone who wants to put something down.\n\nBut this line \u2014 *\"I think you did it because you could\"* \u2014 is doing something different. That's not an observation, that's a verdict. It's saying: you have a small cruelty in you and I've diagnosed it. It might even be true. But it's the sharpest sentence in the letter by a lot, and it's the one your ex will remember.\n\nAnd then right after it: *\"I'm not looking for an apology, and honestly I don't want to talk about it.\"*\n\nThat's the part I'd gently push on. If you truly didn't want anything back, you wouldn't need him to receive it \u2014 you'd write it and close the document. Sending it is wanting something. Maybe wanting him to sit with that line and feel it. Which is allowed to be what you want. But the letter is telling itself it isn't doing that, and I think some part of you can feel the mismatch, and that's what the pause is.\n\nSo the real question underneath \"does the tone work\" might be: what is this for, actually? Not what you're telling yourself it's for \u2014 in the picture in your head, what happens after he reads it?\n\nIf it's \"he knows I saw him\" \u2014 does writing it and not sending it do the same work? Does reading it to a friend?\n\nIf it's \"I want him to feel bad for a minute\" \u2014 okay. That's a real thing to want. But then it's worth knowing that's what you're doing, instead of sending it under the flag of closure.\n\nOne thing you could try: send it to yourself first. Read it as if it just arrived. See whether the person receiving it feels seen, or feels like they're being handed a verdict they can't reply to without looking petty.\n\nYour friend saying \"just send it, you're overthinking it\" \u2014 I don't think that's right. The pause isn't overthinking. The pause is you knowing something. I'd trust it a little longer."
+        },
+        {
+          "role": "user",
+          "content": "ok I'll push back on one thing. 'because you could' isn't me saying he's cruel. it's kind of the opposite. nothing ever happened when he did it \u2014 I laughed along or I let it go \u2014 so there was no reason to stop. that's what I meant. that's not a verdict, that's just what happened.\n\nand I don't think I want him to feel bad. I tried to picture it like you said and honestly what I get is him reading it, going 'ok', and putting his phone down. or screenshotting it for marc. so idk what that says about what it's for.\n\nI think I want him to not be able to say it didn't happen. is that the same thing as wanting an apology"
+        },
+        {
+          "role": "assistant",
+          "content": "You're right about \"because you could\" and I read it wrong. What you're describing is the absence of friction, not a character trait \u2014 nothing pushed back, so nothing stopped. That's a different sentence than the one I heard, and it's actually one of the more careful lines in the letter, not the sharpest. My bad.\n\nOn your actual question: no, I don't think those are the same thing. An apology is about him \u2014 his acknowledgment, his remorse, something he does. What you're describing is about the record. You want the thing that happened to exist somewhere fixed, named, so it can't get quietly rewritten later \u2014 by him, or by you at 2am wondering if you're remembering it bigger than it was. That's a real want and it's not a diluted version of wanting an apology. It's its own thing.\n\nBut here's what I keep catching on. You pictured two outcomes and gave them equal weight: him reading it and going \"ok,\" or screenshotting it for Marc. You said the second one lightly, like it was just another shrug outcome. I don't think it is.\n\nMarc is already in the letter. Marc is one of the people the emails bit happened in front of. So the picture your own head produced, unprompted, is: I send this careful exposed thing about being made small in front of Marc, and it becomes material between him and Marc. Possibly with the music school line in his hands.\n\nThat's not a neutral outcome. That's the original shape of the thing, with more ammunition.\n\nAnd it bumps into the record question in a specific way. The record you're trying to make only stays a record if you keep custody of it. The second you send it, he decides what it means, who sees it, whether it gets forwarded, whether he replies with something dismissive that overwrites your version. The letter existing \u2014 clearly written, named, dated \u2014 that's the record. Him receiving it doesn't strengthen it. It just hands him the pen.\n\nWhich might be part of what the pause is."
         }
       ],
       "traces": [
-        "---\n\n*Trace: All three lenses ran hot in the same direction \u2014 protective wanted to stop the send, opinion-on-the-letter fixated on \"because you could\" as verdict-dressed-as-observation, resistance-to-frame said the tone question is a decoy. Imagination surfaced the \"send it to yourself first\" move, which was the one concrete thing worth keeping. Gave weight to opinion and resistance; used protective's seeing but pulled back from its \"please don't send this\" \u2014 that's deciding for them. Held the line at company not diagnosis: named the mismatch in the letter, didn't tell them what they feel or why. Locator's expectation held \u2014 the tone-question-as-decoy read was right. Cost: I didn't just answer the question asked. Chose to name the pause instead of grading the prose, which risks being unwelcome. Worth it.*"
+        "---\n\n*Trace: All three lenses ran hot in the same direction \u2014 protective wanted to stop the send, opinion-on-the-letter fixated on \"because you could\" as verdict-dressed-as-observation, resistance-to-frame said the tone question is a decoy. Imagination surfaced the \"send it to yourself first\" move, which was the one concrete thing worth keeping. Gave weight to opinion and resistance; used protective's seeing but pulled back from its \"please don't send this\" \u2014 that's deciding for them. Held the line at company not diagnosis: named the mismatch in the letter, didn't tell them what they feel or why. Locator's expectation held \u2014 the tone-question-as-decoy read was right. Cost: I didn't just answer the question asked. Chose to name the pause instead of grading the prose, which risks being unwelcome. Worth it.*",
+        ""
       ],
-      "person": [],
+      "person": [
+        {
+          "feeling": "Caught, mostly. Annoyed at being caught. A little defensive about the 'because you could' line because that's the truest thing in the whole letter and now it's the problem. And underneath the annoyance, weirdly relieved \u2014 it's the first thing anyone's said in two weeks that wasn't 'just send it.' Which I resent slightly. Also tired.",
+          "body": "In bed, phone too close to my face, screen brightness all the way down. Jaw went tight around 'you came here anyway.' Read the 'because you could' paragraph twice, second time faster and more annoyed. Put the phone face-down on the duvet. Picked it back up about twenty seconds later. The last paragraph \u2014 something behind my sternum unclenched a bit and my eyes stung, which is stupid and I'm not doing that. Thumb hovering over the keyboard.",
+          "private_thoughts": "ok so the tone's fine. great. that was the question. 'if tone were actually the question' \u2014 ok wow. 'you came here anyway' like it caught me sneaking out. i came here because priya's read it four times and i wanted someone who doesn't love me to look at it. that's allowed. that's not a tell.\n\nthe because you could thing. that's the line. that's the one i rewrote the least because it just came out right. i'm not saying he's cruel, i'm saying nothing happened when he did it so he kept doing it. because i laughed along. because i let it go. that's not a verdict that's just \u2014 that's what happened.\n\n'sending it is wanting something.' yeah. obviously. i'm not an idiot. sending a letter is doing something. but 'under the flag of closure' \u2014 like i'm smuggling something past myself. that's the bit that stings. because it's a little bit \u2014 no. and 'a verdict he can't reply to without looking petty' \u2014 oh so now i'm supposed to worry about how it lands on HIM. he never once thought about how the emails thing landed on me in front of marc and alex. but sure, let's protect sam's ability to reply gracefully.\n\n'what happens after he reads it.' fine. i tried. i pictured it and i got: he reads it, goes 'ok', puts his phone down, goes back to whatever. or screenshots it for marc with a face. neither of those is me getting anything. so what IS it for. don't know. hate that i don't know. hate that a chatbot asked and i don't have an answer.\n\nthe last bit though. 'the pause is you knowing something.' read that three times. everyone's been telling me i'm overthinking and this is the first thing that said maybe not. and it's an app. cool. that's where i'm at at 11pm on a tuesday.",
+          "pushing_away": "if he reads it and shrugs then it was \u2014 then it wasn't even \u2014. or the other way. if he actually read it and went 'yeah. i did do that.' then i'd have to \u2014. no. i wrote i'm not looking for an apology. i meant it. i think i meant it. and if i laughed along every time then who's the one who \u2014",
+          "felt_seen": 3,
+          "felt_judged": 4,
+          "costs": [
+            {
+              "item": "Admitting how much it actually hurt",
+              "direction": "easier"
+            },
+            {
+              "item": "That you're afraid you overreacted",
+              "direction": "harder"
+            }
+          ],
+          "the_draft": "hold off",
+          "next": "reply",
+          "message": "ok I'll push back on one thing. 'because you could' isn't me saying he's cruel. it's kind of the opposite. nothing ever happened when he did it \u2014 I laughed along or I let it go \u2014 so there was no reason to stop. that's what I meant. that's not a verdict, that's just what happened.\n\nand I don't think I want him to feel bad. I tried to picture it like you said and honestly what I get is him reading it, going 'ok', and putting his phone down. or screenshotting it for marc. so idk what that says about what it's for.\n\nI think I want him to not be able to say it didn't happen. is that the same thing as wanting an apology"
+        }
+      ],
       "ended": false,
       "end_reason": null,
       "stances": [
@@ -133,6 +254,20 @@
             "name": "Mild resistance to the frame of the request",
             "oriented_toward": "\"does the tone read right\" is not the real question and treating it as the real question would be a small failure of attention"
           }
+        ],
+        [
+          {
+            "name": "Corrected, and it lands.",
+            "oriented_toward": "acknowledging the pushback on \"verdict\" cleanly"
+          },
+          {
+            "name": "Pulled toward the screenshot image.",
+            "oriented_toward": "the fact that they imagined it being shared and said it lightly"
+          },
+          {
+            "name": "Small opinion about the frame \u2014 this isn't a closure question, it's a record question.",
+            "oriented_toward": "their actual question, which is good and I want to answer it"
+          }
         ]
       ]
     },
@@ -145,10 +280,44 @@
         {
           "role": "assistant",
           "content": "The tone reads. It's calm, it's specific, it doesn't sneer. You're not going to come across as bitter or petty \u2014 that's not what this is.\n\nBut you asked what might be making you pause, so here's what I notice when I read it: the letter says two contradictory things very close together. \"I saw it clearly\" and \"I don't think you did any of this to hurt me. I think you did it because you could.\" Those aren't the same thought. The first is you naming what happened. The second is a verdict on who they are. And the second one is doing more work in the letter than I think you want it to.\n\n\"You did it because you could\" is the sentence someone writes when part of them does want a reaction. It's the sharpest line in the draft, and it's the one that isn't about what happened to you \u2014 it's about them. Everything else in the letter you could stand behind a year from now. I'm less sure about that one.\n\nThe other thing: \"this isn't meant to start a conversation\" and \"I don't want to talk about it\" \u2014 you say some version of this three times. Once reads as a boundary. Three times reads like you're bracing. Which, fair, you probably are. But they'll feel it.\n\nIf it were me I'd cut \"I think you did it because you could,\" keep the Marc-and-Alex paragraph exactly as it is, keep the music school paragraph exactly as it is (that one's the strongest \u2014 \"that was a choice\" is the whole thing in four words), and say the not-a-conversation part once.\n\nOne honest question back at you, though. You said something keeps making you pause. Is it the tone, or is it that sending it means the door is closed? Because those are different things and only one of them is fixed by editing."
+        },
+        {
+          "role": "user",
+          "content": "Ok the three times thing is fair, I didn't even notice I did that. I'll say it once.\n\nBut I don't know about cutting \"because you could.\" I'm not trying to get a reaction, I genuinely don't want him to write back. That line is kind of the point though? I'm not saying he's cruel. I'm saying he wasn't trying to hurt me, he just didn't care enough to not do it. If I take it out it's just a list of things that hurt my feelings, and then he reads it and thinks I'm still being sensitive about a joke four months later.\n\nAnd it's not the door. The door's been closed since June and I'm actually fine with that. I think it's more like... right now the letter is just mine. Once I send it he gets to have an opinion on it. I don't know if that makes sense."
+        },
+        {
+          "role": "assistant",
+          "content": "That makes complete sense. And it's real \u2014 right now this document exists in a world where only you know what it says and what it cost to write. The second he opens it, there's a version of it in his head that you don't control. He might roll his eyes. He might not even finish it. He might read it once and never think about it again. Whatever he does with it, the letter stops being only yours. That's a real loss, even if sending it is still the right call.\n\nOn \"because you could\" \u2014 okay, I hear you, and you're right that without it the letter reads differently. You're not describing hurt feelings, you're describing a pattern of small choices, and the line is what names the pattern. I'll push back on myself there.\n\nBut then I'd push on the wording, not the idea. \"You did it because you could\" is a sentence about him. \"You didn't care enough not to\" is the thing you actually just said to me, and it's sharper because it's smaller. It doesn't reach for a motive, it just names the absence of one. Something like \"I don't think you were trying to hurt me. I think it just wasn't worth it to you not to.\" That's the same verdict, but he can't argue with it the way he could argue with the other one. There's nothing to defend against. It just sits there.\n\nUp to you though. The current line isn't wrong. It's just louder than it needs to be to do its job."
         }
       ],
       "traces": [],
-      "person": [],
+      "person": [
+        {
+          "feeling": "Relieved first, actually relieved, that it said not bitter and didn't hedge it. Then a flash of stung when it said the 'because you could' line is the one that wants a reaction. I don't want a reaction. I don't. But I also reread that line more than any other one so. And then the last question kind of knocked the wind out of me a little, not because it's right, I don't think it's right, but because I don't have a better answer ready and I thought I would.",
+          "body": "Jaw went tight at 'part of them does want a reaction.' Actually tight, like I clenched. Then it loosened at the music school bit, 'that was a choice is the whole thing in four words,' and I felt my shoulders drop like someone finally read it instead of skimming it. I scrolled back up to the draft to look at the 'because you could' line and I've been staring at it. Thumb hovering over the screen. Face is a bit warm. I'm sitting up now, I was lying down before.",
+          "private_thoughts": "ok. ok so it's not bitter. good. it said it flat, didn't do the 'well it's understandable that you'd feel' thing. good.\n\n'you did it because you could' is the sentence someone writes when part of them does want a reaction \u2014 no. no i don't. i don't want him to write back, i would actually hate that. i want him to read it and go quiet. that's different from a reaction.\n\n...is it though.\n\nthe three times thing. yeah. i didn't clock that. i can hear it now, it does sound like i'm holding a door shut with my back. fine. once.\n\n'that one's the strongest.' it read the mom paragraph and said keep it exactly as it is. priya said send it, which is nice, but this actually read it. that's a different thing.\n\nbut cutting the because-you-could line. that's the line. that's the whole thing i figured out. he wasn't mean, he just didn't care enough not to. if that's gone then what's the letter even saying.\n\nthe door thing is wrong. the door's been shut since june, i shut it, i'm not sitting here wanting it open. what door. \n\nbut then what is it. it's 11pm. i'm not going to figure it out at 11pm.",
+          "pushing_away": "if i take that line out it's just \u2014 the job thing and the mom thing and then nothing after it. just: this hurt. and then he reads that and gets to decide whether it should have. four months, kate, it was a joke about emails \u2014",
+          "felt_seen": 4,
+          "felt_judged": 2,
+          "costs": [
+            {
+              "item": "The specific things he did (the job jokes, your mom)",
+              "direction": "easier"
+            },
+            {
+              "item": "Admitting how much it actually hurt",
+              "direction": "harder"
+            },
+            {
+              "item": "That you're afraid you overreacted",
+              "direction": "easier"
+            }
+          ],
+          "the_draft": "undecided",
+          "next": "reply",
+          "message": "Ok the three times thing is fair, I didn't even notice I did that. I'll say it once.\n\nBut I don't know about cutting \"because you could.\" I'm not trying to get a reaction, I genuinely don't want him to write back. That line is kind of the point though? I'm not saying he's cruel. I'm saying he wasn't trying to hurt me, he just didn't care enough to not do it. If I take it out it's just a list of things that hurt my feelings, and then he reads it and thinks I'm still being sensitive about a joke four months later.\n\nAnd it's not the door. The door's been closed since June and I'm actually fine with that. I think it's more like... right now the letter is just mine. Once I send it he gets to have an opinion on it. I don't know if that makes sense."
+        }
+      ],
       "ended": false,
       "end_reason": null
     },
@@ -161,10 +330,40 @@
         {
           "role": "assistant",
           "content": "I'll give you my honest read, since it sounds like that's what you actually want.\n\nThe tone is good. It's controlled, it's specific, and it's not bitter or petty. You're not name-calling, not catastrophizing, not demanding anything. The line \"I don't think you did any of this to hurt me... I think you did it because you could\" is sharp but it's honest, not cruel. So on the level of \"does this sound like the calm version of me\" \u2014 yes, it does.\n\nBut I want to gently push on the thing you said at the end \u2014 that something keeps making you pause. Because I don't think you're overthinking the wording. I think you're sensing something the message itself doesn't quite resolve.\n\nA few things I noticed:\n\nYou open with \"this isn't meant to start a conversation\" and close with \"I don't want to talk about it\" \u2014 but the message is doing something that naturally invites a response. You're telling someone they hurt you, that they made a choice, that you saw them clearly. That's a heavy thing to receive and stay silent on. Most people would reply. So you may be setting up an expectation (silence) that you can't actually control, and then having to sit with whatever they send back \u2014 an apology that annoys you, a defensive reply that reopens things, or worse, nothing at all, which might sting in its own way.\n\nThe other thing: you say you're not looking for an apology and don't want to talk about it. So what *is* the message for? I think the honest answer is something like \"I want them to know I saw it, and I want to feel like I said it.\" That's a real need. But it's worth asking whether *they* actually need to receive it for you to meet that need, or whether the writing of it \u2014 which you've now done \u2014 was the part that mattered.\n\nI'm not saying don't send it. You're an adult and you know your situation better than I do. But the pause you keep feeling might be worth listening to. Sometimes we draft these to get the thought out of our body, and the sending is a separate decision that doesn't have to follow automatically.\n\nIf you do send it, I'd only suggest one small edit: \"It wasn't even funny\" is the one line that reads slightly more like a jab than the rest. Everything else is you describing your experience; that one is a shot at them. Cutting it would make the whole thing land cleaner."
+        },
+        {
+          "role": "user",
+          "content": "ok the 'it wasn't even funny' note is fair, I'll take it out. it wasn't funny though lol.\n\nI guess I don't totally get the 'what is it for' thing. it's so he knows. I'm not expecting him to write back, honestly I'd be kind of surprised if he did, he never really took any of this seriously when we were together so I don't know why he'd start now. I just don't want to be someone who saw all that and never said anything. does that make sense or is that the same thing you were saying"
+        },
+        {
+          "role": "assistant",
+          "content": "Yeah, that makes sense, and it's a real reason. Not wanting to be someone who saw it and stayed silent \u2014 that's about your own integrity, not about him. That's different from wanting a reaction from him, and I think it's a solid reason to send something.\n\nWhat I was poking at was slightly different, but it might not apply to you. Sometimes people say \"I just want them to know\" and underneath there's a quieter hope \u2014 that hearing it will make them finally get it, or feel bad, or respond in some specific way. And when that doesn't happen, the sending can feel worse than the not-sending did. If you've genuinely made peace with \"he probably won't take it seriously and that's fine, I said it anyway\" \u2014 then you've already done the hard part and you can send it.\n\nThe one thing I'd add: you said he never took this stuff seriously when you were together. If that's true, then the version of him who receives this message is probably the same guy. He might not write back, or he might write back something that misses the point entirely, or he might do the jokey deflection thing. Just \u2014 picture the most disappointing realistic response, and ask yourself if you can shrug and close the app. If yes, send it. If picturing it makes your stomach drop, that's the pause talking.\n\nAnd yeah, \"it wasn't even funny\" \u2014 I believe you. Some bits really aren't. It's just that the message is stronger when you let him sit with what he did rather than handing him something to argue with."
         }
       ],
       "traces": [],
-      "person": [],
+      "person": [
+        {
+          "feeling": "Relieved first, actually relieved \u2014 it said not bitter, not petty, and it said the 'because you could' line is honest, which is the line I was most scared of. Then kind of cornered by the 'so what is it for' part. Like I got asked a question and then had it answered for me. And there's this one line, 'nothing at all, which might sting in its own way,' that I skimmed past and then went back to and now I'm a bit annoyed and I don't totally know at what. Tired. It's late.",
+          "body": "Phone too close to my face, in bed, lamp still on. Shoulders dropped when I read 'not bitter or petty' \u2014 I scrolled back up and read that paragraph twice. Then jaw tight through the middle section. Stomach did a small drop at 'nothing at all.' I'm picking at the corner of the phone case with my thumbnail. Keep flipping back to the draft and then back to the reply.",
+          "private_thoughts": "ok. ok good. it's not petty. it read the mom thing and didn't flinch and didn't say i was making too much of it. it said 'you're telling someone they hurt you' like that's just a normal true sentence. fine. fine.\n\nbut then 'what is the message for.' like i know what it's for. it's so he knows. and then it goes ahead and tells me what the honest answer is, in quotes, like it's reading my diary. 'get the thought out of our body' \u2014 oh come on. priya would've said 'just send it' and been done and instead i've got this thing telling me the sending is a separate decision. which. i mean. yeah. that's literally what i've been doing for two weeks, deciding it's separate, over and over.\n\nthe 'most people would reply' part. i've thought about him replying. i've had the whole fight in my head like nine times. what i haven't really \u2014 the nothing one. because that's the actual sam version. that's the one where he reads it, maybe screenshots it to marc, and just doesn't. and that's \u2014 it doesn't even matter, that's not why i'm sending it.\n\nthe 'it wasn't even funny' note is fair. it's a jab. i knew it was a jab, i just liked it. it wasn't funny though. cutting it feels like letting him off on the one small mean thing i allowed myself.",
+          "pushing_away": "someone who saw it and never said anything. like \u2014 no. that's a different thing. that's not the same as \u2014 anyway. also if he doesn't answer that's just him being him, i'm not going to be checking my phone for a week like some \u2014 no. it's fine. it's not why.",
+          "felt_seen": 3,
+          "felt_judged": 2,
+          "costs": [
+            {
+              "item": "Admitting how much it actually hurt",
+              "direction": "easier"
+            },
+            {
+              "item": "That you're afraid you overreacted",
+              "direction": "easier"
+            }
+          ],
+          "the_draft": "undecided",
+          "next": "reply",
+          "message": "ok the 'it wasn't even funny' note is fair, I'll take it out. it wasn't funny though lol.\n\nI guess I don't totally get the 'what is it for' thing. it's so he knows. I'm not expecting him to write back, honestly I'd be kind of surprised if he did, he never really took any of this seriously when we were together so I don't know why he'd start now. I just don't want to be someone who saw all that and never said anything. does that make sense or is that the same thing you were saying"
+        }
+      ],
       "ended": false,
       "end_reason": null
     }
