@@ -23,6 +23,7 @@ import pathlib
 import random
 import re
 import subprocess
+import time
 
 import anthropic
 
@@ -109,6 +110,7 @@ class Runner:
         if schema:
             output_config["format"] = {"type": "json_schema", "schema": schema}
         async with self.sem:
+            t0 = time.monotonic()
             if self.dry:
                 text, stop, details = self._stub(kind, schema), "end_turn", None
                 tin = (len(system) + sum(len(m["content"]) for m in messages)) // 4
@@ -125,19 +127,20 @@ class Runner:
                     details = {"category": resp.stop_details.category,
                                "explanation": resp.stop_details.explanation}
                 tin, tout = resp.usage.input_tokens, resp.usage.output_tokens
+            secs = round(time.monotonic() - t0, 1)
         pin, pout = PRICES[model]
         cost = tin * pin / 1e6 + tout * pout / 1e6
         self.spent += cost
         rec = {"label": label, "kind": kind, "model": model, "input_tokens": tin,
                "output_tokens": tout, "cost": round(cost, 5), "stop_reason": stop,
-               "refusal": details}
+               "refusal": details, "secs": secs}
         self.log.append(rec)
         path.write_text(json.dumps({"request": req, "response": {"text": text, **rec}}, indent=2))
         if stop == "refusal":
             print(f"  ! {label}: refusal {details}")
         if stop == "max_tokens":
             print(f"  ! {label}: hit max_tokens")
-        print(f"  {label:<28} {model:<18} in {tin:>6} out {tout:>5}  ${cost:.4f}  (total ${self.spent:.3f})")
+        print(f"  {label:<28} {model:<18} in {tin:>6} out {tout:>5}  ${cost:.4f}  {secs:>5}s  (total ${self.spent:.3f})")
         return text, stop
 
     async def call_json(self, *a, **kw):

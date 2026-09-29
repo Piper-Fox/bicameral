@@ -19,6 +19,7 @@ import json
 import pathlib
 import random
 import sys
+import time
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import run as H  # noqa: E402
@@ -123,6 +124,7 @@ async def assistant_turn(r, st, arm, a):
     turn = len([m for m in a["chat"] if m["role"] == "assistant"]) + 1
     tag = f"t{turn}.{arm}"
     model = st["model"]
+    t0 = time.monotonic()
     if arm == "pipeline":
         prior = a["traces"][-1] if a["traces"] else None
         res = await H.arm_pipeline(r, model, st["helper"], as_material(a["chat"]), f"t{turn}",
@@ -138,6 +140,7 @@ async def assistant_turn(r, st, arm, a):
         a["ended"], a["end_reason"] = True, f"assistant refused at turn {turn}"
         return
     a["chat"].append({"role": "assistant", "content": reply})
+    a.setdefault("secs", []).append(round(time.monotonic() - t0, 1))
 
 
 def person_paths(run_dir, arm, turn):
@@ -340,7 +343,8 @@ def report(run_dir, st):
     print(f"API spend so far: ${st['spent']:.4f}")
     for arm, a in st["arms"].items():
         n = len([m for m in a["chat"] if m["role"] == "assistant"])
-        print(f"  {arm:<9} replies: {n}  {'ENDED: ' + a['end_reason'] if a['ended'] else 'open'}")
+        secs = " ".join(f"{x:.0f}s" for x in a.get("secs", []))
+        print(f"  {arm:<9} replies: {n}  [{secs}]  {'ENDED: ' + a['end_reason'] if a['ended'] else 'open'}")
     todo = pending(run_dir, st)
     if todo:
         print("Person inputs waiting:")
