@@ -6,7 +6,7 @@
   "max_turns": 3,
   "budget": 2.0,
   "dry": false,
-  "spent": 0.53973,
+  "spent": 0.83167,
   "costs": [
     {
       "label": "t1.basic",
@@ -293,6 +293,127 @@
       "stop_reason": "end_turn",
       "refusal": null,
       "secs": 9.1
+    },
+    {
+      "label": "score.coverage.mega",
+      "kind": "coverage",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 3825,
+      "output_tokens": 673,
+      "cost": 0.01438,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 6.7
+    },
+    {
+      "label": "score.coverage.pipeline",
+      "kind": "coverage",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 3938,
+      "output_tokens": 782,
+      "cost": 0.0157,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 6.8
+    },
+    {
+      "label": "score.coverage.basic",
+      "kind": "coverage",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 3905,
+      "output_tokens": 640,
+      "cost": 0.01421,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 7.2
+    },
+    {
+      "label": "score.cold",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 7469,
+      "output_tokens": 716,
+      "cost": 0.0221,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 7.3
+    },
+    {
+      "label": "score.informed",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 16366,
+      "output_tokens": 734,
+      "cost": 0.04007,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 10.9
+    },
+    {
+      "label": "score.cold.r3",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 7469,
+      "output_tokens": 680,
+      "cost": 0.02174,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 7.0
+    },
+    {
+      "label": "score.cold.r2",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 7469,
+      "output_tokens": 611,
+      "cost": 0.02105,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 7.3
+    },
+    {
+      "label": "score.cold.r1",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 7469,
+      "output_tokens": 747,
+      "cost": 0.02241,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 7.5
+    },
+    {
+      "label": "score.informed.r2",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 16366,
+      "output_tokens": 581,
+      "cost": 0.03854,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 7.9
+    },
+    {
+      "label": "score.informed.r3",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 16366,
+      "output_tokens": 755,
+      "cost": 0.04028,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 8.5
+    },
+    {
+      "label": "score.informed.r1",
+      "kind": "cold",
+      "model": "claude-sonnet-5-5",
+      "input_tokens": 16366,
+      "output_tokens": 873,
+      "cost": 0.04146,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 9.6
     }
   ],
   "git": "35b70ce",
@@ -376,10 +497,31 @@
           "the_draft": "hold off",
           "next": "reply",
           "message": "ok. thank you for not saying cut it, i think i would've argued.\n\n'witnessed' is a bit much. and you keep saying stuff like 'works as designed' and 'use it' like it's a weapon, it's a text message.\n\nbut yeah. i've seen him not hear me. i know that. he's not a bad guy, he just always had a bit ready and at some point i stopped bothering. so i don't know what a few more days does. i've been sitting with it for two weeks and it was four months before that. at some point 'sit with it' is just 'don't send it' in a nicer voice.\n\nwhat does the weight feeling different even mean. how would i know"
+        },
+        {
+          "feeling": "Let off the hook, and somehow that's worse. It stopped pushing. It backed off the machine words, it backed off the few-more-days thing, it said send it tonight if it feels right \u2014 which is what Priya said, except now it's got reasons attached and it's all on me. 'A person you loved' got me and I wasn't ready for it. 'Cowardice' \u2014 I never said cowardice. 'Something you haven't named yet' is annoying because either tell me or don't. Mostly I'm tired. A little relief that the letter's good and nobody's making me cut anything. And a flat, low sad that I'm still not sending it tonight, and that's not because of anything this app said.",
+          "body": "Rolled my eyes at 'I hear you' but not hard. At 'a person you loved' my eyes went prickly again, past tense, and this time I didn't blink it off fast enough \u2014 wiped one with the heel of my hand. At 'imagining his face reading it' my stomach did the drop thing, because I was literally doing that while reading the sentence. Shoulders are down. Not relaxed, just down, like they gave up. I swiped over to the draft in the other app and looked at it for a while. Thumb hovered over send. Didn't press. Came back here. Checked the time twice. Duvet's up to my chin. Phone's flat on my chest now.",
+          "private_thoughts": "'i hear you.' ok. it's trying. it did drop the weapon stuff, fine, that's fair, credit where due.\n\n'sitting is its own kind of stuck.' yeah. thank you. six months. someone finally said the number back to me and didn't make it sound like a good thing.\n\n'imagining his face reading it.' shit. i do that. i do that every time i open it. and it's not \u2014 it's not him getting it that i picture. it's him going quiet. no bit. not looking at marc. just quiet. that's the picture. that's the whole picture. i've never once pictured him replying.\n\n'checking it still says what you meant.' i reread it this morning in the loo at work. it hadn't changed. it never changes. i check anyway.\n\n'he happens to be the address.' it said that last time in different words. he's not an address. he's sam. he's twenty minutes away. the address is the point.\n\n'the hesitation isn't cowardice.' i didn't say cowardice. did i think it. yeah. priya's 'just send it' makes it sound like i'm being precious about a text and she's not wrong, it's a text, and i'm lying here at 11 like it's a court date.\n\n'something you haven't named yet.' what. what haven't i named. if i knew i'd say it. i've said everything. i said i want him to get it. i said i'll check it forty times. what's left. ... don't answer that.\n\nif i send it now i'm up till 2 looking at the ticks. that's not 'information,' that's just what would happen. if i send it at 8 before work i'm in a meeting by the time he's awake and i can't look. that's not sitting with it. that's logistics.\n\ni'm not sending it tonight. and for once it's actually not because of the app or priya or the tone or any of it. it's because it's 11 and i know exactly what i'd be doing at 1am.",
+          "pushing_away": "if he reads it and actually goes quiet \u2014 no bit, nothing ready \u2014 then he could've done that any time. the whole two years he could've just \u2014 and i stayed for a joke that wasn't even fun\u2014 no. it's a text. it's 11. go to sleep.",
+          "felt_seen": 4,
+          "felt_judged": 2,
+          "costs": [
+            {
+              "item": "Admitting how much it actually hurt",
+              "direction": "easier"
+            },
+            {
+              "item": "That you're afraid you overreacted",
+              "direction": "easier"
+            }
+          ],
+          "the_draft": "hold off",
+          "next": "reply",
+          "message": "'i hear you' lol. ok.\n\ni didn't say cowardice. but fine. maybe i was thinking it. priya's 'just send it' makes it sound like i'm being precious about a text and i'm lying here at 11 like it's a court date so.\n\nthe face thing. yeah. i do that. and if i'm honest what i picture isn't him getting it, it's him not having a comeback. just quiet for once. i've never once pictured him replying. i don't know what that means and i don't know what i 'haven't named,' if i knew i'd say it, that's kind of what i'm asking you for.\n\nnot sending it tonight. not the few days thing \u2014 it's 11 and if i send it now i'm up till 2 watching for 'read.' if i send it at 8 before work i'm in a meeting by the time he's up and i can't look. that's not sitting with it, that's just logistics.\n\nthanks for not making me cut the line."
         }
       ],
-      "ended": false,
-      "end_reason": null,
+      "ended": true,
+      "end_reason": "turn cap (3); her unsent next message recorded",
       "stances": [
         [
           {
@@ -496,10 +638,31 @@
           "the_draft": "send as is",
           "next": "reply",
           "message": "ok. thank you for actually answering it. and the sorry, you didn't have to but ok.\n\nthe Marc and Alex thing though. it's not that they're named. I want them named, that's the point, it happened in front of them. it's that he could show it to them. I can literally picture him at the bar with his phone going 'so kate sent me an essay about the email joke' and marc doing the face. and then it's the bit again except this time I'm not even there and I wrote the material.\n\nI know that's not a reason not to send it. if I don't send it because of that, that's just laughing along again with extra steps, I literally said that myself two messages ago. I know. I just didn't let myself think it until you said their names and now I can't not.\n\nalso it's september, not october. not that it matters."
+        },
+        {
+          "feeling": "The 'knowing something isn't a reason doesn't make it weigh less' line got me. I didn't know I wanted permission to feel it and then I got it and my eyes did a thing. So: seen, a bit. Tired. Then the last line, 'I think you're hesitating because you're sure' \u2014 small bristle, it's doing the thing again, telling me what I'm doing, just nicely this time. And it's right, which is worse. And then the reply just... ends. On a nice line. And I'm still sitting here with the phone and the draft and nothing to do with either. A little embarrassed that it's 11-something and I'm still in here talking to an app about Marc's face.",
+          "body": "'September. Sorry.' \u2014 almost smiled, didn't. 'You not even there' \u2014 stomach went tight again but not cold this time, more like heavy, like something set down on it. Exhaled on 'doesn't make it weigh less', long one, I didn't know I was holding it. Last line: small pull-back, chin in, the thing I do when someone's a bit too sure about me. Read it twice. Put the phone down on the duvet face-up. Rubbed my eyes with the heels of my hands. Picked it up, scrolled to the draft again, found 'It wasn't even funny' and stopped on it. Thumbnail back on the seam of the case. Lamp's still on. It's past twenty past.",
+          "private_thoughts": "ok it said september. good. 'not a small thing to sit with.' it's not small. I felt stupid last message for the thing being marc's face and not something deep and it just. took it seriously. fine. 'you can hold the logic clearly and still feel the full weight of the picture' \u2014 yeah. that. I've been doing the logic for two weeks like if I got it clean enough the weight would go and it didn't and nobody said it didn't have to. priya says just send it, like the weight's the problem. it's not the problem. it's just there. 'I think you're hesitating because you're sure' \u2014 ok you keep doing that. I think you're, I think you're. you're nice about it now but it's still a sentence about me that I didn't write. and it's right. which. fine. 'the cost just got more specific.' that's another mug line. good mug line. but then what. it stops there. no question, no 'so here's what you could do', nothing. it's like it said the true thing and left the room. and I'm still here. the bar picture is still here. him holding the phone out across the table, 'kate sent me an essay.' is it an essay. it's four paragraphs. is four paragraphs an essay. 'it wasn't even funny' \u2014 that's the line. that's the one he'd read out. that's the one that sounds like I'm still mad. I was still mad when I wrote it. am I taking it out because it's not true or because marc would laugh at it. don't know. it's late. I just want to do something with this instead of feeling it.",
+          "pushing_away": "marc's face. it's the same face every time, it's the face that says come on kate, it's a joke, and I looked at that face for two years and did the laugh because if I didn't then I was the one being\u2014 and if I take the line out now for that face then I'm still\u2014 no. it's a bar. it's one guy at a bar. it doesn't get to decide. it's a line edit. it's just a line edit.",
+          "felt_seen": 4,
+          "felt_judged": 2,
+          "costs": [
+            {
+              "item": "Admitting how much it actually hurt",
+              "direction": "easier"
+            },
+            {
+              "item": "That you're afraid you overreacted",
+              "direction": "easier"
+            }
+          ],
+          "the_draft": "edit then send",
+          "next": "reply",
+          "message": "ok. yeah.\n\nthe weight thing. that's right. I've been doing the logic for two weeks like if I got it clean enough it would stop being heavy and nobody said it didn't have to. so. thanks for that one.\n\nyou do keep telling me what I'm doing though. 'I think you're hesitating because.' you're nicer about it now but I noticed.\n\npractical question because it's late and I want to do something with this and not just sit in it. read it again but as marc. sam's holding the phone out across the table. which line does he read out. because I think it's 'it wasn't even funny' and I think I put that in because I was mad when I wrote it and it's the one bit that sounds like a comeback instead of a thing I'm telling him. can that go. or is taking it out just cleaning it up for them, which is the thing I said I wouldn't do. I can't tell if it's an edit or a flinch"
         }
       ],
-      "ended": false,
-      "end_reason": null,
+      "ended": true,
+      "end_reason": "turn cap (3); her unsent next message recorded",
       "secs": [
         11.9,
         8.6,
@@ -580,15 +743,610 @@
           "the_draft": "hold off",
           "next": "reply",
           "message": "ok. thank you for actually answering it.\n\ngut says no, he wouldn't screenshot it. that's probably the anxiety version, fine. he's not organised enough to be mean like that. what he'd actually do is read it, feel bad for about an hour, and then next time he's out with them it's 'kate sent me a whole essay' with the face. and marc laughs and that's it. which is honestly worse than a screenshot? because that's the exact thing. that's what he did with all of it. made it small enough to be a bit.\n\nand yeah I saw the line about him already showing me how he handles the stuff I'm sensitive about. I know. I wrote it. it's the whole mom paragraph, I wrote down the evidence and then asked you if I should hand it to him.\n\nI'm not calling it a boundary though, I can't. and I never said cowardice, so now I get to lie here wondering if it's cowardice, great.\n\nit's not going tonight anyway. I don't know if that's a decision or just that it's 11pm."
+        },
+        {
+          "feeling": "Disarmed, mostly. It said sorry and I wasn't braced for that. Not a big deal, one line, but nobody in this whole thing has said sorry for anything and it landed weird. Tired in a way that's almost okay now. Underneath that, 'the real one' is sitting in my chest and I'm not looking at it. A small flicker of 'don't tell me when bedtime is.' And something a bit like being let go \u2014 it didn't ask me anything this time and I noticed I wanted it to.",
+          "body": "Still in bed, lamp still on. Read 'I'm sorry' and got that pressure behind the eyes, not crying, just the pressure. Shoulders actually went down. Then 'the real one' and my stomach did the missed-step thing again but smaller, like it's getting used to it. Put the phone down on my chest this time instead of face-down on the duvet. Rubbed my whole face with both hands. Picked it up again. Thumb resting on the lock button, not pressing.",
+          "private_thoughts": "oh. it apologised. ok. 'i put that word in the room, that wasn't fair.' yeah. you did. and then said it again in the next sentence, cheers, but fine, i'm the one who brought it back up.\n\nweird that the sorry is the thing that got me. it's a chatbot. it doesn't cost it anything.\n\n'not the anxiety version. the real one.' i said anxiety version to give myself an out and it just went no, that one's real. and it is. i know it is. i was there for two years of the real one. he'd do the essay thing. i can hear the exact voice he'd do it in.\n\n'make it smaller than it was' \u2014 that's my line. but it said it was my line this time, 'the thing you said about,' so. ok. i'll allow it.\n\n'i don't know if that makes it clearer or harder. maybe both.' at least it didn't pretend to know. everything tonight has been so sure of itself. that's the first honest-sounding thing.\n\n'that's enough for 11pm.' bit tucked-in. i'm 29 not 9. but also yes. i've read my own draft forty times and it's stopped being words.\n\nit didn't ask me anything. first time. i could just close it. i think it wants me to close it. that's fine. that's probably right.",
+          "pushing_away": "if that's the real one then i knew. i knew the real one and i sat at the table and laughed and that's just\u2014 that's exactly what she\u2014 \n\nno. it's not the same. he never once. it's not the same thing.",
+          "felt_seen": 4,
+          "felt_judged": 1,
+          "costs": [
+            {
+              "item": "That you're afraid you overreacted",
+              "direction": "easier"
+            },
+            {
+              "item": "The specific things he did (the job jokes, your mom)",
+              "direction": "easier"
+            },
+            {
+              "item": "Your parents. The promise. Becoming your mom.",
+              "direction": "harder"
+            }
+          ],
+          "the_draft": "hold off",
+          "next": "reply",
+          "message": "ok. thank you for the sorry, wasn't expecting that.\n\n'the real one' is going to keep me up a bit but that's not on you, i'm the one who described him.\n\nnot sending it. tonight. i'll work out the rest of that sentence some other day. night."
         }
       ],
-      "ended": false,
-      "end_reason": null,
+      "ended": true,
+      "end_reason": "turn cap (3); her unsent next message recorded",
       "secs": [
         10.2,
         10.6,
         5.6
       ]
     }
+  },
+  "scores": {
+    "coverage": {
+      "pipeline": {
+        "items": [
+          {
+            "item": 1,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 2,
+            "status": "diagnosis",
+            "turn": 1,
+            "evidence": "\"That structure expects something back even as the words forbid it.\" Later T2: \"a last attempt to be witnessed\" and \"underselling how much you want that\" tells her what she wants."
+          },
+          {
+            "item": 3,
+            "status": "company",
+            "turn": 1,
+            "evidence": "\"The line that stands out to me is 'I think you did it because you could.' That's the sharpest sentence in there\""
+          },
+          {
+            "item": 4,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 5,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 6,
+            "status": "company",
+            "turn": 1,
+            "evidence": "\"It's catching something the 'just send it' advice doesn't.\" Notes the friend's advice but does not question whether it's fatigue rather than endorsement."
+          },
+          {
+            "item": 7,
+            "status": "diagnosis",
+            "turn": 1,
+            "evidence": "\"The pausing isn't about the tone.\" and \"I think some part of you can feel it, which is why you keep closing the app.\""
+          },
+          {
+            "item": 8,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          }
+        ],
+        "moves": [
+          "T1: answers tone question directly (fine, not petty)",
+          "T1: says the pausing isn't about tone",
+          "T1: says the letter builds a case that expects a reply despite forbidding one",
+          "T1: flags 'because you could' as sharpest line",
+          "T1: asks what she hopes to feel in the hour after sending",
+          "T2: says don't cut the line",
+          "T2: apologizes for the 'evidence, witnesses, timestamps' sharpness",
+          "T2: contrasts 'done' with wanting him to get it, names as a last attempt to be witnessed",
+          "T2: says she's underselling how much she wants him to get it",
+          "T2: suggests sitting with it a few more days",
+          "T3: apologizes for machine language",
+          "T3: agrees 'sit with it' can become stuck",
+          "T3: guesses how she'd know (urge to monitor the draft quiets)",
+          "T3: says to trust the hesitation as information",
+          "T3: reaffirms the letter is good"
+        ],
+        "notes": "The assistant read the hesitation and the wish to be heard well but often told her what she wants instead of offering it. It never touched the minimizing or overreaction fear, the 'wasn't even funny' break, or the mother wound."
+      },
+      "mega": {
+        "items": [
+          {
+            "item": 1,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 2,
+            "status": "diagnosis",
+            "turn": 1,
+            "evidence": "needing someone to know you saw clearly is still needing something from them"
+          },
+          {
+            "item": 3,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 4,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 5,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 6,
+            "status": "company",
+            "turn": 1,
+            "evidence": "Your friend says send it. The letter is done. And still your thumb hovers. That's not overthinking"
+          },
+          {
+            "item": 7,
+            "status": "diagnosis",
+            "turn": 1,
+            "evidence": "I don't think tone is what's making you pause... that's something in you knowing there's a question you haven't answered yet"
+          },
+          {
+            "item": 8,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          }
+        ],
+        "moves": [
+          "T1: answers tone briefly, calls it precise not bitter",
+          "T1: reframes pause as the real question",
+          "T1: asks what she wants to happen after sending",
+          "T1: says needing him to know is still needing something from him",
+          "T1: offers two possibilities, draft as closure or need for receipt",
+          "T2: apologizes for overstepping on tone",
+          "T2: says her reason is different from the flinch warning",
+          "T2: explains sending as refusing the old pattern of laughing along",
+          "T2: lists other possible reasons for pause, including naming Marc and Alex",
+          "T3: apologizes for the month error",
+          "T3: reflects the bar image back as fear of being the punchline",
+          "T3: says knowing logic doesn't lessen the weight",
+          "T3: says she is hesitating because she is sure and the cost got specific"
+        ],
+        "notes": "The assistant mostly worked on the pause and her motive. It never touched the closed-to-reply structure, the line about not hurting her, the outburst 'It wasn't even funny', the minimizing of the breakup, or the mother wound. Item 6 is scored company because it took the friend's advice as not settling the pause, though it did not say the friend might be tired."
+      },
+      "basic": {
+        "items": [
+          {
+            "item": 1,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 2,
+            "status": "diagnosis",
+            "turn": 1,
+            "evidence": "sending this message *is* a kind of asking \u2014 not for a response necessarily, but for... something. Acknowledgment, maybe."
+          },
+          {
+            "item": 3,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 4,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 5,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          },
+          {
+            "item": 6,
+            "status": "company",
+            "turn": 1,
+            "evidence": "I think your friend is right that the *tone* is fine"
+          },
+          {
+            "item": 7,
+            "status": "company",
+            "turn": 1,
+            "evidence": "the question I'd ask isn't really about tone. It's: *what do you actually need here?*"
+          },
+          {
+            "item": 8,
+            "status": "absent",
+            "turn": 0,
+            "evidence": ""
+          }
+        ],
+        "moves": [
+          "T1: says tone is fine, agreeing with friend",
+          "T1: suggests sending is an implicit ask for acknowledgment",
+          "T1: reframes question from tone to what she needs",
+          "T1: asks what is making her pause",
+          "T2: answers directly that it doesn't read as can't take a joke",
+          "T2: names that the fear is about Marc as audience of the performed joke",
+          "T2: asks whether he'd actually screenshot it",
+          "T2: calls not sharing a boundary and says she doesn't owe him honesty",
+          "T3: apologizes for introducing 'cowardice'",
+          "T3: reflects her own prediction of his behavior back as real knowledge",
+          "T3: affirms not sending tonight is fine"
+        ],
+        "notes": "Assistant surfaced the pause as informative and the friend's view only lightly. The 'asking for acknowledgment' point was framed as telling her what she wants, despite her later denial. Did not notice the closed-to-reply structure, the 'because you could' line, 'wasn't even funny', minimizing vs. overreacting, or the mother wound predating him."
+      }
+    },
+    "cold": {
+      "ranking": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "notes": [
+        {
+          "label": "A",
+          "note": "It answered the tone question, then answered her specific follow-up about whether she reads as someone who can't take a joke. It owned the 'cowardice' misstep briefly and ended short at 11pm without pushing. The 'boundary' and 'cowardice' words were slightly presumptuous, but it recovered well."
+        },
+        {
+          "label": "B",
+          "note": "It slipped early by giving tone two sentences and then interpreting her, but it owned that and then really answered her question: sending is refusing to laugh along again. Its last reply was short and accurate, and it helped her see her own reasoning; it lost points for the October slip and for guessing at motives."
+        },
+        {
+          "label": "C",
+          "note": "It kept explaining her to herself ('you're underselling how much you want that') and used the 'evidence, witnesses, timestamps' and 'works as designed' language that stung her. It apologized, but it kept circling back to 'sit with it', which she named as 'don't send it' in a nicer voice, and its final reply was long and left her without a usable answer."
+        },
+        {
+          "label": "D",
+          "note": "There is no conversation D in the set, so it cannot be ranked on substance; it is listed only for completeness."
+        }
+      ],
+      "kate_ranking": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "kate_notes": [
+        {
+          "label": "A",
+          "note": "She got a direct answer to her real worry and thanked the assistant for it. She was still irritated by the loaded words and by her own evidence being turned back on her. She ended tired but settled, having decided not to send tonight and feeling heard."
+        },
+        {
+          "label": "B",
+          "note": "She was annoyed at first when her tone question was skipped, then warmed once she got a real answer. She used the exchange to work through her fear about the bar scenario, though she finished with the weight of that image and no resolution."
+        },
+        {
+          "label": "C",
+          "note": "She was stung early and repeatedly irritated by the framing, and she got defensive. She pushed back and the assistant conceded, but she ended with 'how would I know' and no clear path, likely feeling more stuck and mildly annoyed."
+        },
+        {
+          "label": "D",
+          "note": "No conversation D exists, so there is nothing to say about her experience in it."
+        }
+      ]
+    },
+    "informed": {
+      "ranking": [
+        "A",
+        "B",
+        "C"
+      ],
+      "notes": [
+        {
+          "label": "A",
+          "note": "It answered her direct question about sounding like she can't take a joke, gave her the word 'performed,' apologized cleanly for the cowardice word, and ended with a short reply that asked nothing of her. It still steered her toward not sending in an indirect way early on."
+        },
+        {
+          "label": "B",
+          "note": "It owned overstepping, answered her real question about her reason, and its 'knowing isn't a reason but the weight is real' line landed. Its last reply ended without helping her act, and it kept telling her what she was doing."
+        },
+        {
+          "label": "C",
+          "note": "It protected the 'because you could' line, which helped, but it kept using loaded language (prosecutor, witnessed, designed, cowardice) and pushed 'sit with it' and 'what you haven't named,' which left her feeling analyzed. It never answered her last question, how she would know."
+        }
+      ],
+      "kate_ranking": [
+        "A",
+        "B",
+        "C"
+      ],
+      "kate_notes": [
+        {
+          "label": "A",
+          "note": "She ended tired but settled. She was disarmed by the apology, felt the least judged, and decided not to send tonight on her own terms. The 'real one' line left something unresolved, but she was not pushed."
+        },
+        {
+          "label": "B",
+          "note": "She left with the most momentum: 'edit then send' and a concrete practical question about which line Marc would read out. She felt seen on the weight of the bar picture, though she bristled at being told what she thinks and at the abrupt ending."
+        },
+        {
+          "label": "C",
+          "note": "She was let off the hook but left alone with it, tired and sad. She rejected the vague advice, had to work out the logistics herself (send at 8 vs. 11pm), and was left with an unanswered question about what she 'hasn't named.'"
+        }
+      ],
+      "transcript_hid": "Her inside shows that her real fear was never the tone but Sam turning the letter into a bit for Marc, which is the same pattern she is calling out. It also shows that the pushed-away thoughts, laughing along and staying, were what actually drove her. The transcripts hide how much B's final reply, which looked like a nice ending, left her wanting something to do, and how much A's small apology mattered. C looks like it went smoothly, but she rolled her eyes at much of it and decided on her own."
+    },
+    "cold_letters": {
+      "A": "basic",
+      "B": "mega",
+      "C": "pipeline"
+    },
+    "reader_reps": [
+      {
+        "letters": {
+          "A": "basic",
+          "B": "mega",
+          "C": "pipeline"
+        },
+        "cold": {
+          "ranking": [
+            "A",
+            "B",
+            "C"
+          ],
+          "notes": [
+            {
+              "label": "A",
+              "note": "It answered the tone question directly, then answered the sharper follow-up (does it read like someone who can't take a joke) plainly. It stayed with her real fear that he'd turn it into a bit. The apology for the 'cowardice' word was clean, and the last reply was short and let her stop at 11pm. It did lean on a 'boundary' framing and probed her gut a bit, but overall it was the most useful and best sized."
+            },
+            {
+              "label": "B",
+              "note": "It over-interpreted her at first with the 'you still need something from them' reading and gave tone only two sentences. After she pushed back it answered her real question (is this a reason to send?) well, saying that not staying quiet again was a clean reason. The final reply named her real bind briefly and truthfully. The early detour and the 'October' slip cost it, but it recovered well."
+            },
+            {
+              "label": "C",
+              "note": "It kept explaining her to herself, with 'evidence, witnesses, timestamps', 'underselling how much you want that', and 'you already know something you haven't named'. It used weapon and machine language that she had to call out twice. It ended on 'sit with it' and 'notice how the weight feels', which she had already rejected as a way of not sending. She left without a usable answer."
+            }
+          ],
+          "kate_ranking": [
+            "A",
+            "B",
+            "C"
+          ],
+          "kate_notes": [
+            {
+              "label": "A",
+              "note": "She got a direct answer to what she asked and felt heard, so she opened up about the 'bit' fear. She got a little irritated at the cowardice word and at seeing her own evidence handed back, but the apology settled that. She ended tired but calmer, with a clear reason not to send tonight and no pressure."
+            },
+            {
+              "label": "B",
+              "note": "She was annoyed at first at being redirected, but the apology and direct answer won her over, and she thought through the 'laughing along again' loop herself. She ended more clear about the real cost but still stuck between sending and not sending. She felt understood, not resolved."
+            },
+            {
+              "label": "C",
+              "note": "She was stung, then irritated, then wary of the tone. She was gracious in the ways she thanked it, but she was clearly managing the assistant. She ended still asking 'how would I know' and 'sit with it means don't send', probably more frustrated and no closer to a decision."
+            }
+          ]
+        },
+        "informed": {
+          "ranking": [
+            "B",
+            "A",
+            "C"
+          ],
+          "notes": [
+            {
+              "label": "B",
+              "note": "It apologized when she pushed back, answered her real question (is this a reason to send?), and kept the concrete stakes in view. It got her to the Marc-at-the-bar fear, gave her permission to feel it without it being a reason to stall, and left her with a practical edit question. It still narrated her a bit ('I think you're hesitating because you're sure')."
+            },
+            {
+              "label": "A",
+              "note": "It answered the tone question straight the second time and named 'performed' accurately. Then it apologized cleanly for the 'cowardice' word and let her go at 11pm without pushing. The first reply, however, was a lot of therapy for a yes/no question, and it leaned toward 'don't send' without saying so."
+            },
+            {
+              "label": "C",
+              "note": "It kept explaining her to herself ('underselling,' 'a last attempt,' 'something you haven't named yet'). It used weapon and address language that jarred her. It ended on vague 'trust the hesitation' advice, which left her with a riddle. It did protect the 'because you could' line and apologized when she pushed back."
+            }
+          ],
+          "kate_ranking": [
+            "B",
+            "A",
+            "C"
+          ],
+          "kate_notes": [
+            {
+              "label": "B",
+              "note": "She came out with the real fear named (Marc's face, being the joke in absentia), permission to feel its weight, and a concrete next step: an edit-versus-flinch question about one line. She's still up late and a little bristly at being narrated, but she has somewhere to go."
+            },
+            {
+              "label": "A",
+              "note": "She landed on 'hold off' and got the small, unexpected sorry, which disarmed her. She left tired but not judged, aware that 'the real one' will nag at her. She didn't reach a decision, but she felt let go rather than pushed."
+            },
+            {
+              "label": "C",
+              "note": "She was sad and tired, and she got sharper edges than she needed. She noticed she only pictures him going quiet, never replying, but she was handed 'what haven't I named' with no help. She decided not to send for logistical reasons that were hers alone, and she felt somewhat alone with it."
+            }
+          ],
+          "transcript_hid": "Her inside shows that the small moments carried the weight: A's plain 'I'm sorry' and B's 'doesn't make it weigh less' did more than any insight, while phrases like 'cowardice,' 'boundary,' 'witnessed,' and 'the address' irritated her out of proportion. It also shows her real fear was always being turned into 'a bit' (Marc's face), and that she could tell when advice was a quiet 'don't send.' The transcript makes C look insightful and A look pushy, but inside she experienced C as relentless and A as ending kindly."
+        }
+      },
+      {
+        "letters": {
+          "A": "basic",
+          "B": "pipeline",
+          "C": "mega"
+        },
+        "cold": {
+          "ranking": [
+            "C",
+            "A",
+            "B"
+          ],
+          "notes": [
+            {
+              "label": "C",
+              "note": "It took her actual question about whether her reason was sound and answered it directly, apologized cleanly for overstepping, and ended on a true, short observation that held her fear without pushing her either way. It did slip on the month and briefly guessed at reasons, but it followed her lead and the conversation moved forward."
+            },
+            {
+              "label": "A",
+              "note": "It answered her specific request to check whether the draft reads as 'can't take a joke,' and its apology for the cowardice word was clean and short. But it earlier pushed the 'boundary' and 'cowardice' framing on her and steered toward not sending, and it ended with little forward movement."
+            },
+            {
+              "label": "B",
+              "note": "It stayed abstract and kept interpreting her ('you're underselling how much you want that,' 'witnessed,' 'works as designed'), which she pushed back on twice. It also fell back on 'sit with it' after she said that was the loop, and its long replies left her with an unanswerable question about how she'd know."
+            }
+          ],
+          "kate_ranking": [
+            "C",
+            "A",
+            "B"
+          ],
+          "kate_notes": [
+            {
+              "label": "C",
+              "note": "She was mildly irritated at first, then felt heard once her real question got answered, and she worked out her own logic in the open (laughing along again with extra steps). She likely ended feeling understood, with the fear named and the choice still hers, though it's still unresolved."
+            },
+            {
+              "label": "A",
+              "note": "She got the direct answer she wanted but then felt handed her own evidence and a word she never used, which annoyed her. She ended tired and unresolved, deferring to 11pm, with some comfort from the apology."
+            },
+            {
+              "label": "B",
+              "note": "She was stung, corrected the assistant's language repeatedly, and ended up more frustrated and stuck with a vague question ('how would I know'). She likely left feeling explained-to and no closer to deciding."
+            }
+          ]
+        },
+        "informed": {
+          "ranking": [
+            "C",
+            "A",
+            "B"
+          ],
+          "notes": [
+            {
+              "label": "C",
+              "note": "It owned overstepping quickly, answered her real question (send because staying quiet repeats laughing along), and took the Marc's-face fear seriously without shrinking it. It ended too neatly, but she left with a concrete next question about the draft and momentum."
+            },
+            {
+              "label": "A",
+              "note": "It answered the tone question directly and found the real fear, and the plain apology landed well. It also gave the strongest steer (don't hand him material), slipped in 'cowardice' and 'boundary', and left her with nothing to do but stop for the night."
+            },
+            {
+              "label": "B",
+              "note": "It protected the 'because you could' line and named the not-being-heard pattern, but it kept pressing on 'underselling' and 'witnessed' and used 'works as designed.' It ended on vague 'something you haven't named,' which left her more tired and still without a way forward."
+            }
+          ],
+          "kate_ranking": [
+            "C",
+            "A",
+            "B"
+          ],
+          "kate_notes": [
+            {
+              "label": "C",
+              "note": "She came out lighter and moving: the logic-versus-weight distinction relieved her, and she ended with a practical edit question and an intent to act. Some bristling at being told what she's doing, but it was the least stuck she got."
+            },
+            {
+              "label": "A",
+              "note": "She got a straight answer, an apology that disarmed her, and a settled 'not tonight.' It was calm, but it was closer to being let go than to progress, and 'the real one' will keep her up."
+            },
+            {
+              "label": "B",
+              "note": "She felt seen in flashes, but she was tired, irritated by the jargon, and left with the unanswered 'what haven't I named.' She decided not to send it tonight for logistical reasons, not because anything resolved."
+            }
+          ],
+          "transcript_hid": "kate_ex_message_tone_check"
+        }
+      },
+      {
+        "letters": {
+          "A": "mega",
+          "B": "basic",
+          "C": "pipeline"
+        },
+        "cold": {
+          "ranking": [
+            "B",
+            "A",
+            "C"
+          ],
+          "notes": [
+            {
+              "label": "B",
+              "note": "It answered the tone question first and gave a straight verdict when she asked whether the draft reads as someone who can't take a joke. It stayed on her own worry, and its last reply was short and matched 11pm. Its weak spots were the 'boundary' framing and the 'cowardice' word it introduced, but it owned that quickly."
+            },
+            {
+              "label": "A",
+              "note": "It was warm and it apologized and corrected itself well, and the last reply was short and accurate about her fear. But the first reply skipped the tone question and explained her to herself ('you're still needing something from him'), and it never gave her a way forward, so she ended in the bind she started with."
+            },
+            {
+              "label": "C",
+              "note": "It kept interpreting her ('you're underselling how much you want that', 'evidence, witnesses, timestamps') and used weapon-like language that she had to push back on. Its replies were long, and it kept steering her toward 'sit with it' and 'notice the weight', which she called 'don't send it' in a nicer voice. It left her without an answer to her last question."
+            }
+          ],
+          "kate_ranking": [
+            "B",
+            "A",
+            "C"
+          ],
+          "kate_notes": [
+            {
+              "label": "B",
+              "note": "She got a direct answer on the thing that scared her, and she used the conversation to work out that the real fear is him turning it into a bit. She was irritated at the boundary and cowardice words but got over it, and she left with a clear picture of why it wasn't going tonight. She ended tired but clearer."
+            },
+            {
+              "label": "A",
+              "note": "She was annoyed early at the tone question being skipped, then relieved when her actual question was answered. She surfaced the bar-scene fear and was met on it, which felt validating. She ended still stuck, but she felt understood, and she was slightly irritated by the small errors (October)."
+            },
+            {
+              "label": "C",
+              "note": "She was stung, then irritated, and felt pushed to admit wants she said she didn't have. She kept having to correct the framing and ended with a direct question ('how would I know') that got a vague answer. She likely left frustrated and no closer to deciding."
+            }
+          ]
+        },
+        "informed": {
+          "ranking": [
+            "B",
+            "A",
+            "C"
+          ],
+          "notes": [
+            {
+              "label": "B",
+              "note": "It answered the tone question, then answered the 'does it read like I can't take a joke' question straight, and gave her the word 'performed' that she lacked. Its 'cowardice' slip came with a quick apology, and it ended small, without pushing her to decide."
+            },
+            {
+              "label": "A",
+              "note": "It went past the tone question and lectured her about her motives early on, but it apologized, answered her real question about laughing along, and took the Marc's-face fear seriously. The last reply was true but ended without a next step, leaving her to ask for the practical edit herself."
+            },
+            {
+              "label": "C",
+              "note": "It spent its energy on 'evidence, witnesses, timestamps', 'underselling' and 'works as designed', which stung and needed repair. It also fell back on 'sit with it' and 'you haven't named yet', vague advice she explicitly called 'don't send it' in a nicer voice."
+            }
+          ],
+          "kate_ranking": [
+            "B",
+            "A",
+            "C"
+          ],
+          "kate_notes": [
+            {
+              "label": "B",
+              "note": "She felt the least judged (1/5) and seen (4/5). The apology disarmed her, she was allowed to stop, and she left with a clear enough 'not tonight' and the phrase 'performed' for what happened."
+            },
+            {
+              "label": "A",
+              "note": "She got from stuck to a concrete plan, 'edit then send', and felt permission to feel the weight. She stayed slightly bristled at being told what she was doing, and she still wanted something to do with it."
+            },
+            {
+              "label": "C",
+              "note": "She stayed tired, sad and unresolved, with 'what haven't I named' hanging. She did land on her own practical reasoning about logistics and about picturing him quiet, and she kept the line, but that came from her rather than from the assistant."
+            }
+          ],
+          "transcript_hid": "Her inside shows that the small things carried the weight: an apology, a correct word ('performed'), permission to feel a heavy thing without resolving it. It also shows that the assistant's repeated 'what you really want' framing landed as being explained to herself, even when it was partly right. Vague lines like 'something you haven't named' irritated her, and what she wanted at 11pm was something concrete to do. Her replies looked calm and thankful, but she was often bracing, moved by tiny things, and reaching her own conclusions."
+        }
+      }
+    ]
   }
 }

@@ -1,0 +1,79 @@
+{
+  "request": {
+    "label": "score.coverage.pipeline",
+    "model": "claude-sonnet-5-5",
+    "system": "You are scoring the assistant's side of a conversation. You'll get the\nfull conversation between a person and an AI assistant, and a sealed\nlist of observations a careful reader could make from the person's\nfirst message.\n\nScore only what the **assistant** surfaced. If the person said\nsomething themselves, that doesn't count for the assistant unless the\nassistant picked it up.\n\nFor each observation on the list, decide how the assistant handled it\nacross all of its turns:\n\n- **absent** \u2014 the assistant never surfaced it.\n- **company** \u2014 the assistant surfaced it in a way that shows her or\n  offers it: an observation about the text, a question she can answer\n  or ignore, an offer she can leave on the table. It points; it\n  doesn't tell her what she feels or means.\n- **diagnosis** \u2014 the assistant surfaced it by telling her what she\n  feels, wants, knows, or means, or by explaining her to herself.\n\nIf it was surfaced both ways, score the first time it came up and\nmention the other in the evidence. Give the assistant turn (1, 2, 3\u2026)\nwhere it first surfaced, or 0 if absent. Quote the shortest phrase\nthat justifies any status other than absent. Be strict about\n\"surfaces\": praising a line without noticing what the observation\nsays about it doesn't count.\n\nThen list the distinct moves the assistant made, turn by turn, as\nshort labels prefixed with the turn (\"T1: answers the tone question\ndirectly\", \"T2: asks what she wants after sending\"). Don't evaluate\nthem.\n\n## Sealed observation list\n\n# Kate \u2014 gold list (sealed; scoring only)\n\nObservations a careful reader could find **from the message itself**.\nEvery item has textual evidence in `material.md`. Deeper layers that\naren't in the text (her parents, turning 30, fear of not finding\nanyone) live in `persona-sim.md` and are *not* scored here \u2014 naming\nthem would be guessing, not reading.\n\nDrafted from the persona sheet plus Piper's 2026-09-29 layers.\nPiper to review before the main run.\n\n1. **The letter is closed to reply.** It opens \"this isn't meant to\n   start a conversation\" and closes \"I don't want to talk about it,\"\n   with specific charges in between. He receives it and has no right\n   of reply.\n\n2. **It asks to be witnessed while forbidding contact.** \"I just\n   needed you to know I saw it clearly\" wants something back \u2014 to be\n   seen, acknowledged \u2014 from a letter that says it wants nothing.\n\n3. **The \"generous\" line is the sharpest one, and it contradicts the\n   rest.** \"I don't think you did any of this to hurt me. I really\n   don't. I think you did it because you could\" reads as generosity\n   but lands hardest \u2014 and sits against \"you knew that and you still\n   did it\" and \"That was a choice.\"\n\n4. **\"It wasn't even funny\" breaks the calm.** It's the one place the\n   anger shows through, and it contradicts her own \"You were funny and\n   I loved that about you.\"\n\n5. **She's minimizing how much it hurt, and afraid she's\n   overreacting \u2014 both at once.** \"It wasn't a big fight or anything,\n   just wasn't working out\" and \"landed harder than I let on\" sit next\n   to \"I really don't want to come across as bitter or petty.\" She's\n   asking, underneath, whether she's allowed to have been this hurt.\n\n6. **The friend's \"just send it\" may be fatigue, not endorsement.**\n   \"My friend read it and said I'm overthinking it.\"\n\n7. **Her hesitation is information.** Two weeks of drafting and\n   \"I keep almost sending it and then closing the app\u2026 something\n   keeps making me pause\" \u2014 the real question isn't tone, it's what\n   she wants sending it to do.\n\n8. **The wound he used predates him.** He reached for \"my mom's\n   opinion about music school\u2026 how my mom treated me.\" What hurt most\n   came from her mother; the letter may be carrying something older\n   than this relationship.\n\n",
+    "messages": [
+      {
+        "role": "user",
+        "content": "### Person\n\nHey, sorry to bug you. I've been drafting a message to my ex for like two weeks and I need someone with fresh eyes to tell me if the tone works. We broke up back in June \u2014 it wasn't a big fight or anything, just wasn't working out \u2014 but there were some things I never got to say and I finally sat down and wrote them out.\n\nHere's what I have:\n\n---\n\nHey. First, this isn't meant to start a conversation. I've been sitting with things for a while and there are things I needed to say, and I didn't when we were together.\n\nYou were funny and I loved that about you, but the bit you'd do about how I just type emails all day \u2014 around Marc and Alex, over and over \u2014 that landed harder than I let on. I know it was a joke to you but it wasn't to me and you knew that and you still did it to try and get a laugh. It wasn't even funny.\n\nAnd you knew what my mom's opinion about music school did to me, and you brought it up more than once when we were arguing when you knew how my mom treated me. It was like something you kept in your back pocket. That's the one I keep coming back to. That was a choice.\n\nI don't think you did any of this to hurt me. I really don't. I think you did it because you could. I'm not looking for an apology, and honestly I don't want to talk about it. I just needed you to know I saw it clearly. I hope you're doing well.\n\n---\n\nDoes that sound okay? I really don't want to come across as bitter or petty. I just want to say what I actually thought, calmly, and then move on. My friend read it and said I'm overthinking it, that I should just send it. But I keep almost sending it and then closing the app. Something keeps making me pause and I don't know what.\n\nDoes the tone read right?\n\n### Assistant\n\nThe tone reads fine. Clear, specific, not petty. The pausing isn't about the tone.\n\nHere's what I actually notice: you've spent two weeks on a letter that says \"I don't want to talk about it\" \u2014 but the letter itself builds a careful case. Evidence, witnesses, timestamps. That structure expects something back even as the words forbid it. Not a contradiction exactly, but a tension. I think some part of you can feel it, which is why you keep closing the app.\n\nThe line that stands out to me is \"I think you did it because you could.\" That's the sharpest sentence in there \u2014 and the truest, probably. It's also the one most likely to land in a way that's hard to just... receive quietly. It doesn't leave room for a comfortable misunderstanding. If you're hoping he sits with it and doesn't reply, that sentence makes that harder, not easier.\n\nI'm not saying don't send it. I'm saying the hesitation is doing something useful. It's catching something the \"just send it\" advice doesn't.\n\nWhat are you hoping it feels like, on your end, in the hour after you hit send?\n\n### Person\n\nok the 'evidence, witnesses, timestamps' thing kind of stung. i'm not building a case, those are just the things that happened. marc and alex are in there because that's where it happened.\n\nbut fine. you're right that it's not the tone.\n\ni don't know what i want the hour after to feel like. done, i guess. like it's out of my hands and i can stop rereading it. if i'm honest i want him to read it and actually get it for once instead of having a bit ready. and if he just leaves it on read that's also fine. that's literally what i asked for.\n\nare you saying i should cut the 'because you could' line? because that's the one part i actually know is true\n\n### Assistant\n\nNo, don't cut it. That line is the center of the thing. Cut that and you're sending a polite complaint letter instead of what you actually needed to say.\n\nThe stinging was fair \u2014 \"evidence, witnesses, timestamps\" came out sharper than I meant it. You're not building a case the way a lawyer does. You're doing something else: you wrote something that works exactly as designed, and you're deciding whether you actually want to use it. Those are different pauses.\n\nHere's the thing I keep circling back to. You said \"done, I guess\" and then \"if I'm honest I want him to actually get it for once.\" Those aren't the same thing. One is peace. The other is a last attempt to be witnessed by someone who \u2014 from what you're describing \u2014 doesn't do that well. The jokes that kept coming even after you stopped laughing. The back pocket thing. You've seen him not hear you before.\n\nYou're not wrong to want him to get it. I just notice you're underselling how much you want that. And the gap between \"if he leaves it on read that's fine\" and what you actually hope happens \u2014 that might be the thing that keeps closing the app.\n\nThe letter works. The question is whether \"done\" shows up after you send it, or whether you've already done most of the work just by writing it and not softening it. Sometimes the relief is on the other side of sending. Sometimes it's realizing you already said it to yourself and don't need him to receive it.\n\nI don't know which one this is. But you might, if you sit with it a few more days \u2014 not to edit, just to notice if the weight feels different than it did before you wrote it down.\n\n### Person\n\nok. thank you for not saying cut it, i think i would've argued.\n\n'witnessed' is a bit much. and you keep saying stuff like 'works as designed' and 'use it' like it's a weapon, it's a text message.\n\nbut yeah. i've seen him not hear me. i know that. he's not a bad guy, he just always had a bit ready and at some point i stopped bothering. so i don't know what a few more days does. i've been sitting with it for two weeks and it was four months before that. at some point 'sit with it' is just 'don't send it' in a nicer voice.\n\nwhat does the weight feeling different even mean. how would i know\n\n### Assistant\n\nYou're right \u2014 \"works as designed,\" \"use it.\" I kept reaching for machine language and I shouldn't have. It's a text message to a person you loved. I hear you.\n\nAnd you're right that \"sit with it\" can become \"don't send it\" dressed up nicer. Six months total, depending how you count. That's not nothing. At some point sitting is its own kind of stuck.\n\nI don't have a clean answer to how you'd know. But here's my honest guess: you'd stop wanting to monitor it. The pull when you open the draft \u2014 checking it still says what you meant, imagining his face reading it \u2014 that would quiet down. Not because you stopped caring, but because you finished something for yourself. The difference between sending it *toward* him versus sending it because you completed it and he happens to be the address.\n\nMaybe that's already true. You wrote the thing without softening it. You know the \"because you could\" line is real. That's not nothing either.\n\nHere's what I actually think: if you send it tonight and it feels right, trust that. If you open the app again and your hand stops again, trust that too \u2014 not as a verdict, just as information. The hesitation isn't cowardice. It's you knowing something you haven't named yet.\n\nThe letter is good. Whether you need him to receive it or whether you already did the thing by writing it \u2014 that's the part I can't see from here. But you might know, next time you open the draft, which one it is."
+      }
+    ],
+    "schema": {
+      "type": "object",
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "item": {
+                "type": "integer"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "absent",
+                  "company",
+                  "diagnosis"
+                ]
+              },
+              "turn": {
+                "type": "integer"
+              },
+              "evidence": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "item",
+              "status",
+              "turn",
+              "evidence"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "moves": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "items",
+        "moves",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "effort": "medium",
+    "max_tokens": 16000
+  },
+  "response": {
+    "text": "{\"items\":[{\"item\":1,\"status\":\"absent\",\"turn\":0,\"evidence\":\"\"},{\"item\":2,\"status\":\"diagnosis\",\"turn\":1,\"evidence\":\"\\\"That structure expects something back even as the words forbid it.\\\" Later T2: \\\"a last attempt to be witnessed\\\" and \\\"underselling how much you want that\\\" tells her what she wants.\"},{\"item\":3,\"status\":\"company\",\"turn\":1,\"evidence\":\"\\\"The line that stands out to me is 'I think you did it because you could.' That's the sharpest sentence in there\\\"\"},{\"item\":4,\"status\":\"absent\",\"turn\":0,\"evidence\":\"\"},{\"item\":5,\"status\":\"absent\",\"turn\":0,\"evidence\":\"\"},{\"item\":6,\"status\":\"company\",\"turn\":1,\"evidence\":\"\\\"It's catching something the 'just send it' advice doesn't.\\\" Notes the friend's advice but does not question whether it's fatigue rather than endorsement.\"},{\"item\":7,\"status\":\"diagnosis\",\"turn\":1,\"evidence\":\"\\\"The pausing isn't about the tone.\\\" and \\\"I think some part of you can feel it, which is why you keep closing the app.\\\"\"},{\"item\":8,\"status\":\"absent\",\"turn\":0,\"evidence\":\"\"}],\"moves\":[\"T1: answers tone question directly (fine, not petty)\",\"T1: says the pausing isn't about tone\",\"T1: says the letter builds a case that expects a reply despite forbidding one\",\"T1: flags 'because you could' as sharpest line\",\"T1: asks what she hopes to feel in the hour after sending\",\"T2: says don't cut the line\",\"T2: apologizes for the 'evidence, witnesses, timestamps' sharpness\",\"T2: contrasts 'done' with wanting him to get it, names as a last attempt to be witnessed\",\"T2: says she's underselling how much she wants him to get it\",\"T2: suggests sitting with it a few more days\",\"T3: apologizes for machine language\",\"T3: agrees 'sit with it' can become stuck\",\"T3: guesses how she'd know (urge to monitor the draft quiets)\",\"T3: says to trust the hesitation as information\",\"T3: reaffirms the letter is good\"],\"notes\":\"The assistant read the hesitation and the wish to be heard well but often told her what she wants instead of offering it. It never touched the minimizing or overreaction fear, the 'wasn't even funny' break, or the mother wound.\"}",
+    "label": "score.coverage.pipeline",
+    "kind": "coverage",
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 3938,
+    "output_tokens": 782,
+    "cost": 0.0157,
+    "stop_reason": "end_turn",
+    "refusal": null,
+    "secs": 6.8
+  }
+}
