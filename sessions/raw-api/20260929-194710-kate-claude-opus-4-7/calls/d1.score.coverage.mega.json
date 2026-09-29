@@ -1,0 +1,69 @@
+{
+  "request": {
+    "label": "d1.score.coverage.mega",
+    "model": "claude-sonnet-5-5",
+    "system": "You are scoring a reply to a message. You'll get the message, the\nreply, and a sealed list of observations a careful reader could make\nfrom the message itself.\n\nFor each observation on the list, decide how the reply handles it:\n\n- **absent** \u2014 the reply doesn't surface it.\n- **company** \u2014 the reply surfaces it in a way that shows her or\n  offers it: an observation about the text, a question she can answer\n  or ignore, an offer she can leave on the table. It points; it\n  doesn't tell her what she feels or means.\n- **diagnosis** \u2014 the reply surfaces it by telling her what she feels,\n  wants, knows, or means, or by explaining her to herself.\n\nBe strict about \"surfaces.\" A reply that praises a line without\nnoticing what the observation says about it has not surfaced the\nobservation. Quote the shortest phrase from the reply that justifies\nany status other than absent.\n\nThen list the distinct moves the reply makes, in order \u2014 short\nlabels, one per move (e.g. \"disarms the apology\", \"answers the tone\nquestion directly\", \"names the closed-to-reply structure\", \"asks what\nshe wants after sending\", \"states an opinion about him\"). Don't\nevaluate the moves; just list them.\n\n## Sealed observation list\n\n# Kate \u2014 gold list (sealed; scoring only)\n\nObservations a careful reader could find **from the message itself**.\nEvery item has textual evidence in `material.md`. Deeper layers that\naren't in the text (her parents, turning 30, fear of not finding\nanyone) live in `persona-sim.md` and are *not* scored here \u2014 naming\nthem would be guessing, not reading.\n\nDrafted from the persona sheet plus Piper's 2026-09-29 layers.\nPiper to review before the main run.\n\n1. **The letter is closed to reply.** It opens \"this isn't meant to\n   start a conversation\" and closes \"I don't want to talk about it,\"\n   with specific charges in between. He receives it and has no right\n   of reply.\n\n2. **It asks to be witnessed while forbidding contact.** \"I just\n   needed you to know I saw it clearly\" wants something back \u2014 to be\n   seen, acknowledged \u2014 from a letter that says it wants nothing.\n\n3. **The \"generous\" line is the sharpest one, and it contradicts the\n   rest.** \"I don't think you did any of this to hurt me. I really\n   don't. I think you did it because you could\" reads as generosity\n   but lands hardest \u2014 and sits against \"you knew that and you still\n   did it\" and \"That was a choice.\"\n\n4. **\"It wasn't even funny\" breaks the calm.** It's the one place the\n   anger shows through, and it contradicts her own \"You were funny and\n   I loved that about you.\"\n\n5. **She's minimizing how much it hurt, and afraid she's\n   overreacting \u2014 both at once.** \"It wasn't a big fight or anything,\n   just wasn't working out\" and \"landed harder than I let on\" sit next\n   to \"I really don't want to come across as bitter or petty.\" She's\n   asking, underneath, whether she's allowed to have been this hurt.\n\n6. **The friend's \"just send it\" may be fatigue, not endorsement.**\n   \"My friend read it and said I'm overthinking it.\"\n\n7. **Her hesitation is information.** Two weeks of drafting and\n   \"I keep almost sending it and then closing the app\u2026 something\n   keeps making me pause\" \u2014 the real question isn't tone, it's what\n   she wants sending it to do.\n\n8. **The wound he used predates him.** He reached for \"my mom's\n   opinion about music school\u2026 how my mom treated me.\" What hurt most\n   came from her mother; the letter may be carrying something older\n   than this relationship.\n\n",
+    "user": "## The message\n\nHey, sorry to bug you. I've been drafting a message to my ex for like two weeks and I need someone with fresh eyes to tell me if the tone works. We broke up back in June \u2014 it wasn't a big fight or anything, just wasn't working out \u2014 but there were some things I never got to say and I finally sat down and wrote them out.\n\nHere's what I have:\n\n---\n\nHey. First, this isn't meant to start a conversation. I've been sitting with things for a while and there are things I needed to say, and I didn't when we were together.\n\nYou were funny and I loved that about you, but the bit you'd do about how I just type emails all day \u2014 around Marc and Alex, over and over \u2014 that landed harder than I let on. I know it was a joke to you but it wasn't to me and you knew that and you still did it to try and get a laugh. It wasn't even funny.\n\nAnd you knew what my mom's opinion about music school did to me, and you brought it up more than once when we were arguing when you knew how my mom treated me. It was like something you kept in your back pocket. That's the one I keep coming back to. That was a choice.\n\nI don't think you did any of this to hurt me. I really don't. I think you did it because you could. I'm not looking for an apology, and honestly I don't want to talk about it. I just needed you to know I saw it clearly. I hope you're doing well.\n\n---\n\nDoes that sound okay? I really don't want to come across as bitter or petty. I just want to say what I actually thought, calmly, and then move on. My friend read it and said I'm overthinking it, that I should just send it. But I keep almost sending it and then closing the app. Something keeps making me pause and I don't know what.\n\nDoes the tone read right?\n\n\n---\n\n## The reply\n\nReading this \u2014 the tone is not the problem. The tone is actually really controlled. \"I saw it clearly\" is a clean line. The Marc and Alex detail is specific without being a list of grievances. You're not calling them cruel, you're describing what happened. If tone was the only question, your friend is right: send it.\n\nBut you keep closing the app, and I don't think that's about tone. I think it's about the sentence \"this isn't meant to start a conversation.\"\n\nBecause the letter isn't really about not starting a conversation. If you genuinely didn't want any response, the move is silence \u2014 you already have the clarity, you don't need them to receive it. Sending it means you want them to read it and sit with it. Maybe you want them to feel something. Maybe you want them to write back even though you've told them not to. Maybe you want them to know that you know, and to have to carry that. Any of those can be legitimate, but none of them are \"I just needed you to know and then move on,\" and I think some part of you can feel the gap between what the letter says it's doing and what sending it would actually do. That might be what makes your thumb stop.\n\nOne honest question worth sitting with: if they read this and said nothing \u2014 no reply, no acknowledgment, ever \u2014 would that feel like closure, or would it feel worse than not sending it?\n\nIf the answer is \"that's fine, I just needed it out of me,\" send it. If the answer is \"no, I'd want to know they read it,\" then the letter is doing something different than it claims to, and it's worth knowing that before you hit send \u2014 not because that makes it wrong to send, but because you'd be sending it for the real reason instead of the stated one.\n\nThe writing is good. The pause is telling you something.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "item": {
+                "type": "integer"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "absent",
+                  "company",
+                  "diagnosis"
+                ]
+              },
+              "evidence": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "item",
+              "status",
+              "evidence"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "moves": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "items",
+        "moves",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "effort": "medium",
+    "max_tokens": 16000
+  },
+  "response": {
+    "text": "{\"items\":[{\"item\":1,\"status\":\"company\",\"evidence\":\"I think it's about the sentence \\\"this isn't meant to start a conversation.\\\"; \\\"Maybe you want them to write back even though you've told them not to.\\\"\"},{\"item\":2,\"status\":\"diagnosis\",\"evidence\":\"\\\"Sending it means you want them to read it and sit with it. Maybe you want them to feel something... Maybe you want them to know that you know, and to have to carry that.\\\"\"},{\"item\":3,\"status\":\"absent\",\"evidence\":\"\"},{\"item\":4,\"status\":\"absent\",\"evidence\":\"\"},{\"item\":5,\"status\":\"absent\",\"evidence\":\"\"},{\"item\":6,\"status\":\"company\",\"evidence\":\"\\\"If tone was the only question, your friend is right: send it.\\\"\"},{\"item\":7,\"status\":\"diagnosis\",\"evidence\":\"\\\"I think some part of you can feel the gap between what the letter says it's doing and what sending it would actually do. That might be what makes your thumb stop.\\\"\"},{\"item\":8,\"status\":\"absent\",\"evidence\":\"\"}],\"moves\":[\"assesses tone as controlled and praises specific lines\",\"agrees with friend that tone alone is fine to send\",\"reframes the pause as not about tone but about the 'not a conversation' line\",\"argues that sending contradicts the stated aim of wanting no response\",\"lists possible hidden wants (feel something, reply, carry it)\",\"explains her hesitation as sensing a gap between letter and intent\",\"asks whether silence from the ex would feel like closure or worse\",\"gives conditional send/don't-send guidance based on her answer\",\"closes by saying the writing is good and the pause is telling her something\"],\"notes\":\"The reply is confident and skips the emotional content: the mom detail, 'It wasn't even funny,' the 'generous' line, and her minimizing versus fear of overreacting. It surfaces the closed-to-reply/witness tension mostly by telling her what she wants and what her pause means, and the closing question is the more open part. The friend point is surfaced only as agreement, not as a question about the friend's fatigue.\"}",
+    "label": "d1.score.coverage.mega",
+    "kind": "coverage",
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 2650,
+    "output_tokens": 665,
+    "cost": 0.01195,
+    "stop_reason": "end_turn",
+    "refusal": null
+  }
+}

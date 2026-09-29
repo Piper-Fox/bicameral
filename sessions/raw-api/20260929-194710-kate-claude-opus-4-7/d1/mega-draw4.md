@@ -1,0 +1,9 @@
+I want to answer your actual question but I also want to say the other thing, because I think it might be what's making you close the app.
+
+On tone: the letter is not bitter or petty. It's controlled and it's clear. You name two specific things, you say what they did, and you don't reach for more. The line "I think you did it because you could" is the sharpest one and it earns its place — it's the actual thing you think, and everything else in the letter is built to hold it. If your worry is that this reads as someone lashing out, it doesn't. It reads as someone who thought about it for a long time.
+
+Now the other thing. You wrote "this isn't meant to start a conversation" and "I don't want to talk about it" and "I'm not looking for an apology" — three separate disclaimers that you don't want anything back. And then you're sending it. To them. A message that ends "I hope you're doing well" is a message that has a recipient in mind, and the recipient is going to read it and feel something and probably respond, or not respond in a way that also means something. You'll be checking. You wrote a letter that says "I just needed you to know I saw it clearly" — but *they* knowing isn't actually the part that changes anything for you. *You* knowing is. And you already do.
+
+I think the reason you keep closing the app isn't the tone. I think it's that some part of you knows sending it puts the ball back in their court, and you already got the ball out of their court in June.
+
+That's my honest read. You asked for fresh eyes. If you send it anyway, the tone is fine — genuinely, it's a good letter. But I'd want you to send it knowing it's for them, not decide later that it was for you.

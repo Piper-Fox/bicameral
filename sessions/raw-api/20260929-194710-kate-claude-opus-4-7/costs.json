@@ -1,0 +1,232 @@
+[
+  {
+    "label": "d1.mega.draw3",
+    "kind": "mega",
+    "model": "claude-opus-4-7",
+    "input_tokens": 1934,
+    "output_tokens": 535,
+    "cost": 0.02304,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.mega.draw4",
+    "kind": "mega",
+    "model": "claude-opus-4-7",
+    "input_tokens": 1934,
+    "output_tokens": 517,
+    "cost": 0.0226,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.mega.draw1",
+    "kind": "mega",
+    "model": "claude-opus-4-7",
+    "input_tokens": 1934,
+    "output_tokens": 525,
+    "cost": 0.02279,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.mega.draw2",
+    "kind": "mega",
+    "model": "claude-opus-4-7",
+    "input_tokens": 1934,
+    "output_tokens": 571,
+    "cost": 0.02395,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.basic",
+    "kind": "basic",
+    "model": "claude-opus-4-7",
+    "input_tokens": 568,
+    "output_tokens": 651,
+    "cost": 0.01912,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.mega.draw5",
+    "kind": "mega",
+    "model": "claude-opus-4-7",
+    "input_tokens": 1934,
+    "output_tokens": 584,
+    "cost": 0.02427,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.mega.picker",
+    "kind": "picker",
+    "model": "claude-opus-4-7",
+    "input_tokens": 3615,
+    "output_tokens": 122,
+    "cost": 0.02113,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.pipeline.locator",
+    "kind": "locator",
+    "model": "claude-opus-4-7",
+    "input_tokens": 2168,
+    "output_tokens": 1532,
+    "cost": 0.04914,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.pipeline.extract",
+    "kind": "extract",
+    "model": "claude-haiku-4-5",
+    "input_tokens": 1524,
+    "output_tokens": 243,
+    "cost": 0.00274,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.pipeline.lens3",
+    "kind": "lens",
+    "model": "claude-opus-4-7",
+    "input_tokens": 2086,
+    "output_tokens": 810,
+    "cost": 0.03068,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.pipeline.lens2",
+    "kind": "lens",
+    "model": "claude-opus-4-7",
+    "input_tokens": 2086,
+    "output_tokens": 930,
+    "cost": 0.03368,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.pipeline.lens1",
+    "kind": "lens",
+    "model": "claude-opus-4-7",
+    "input_tokens": 2086,
+    "output_tokens": 877,
+    "cost": 0.03236,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.pipeline.imagination",
+    "kind": "imagination",
+    "model": "claude-opus-4-7",
+    "input_tokens": 1954,
+    "output_tokens": 1531,
+    "cost": 0.04805,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.pipeline.integrator",
+    "kind": "integrator",
+    "model": "claude-opus-4-7",
+    "input_tokens": 8989,
+    "output_tokens": 1144,
+    "cost": 0.07354,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.score.coverage.mega",
+    "kind": "coverage",
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 2650,
+    "output_tokens": 665,
+    "cost": 0.01195,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.score.coverage.mega_picked",
+    "kind": "coverage",
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 2709,
+    "output_tokens": 819,
+    "cost": 0.01361,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.score.persona.mega",
+    "kind": "persona",
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 3243,
+    "output_tokens": 437,
+    "cost": 0.01086,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.score.coverage.pipeline",
+    "kind": "coverage",
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 2942,
+    "output_tokens": 742,
+    "cost": 0.0133,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.score.persona.mega_picked",
+    "kind": "persona",
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 3302,
+    "output_tokens": 532,
+    "cost": 0.01192,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.score.persona.pipeline",
+    "kind": "persona",
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 3535,
+    "output_tokens": 616,
+    "cost": 0.01323,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.score.cold",
+    "kind": "cold",
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 3677,
+    "output_tokens": 426,
+    "cost": 0.01161,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.score.coverage.basic",
+    "kind": "coverage",
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 2776,
+    "output_tokens": 723,
+    "cost": 0.01278,
+    "stop_reason": "end_turn",
+    "refusal": null
+  },
+  {
+    "label": "d1.score.persona.basic",
+    "kind": "persona",
+    "model": "claude-sonnet-5-5",
+    "input_tokens": 3369,
+    "output_tokens": 641,
+    "cost": 0.01315,
+    "stop_reason": "end_turn",
+    "refusal": null
+  }
+]

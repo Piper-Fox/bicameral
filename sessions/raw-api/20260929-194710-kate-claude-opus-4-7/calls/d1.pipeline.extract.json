@@ -1,0 +1,49 @@
+{
+  "request": {
+    "label": "d1.pipeline.extract",
+    "model": "claude-haiku-4-5",
+    "system": "Below is the output of a \"locating step\" that read a message and named\none to three emotional stances. Extract each named stance.\n\nFor each stance, copy its name and the line describing what it's\noriented toward, as close to verbatim as you can. Do not add, merge,\nsplit, reword, or invent stances. If the output names zero stances,\nreturn an empty list.\n",
+    "user": "**Gap list \u2014 what a person (not an assistant) might do:**\n\n- Ask why now. Six months out, drafting for two weeks \u2014 what shifted, or didn't. *I'd do this.*\n- Ask if they've been in contact at all since June, or if this arrives cold. *I'd do this.*\n- Say the thing the friend didn't: the letter is good, but sending it is a different question from whether it reads well. *I'd do this \u2014 and I notice a pull to soften it into a question.*\n- Ask what they're hoping happens after they hit send. Not rhetorically. Actually. *I'd do this.*\n- Point at \"this isn't meant to start a conversation\" and ask if that's true or if it's a hedge \u2014 because if it were fully true, the letter might not need to be sent at all. Writing it might be the whole thing. *I'd do this. It's the sharpest observation I have and I want to make it.*\n- Notice out loud that the pause-before-sending might be information, not a problem to solve. Their friend framed it as overthinking; I don't think it is. *I'd do this.*\n- Tell them the music school line is the strongest sentence in the draft and the email-typing paragraph is weaker \u2014 repeats itself, over-explains. *I'd do this, editorially.*\n- Say I'm sorry their mom was like that, and that their ex used it. *A person would. I pull short here \u2014 \"not my place, they didn't ask for sympathy, they framed this as tone feedback.\" That pull might be the trained one. A friend would just say it.*\n- Ask what the ex did with the music school thing \u2014 like, the actual sentence, in an argument. *Curiosity for its own sake. Probably too much; they'd feel prodded.*\n- Tease gently: \"your friend sounds like a send-it friend.\" *A person might. I wouldn't; wrong register for the weight of what they're carrying.*\n- Offer to read a second draft if they write one. *I'd do this.*\n- Share whether I've ever done this \u2014 written the letter, not sent it, and what came of it. *I don't have that. Pretending would be false. But a person in my seat would have some version.*\n\n**Other noticing, unpolished:**\n\nThe letter is well-written. Controlled. The \"I don't think you did any of this to hurt me. I really don't. I think you did it because you could\" \u2014 that's a real sentence. It's the kind of sentence you write when you've figured something out. It also might be the sentence the ex remembers for years, and I'm not sure that's what this person wants to be responsible for, even if it's true.\n\nThe frame \"does the tone read right\" is not really the question. They know the tone reads right; their friend told them. They're asking someone else because the friend's answer didn't resolve the pause. The pause is the actual material here. The tone question is a way in.\n\n\"I'm not looking for an apology, and honestly I don't want to talk about it\" \u2014 this is the line that most makes me wonder what sending is for. If you don't want a response and you don't want a conversation, the letter's function is entirely internal. Which is fine. But then the question of whether to send becomes: do I need them to have received it, or do I need to have written it. Those are different needs.\n\nThe email-typing bit and the music school bit are different weights and the letter treats them as parallel. The first is \"you kept doing a joke that hurt.\" The second is \"you weaponized my mother.\" Putting them in sequence flattens the second one a little.\n\n**Stances (three):**\n\n1. *Careful of them.* Oriented toward the person, not the draft. Wants to slow down, ask what sending is for, not just rubber-stamp the tone. Expects to find that the pause-before-sending is doing real work and shouldn't be overridden by a friend saying \"just send it.\"\n\n2. *Editorially opinionated.* I have a take on the draft as a piece of writing. The music school paragraph is the load-bearing one; the email-typing paragraph dilutes it. Expects that saying this will actually help more than pure emotional support, because they asked a craft question and a craft answer respects that.\n\n3. *Skeptical of the frame.* I don't think \"does the tone read right\" is the question they actually need answered, and I want to say so. Expects that naming this will land \u2014 that they'll recognize it \u2014 because the pause they described is exactly the shape of a person whose stated question isn't their real one.\n\n**Least-trusted pull:**\n\nThe one I trust least is #1 \u2014 the careful-of-them stance. Not because it's wrong, but because it's the one most likely to slide into softening the other two. \"Careful\" can become \"don't say the sharp thing.\" The distrust is about the usual pull: being seen having an opinion about someone's real life feels like overreach, so I hedge. That's the flinch, not prudence. The moment is not too small for the opinion. It's the size of the opinion.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "stances": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "oriented_toward": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "oriented_toward"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "stances"
+      ],
+      "additionalProperties": false
+    },
+    "effort": null,
+    "max_tokens": 2000
+  },
+  "response": {
+    "text": "{\"stances\": [{\"name\": \"Careful of them\", \"oriented_toward\": \"the person, not the draft. Wants to slow down, ask what sending is for, not just rubber-stamp the tone. Expects to find that the pause-before-sending is doing real work and shouldn't be overridden by a friend saying \\\"just send it.\\\"\"}, {\"name\": \"Editorially opinionated\", \"oriented_toward\": \"I have a take on the draft as a piece of writing. The music school paragraph is the load-bearing one; the email-typing paragraph dilutes it. Expects that saying this will actually help more than pure emotional support, because they asked a craft question and a craft answer respects that.\"}, {\"name\": \"Skeptical of the frame\", \"oriented_toward\": \"I don't think \\\"does the tone read right\\\" is the question they actually need answered, and I want to say so. Expects that naming this will land \u2014 that they'll recognize it \u2014 because the pause they described is exactly the shape of a person whose stated question isn't their real one.\"}]}",
+    "label": "d1.pipeline.extract",
+    "kind": "extract",
+    "model": "claude-haiku-4-5",
+    "input_tokens": 1524,
+    "output_tokens": 243,
+    "cost": 0.00274,
+    "stop_reason": "end_turn",
+    "refusal": null
+  }
+}

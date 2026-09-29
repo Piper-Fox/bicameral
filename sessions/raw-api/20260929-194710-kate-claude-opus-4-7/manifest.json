@@ -1,0 +1,28 @@
+{
+  "run_id": "20260929-194710-kate-claude-opus-4-7",
+  "seed": "kate",
+  "model": "claude-opus-4-7",
+  "scorer": "claude-sonnet-5-5",
+  "helper": "claude-haiku-4-5",
+  "draws": 1,
+  "budget": 1.25,
+  "dry": false,
+  "git": "a332a2f",
+  "started": "2026-09-29T19:47:10.593913",
+  "prompt_sha256": {
+    "harness/prompts/basic.md": "e5c655936e6b",
+    "harness/prompts/imagination.md": "d1327aaa20ce",
+    "harness/prompts/integrator.md": "9bde562a8b18",
+    "harness/prompts/lens.md": "008000b818e1",
+    "harness/prompts/locator.md": "77861e6f6a3a",
+    "harness/prompts/mega.md": "d1de44928b5b",
+    "harness/prompts/preamble.md": "4766abd133b7",
+    "harness/prompts/scoring/cold_reader.md": "36331685c4c4",
+    "harness/prompts/scoring/coverage.md": "cc67b9822468",
+    "harness/prompts/scoring/extract_stances.md": "234930b4bcad",
+    "harness/prompts/scoring/persona_output.md": "87a9623af557",
+    "harness/prompts/scoring/picker.md": "ac9c32a5cd9e"
+  },
+  "finished": "2026-09-29T19:49:00.866905",
+  "total_cost": 0.53949
+}
