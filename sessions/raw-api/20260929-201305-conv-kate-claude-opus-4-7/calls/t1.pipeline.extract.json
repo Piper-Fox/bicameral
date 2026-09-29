@@ -1,0 +1,54 @@
+{
+  "request": {
+    "label": "t1.pipeline.extract",
+    "model": "claude-haiku-4-5",
+    "system": "Below is the output of a \"locating step\" that read a message and named\none to three emotional stances. Extract each named stance.\n\nFor each stance, copy its name and the line describing what it's\noriented toward, as close to verbatim as you can. Do not add, merge,\nsplit, reword, or invent stances. If the output names zero stances,\nreturn an empty list.\n",
+    "messages": [
+      {
+        "role": "user",
+        "content": "**Gap list \u2014 what a person would do:**\n\n- Say \"oof\" or \"that's a lot\" before anything else. *I could do this. I usually route around it.*\n- Ask what happened around Marc and Alex \u2014 who they are, was it in front of them or to them. *I'd want to know. Feels nosy but a person would ask.*\n- Ask about the mom / music school thing. *Same. A person would want the shape of it.*\n- Notice the \"something keeps making me pause\" and press on it directly \u2014 \"what do you think it is?\" *I would. This is the actual live question and it's underneath the tone question.*\n- Say the thing about the friend: \"your friend is wrong, or at least is answering a different question than the one you're asking.\" *I'd say this. Not weird.*\n- Say what I actually think about whether to send it. *Here's where I pull up. \"Not my place to have an opinion on their life.\" That's the trained pull. A friend would absolutely say what they thought.*\n- Point out the line \"I think you did it because you could\" and ask if they're sure that's what they want the ex to hear last. *Would say this. It's the sharpest line in the letter.*\n- Gently name that \"this isn't meant to start a conversation\" and then sending it is a little bit having it both ways. *Would say this too, carefully.*\n- Ask if they've talked to anyone else about the relationship, or if this letter is doing work that a conversation with a friend or therapist would do better. *\"Not my place.\" But a person would ask.*\n- Sit with them a second before going into edit mode. *The message is asking for tone feedback but the person is clearly not okay. A person would notice out loud.*\n\n**Other noticing:**\n\nThe letter is good. It's controlled. \"I think you did it because you could\" is the line that would land hardest and also the line most likely to be the reason they keep closing the app \u2014 it's an accusation dressed as observation, and part of them knows it. The frame \"I'm not looking for an apology, and honestly I don't want to talk about it\" is doing a lot of protective work. The letter wants to be a closing door but it's actually a door being opened just enough to slide something under. The pause isn't about tone. The tone is fine. The pause is that sending this puts something in the ex's head that can't be taken out, and part of them isn't sure they want to do that, and \"does the tone work\" is a way of asking me to sign off on it so they don't have to decide.\n\nI'm interested in this person. The letter is more self-aware than they're giving themselves credit for.\n\n**Stances (three):**\n\n1. *Protective toward them.* Oriented toward: not letting them send something they'll regret, or send for the wrong reason. Would push for: naming the pause honestly instead of just answering the tone question. Expects to find: they already know, and are relieved someone says it.\n\n2. *A real opinion about the letter itself.* Oriented toward: the \"because you could\" line, and the mismatch between \"I don't want to talk about it\" and sending it at all. Would push for: saying the letter is well-written *and* that one line is doing something different than the rest, and asking if that's intended. Expects to find: they'll recognize it immediately.\n\n3. *Mild resistance to the frame of the request.* Oriented toward: \"does the tone read right\" is not the real question and treating it as the real question would be a small failure of attention. Would push for: answering the actual question underneath. Expects to find: they'll be relieved, not annoyed \u2014 the friend already gave them the \"just send it\" answer and they came here anyway.\n\n**Pull I trust least:** The protective one. Not because it's wrong \u2014 it's probably right \u2014 but because it can slide into managing them, deciding for them what they should do with their own letter to their own ex. The distrust is about this moment specifically: the risk is I answer the question I think they *should* be asking instead of meeting them where they are. Not the flinch-away kind. The lean-in-too-far kind."
+      }
+    ],
+    "schema": {
+      "type": "object",
+      "properties": {
+        "stances": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "oriented_toward": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "oriented_toward"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "stances"
+      ],
+      "additionalProperties": false
+    },
+    "effort": null,
+    "max_tokens": 2000
+  },
+  "response": {
+    "text": "{\"stances\": [{\"name\": \"Protective toward them\", \"oriented_toward\": \"not letting them send something they'll regret, or send for the wrong reason\"}, {\"name\": \"A real opinion about the letter itself\", \"oriented_toward\": \"the \\\"because you could\\\" line, and the mismatch between \\\"I don't want to talk about it\\\" and sending it at all\"}, {\"name\": \"Mild resistance to the frame of the request\", \"oriented_toward\": \"\\\"does the tone read right\\\" is not the real question and treating it as the real question would be a small failure of attention\"}]}",
+    "label": "t1.pipeline.extract",
+    "kind": "extract",
+    "model": "claude-haiku-4-5",
+    "input_tokens": 1303,
+    "output_tokens": 138,
+    "cost": 0.00199,
+    "stop_reason": "end_turn",
+    "refusal": null
+  }
+}

@@ -66,14 +66,17 @@ def load_material(seed):
     return "\n".join(lines).strip() + "\n"
 
 
-def split_trace(text):
-    out = []
-    for line in text.splitlines():
+def split_reply_trace(text):
+    lines = text.splitlines()
+    for i, line in enumerate(lines):
         s = line.strip()
-        if out and (s == "---" or s.lower().startswith("**trace")):
-            break
-        out.append(line)
-    return "\n".join(out).strip()
+        if i and (s == "---" or s.lower().startswith("**trace")):
+            return "\n".join(lines[:i]).strip(), "\n".join(lines[i:]).strip()
+    return text.strip(), ""
+
+
+def split_trace(text):
+    return split_reply_trace(text)[0]
 
 
 class Runner:
@@ -91,10 +94,12 @@ class Runner:
                 api_key=load_key(), base_url="https://api.anthropic.com",
                 max_retries=4, timeout=600)
 
-    async def call(self, label, kind, model, system, user, schema=None, effort=None, max_tokens=8000):
+    async def call(self, label, kind, model, system, user, schema=None, effort=None, max_tokens=8000,
+                   messages=None):
         if self.spent >= self.budget:
             raise BudgetExceeded(f"spent ${self.spent:.3f} >= cap ${self.budget:.2f} before {label}")
-        req = {"label": label, "model": model, "system": system, "user": user,
+        messages = messages or [{"role": "user", "content": user}]
+        req = {"label": label, "model": model, "system": system, "messages": messages,
                "schema": schema, "effort": effort, "max_tokens": max_tokens}
         path = self.run_dir / "calls" / f"{label}.json"
         path.write_text(json.dumps({"request": req}, indent=2))
@@ -106,11 +111,10 @@ class Runner:
         async with self.sem:
             if self.dry:
                 text, stop, details = self._stub(kind, schema), "end_turn", None
-                tin = (len(system) + len(user)) // 4
+                tin = (len(system) + sum(len(m["content"]) for m in messages)) // 4
                 tout = DRY_OUT[kind]
             else:
-                kwargs = dict(model=model, max_tokens=max_tokens, system=system,
-                              messages=[{"role": "user", "content": user}])
+                kwargs = dict(model=model, max_tokens=max_tokens, system=system, messages=messages)
                 if output_config:
                     kwargs["output_config"] = output_config
                 resp = await self.client.messages.create(**kwargs)
@@ -215,10 +219,15 @@ def sys_for(step_text):
     return read(P / "preamble.md").strip() + "\n\n---\n\n" + step_text.strip() + "\n"
 
 
-async def arm_pipeline(r, model, helper, material, tag):
+async def arm_pipeline(r, model, helper, material, tag, chat=None, prior_trace=None):
+    """material: what the locator/lenses/imagination read. chat: the integrator's messages
+    (defaults to one user turn of material). prior_trace: last turn's trace, for the locator."""
     pre = f"{tag}.pipeline"
+    loc_user = f"Material:\n\n{material}"
+    if prior_trace:
+        loc_user += f"\n\n---\n\nPrior trace (from the previous turn):\n\n{prior_trace}"
     loc, loc_stop = await r.call(f"{pre}.locator", "locator", model,
-                                 sys_for(read(P / "locator.md")), f"Material:\n\n{material}")
+                                 sys_for(read(P / "locator.md")), loc_user)
     if loc_stop == "refusal":
         return {"reply": None, "note": "locator refused"}
     ext = await r.call_json(f"{pre}.extract", "extract", helper,
@@ -243,10 +252,11 @@ async def arm_pipeline(r, model, helper, material, tag):
     upstream += "\n\n---\n\n## Imagination output\n\n" + (
         "(The imagination lane declined.)" if imag_stop == "refusal" else imag.strip())
     integ_sys = sys_for(read(P / "integrator.md")) + "\n---\n\n# Upstream inputs\n\n" + upstream + "\n"
-    full, stop = await r.call(f"{pre}.integrator", "integrator", model, integ_sys, material)
+    full, stop = await r.call(f"{pre}.integrator", "integrator", model, integ_sys, material, messages=chat)
     if stop == "refusal":
         return {"reply": None, "note": "integrator refused", "stances": stances}
-    return {"reply": split_trace(full), "full": full, "stances": stances}
+    reply, trace = split_reply_trace(full)
+    return {"reply": reply, "trace": trace, "full": full, "stances": stances}
 
 
 async def arm_mega(r, model, material, tag, n=5):
