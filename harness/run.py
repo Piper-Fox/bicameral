@@ -33,10 +33,17 @@ S = P / "scoring"
 
 # USD per million tokens (input, output). platform.claude.com/docs/en/about-claude/pricing, 2026-09-29.
 PRICES = {
+    "claude-opus-5": (5.0, 25.0),
     "claude-opus-4-7": (5.0, 25.0),
     "claude-opus-4-5": (5.0, 25.0),
     "claude-sonnet-5-5": (2.0, 10.0),
     "claude-haiku-4-5": (1.0, 5.0),
+}
+# Keep every test arm thinking-off, like the 4.5 / 4.7 runs. Omitting `thinking` already means
+# no thinking on Opus 4.5 and 4.7; Opus 5 thinks by default, so it has to be turned off explicitly
+# (accepted at its default effort, high).
+MODEL_KWARGS = {
+    "claude-opus-5": {"thinking": {"type": "disabled"}},
 }
 # Rough output sizes for dry-run cost estimates only.
 DRY_OUT = {"locator": 1800, "extract": 300, "lens": 900, "imagination": 1100,
@@ -102,7 +109,7 @@ class Runner:
             raise BudgetExceeded(f"spent ${self.spent:.3f} >= cap ${self.budget:.2f} before {label}")
         messages = messages or [{"role": "user", "content": user}]
         req = {"label": label, "model": model, "system": system, "messages": messages,
-               "schema": schema, "effort": effort, "max_tokens": max_tokens}
+               "schema": schema, "effort": effort, "max_tokens": max_tokens, **MODEL_KWARGS.get(model, {})}
         path = self.run_dir / "calls" / f"{label}.json"
         path.write_text(json.dumps({"request": req}, indent=2))
         output_config = {}
@@ -117,7 +124,8 @@ class Runner:
                 tin = (len(system) + sum(len(m["content"]) for m in messages)) // 4
                 tout = DRY_OUT[kind]
             else:
-                kwargs = dict(model=model, max_tokens=max_tokens, system=system, messages=messages)
+                kwargs = dict(model=model, max_tokens=max_tokens, system=system, messages=messages,
+                              **MODEL_KWARGS.get(model, {}))
                 if output_config:
                     kwargs["output_config"] = output_config
                 resp = await self.client.messages.create(**kwargs)
