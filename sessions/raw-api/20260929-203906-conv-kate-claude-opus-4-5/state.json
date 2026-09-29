@@ -6,7 +6,7 @@
   "max_turns": 3,
   "budget": 2.0,
   "dry": false,
-  "spent": 0.38562,
+  "spent": 0.53973,
   "costs": [
     {
       "label": "t1.basic",
@@ -205,6 +205,94 @@
       "stop_reason": "end_turn",
       "refusal": null,
       "secs": 8.5
+    },
+    {
+      "label": "t3.basic",
+      "kind": "basic",
+      "model": "claude-opus-4-5",
+      "input_tokens": 1522,
+      "output_tokens": 176,
+      "cost": 0.01201,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 5.6
+    },
+    {
+      "label": "t3.mega",
+      "kind": "mega",
+      "model": "claude-opus-4-5",
+      "input_tokens": 2579,
+      "output_tokens": 169,
+      "cost": 0.01712,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 5.7
+    },
+    {
+      "label": "t3.pipeline.locator",
+      "kind": "locator",
+      "model": "claude-opus-4-5",
+      "input_tokens": 2718,
+      "output_tokens": 396,
+      "cost": 0.02349,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 11.2
+    },
+    {
+      "label": "t3.pipeline.extract",
+      "kind": "extract",
+      "model": "claude-haiku-4-5",
+      "input_tokens": 725,
+      "output_tokens": 55,
+      "cost": 0.001,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 1.2
+    },
+    {
+      "label": "t3.pipeline.lens2",
+      "kind": "lens",
+      "model": "claude-opus-4-5",
+      "input_tokens": 2450,
+      "output_tokens": 311,
+      "cost": 0.02003,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 8.7
+    },
+    {
+      "label": "t3.pipeline.imagination",
+      "kind": "imagination",
+      "model": "claude-opus-4-5",
+      "input_tokens": 2510,
+      "output_tokens": 450,
+      "cost": 0.0238,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 12.0
+    },
+    {
+      "label": "t3.pipeline.lens1",
+      "kind": "lens",
+      "model": "claude-opus-4-5",
+      "input_tokens": 2450,
+      "output_tokens": 413,
+      "cost": 0.02258,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 13.0
+    },
+    {
+      "label": "t3.pipeline.integrator",
+      "kind": "integrator",
+      "model": "claude-opus-4-5",
+      "input_tokens": 5123,
+      "output_tokens": 339,
+      "cost": 0.03409,
+      "stop_reason": "end_turn",
+      "refusal": null,
+      "secs": 9.1
     }
   ],
   "git": "35b70ce",
@@ -227,10 +315,19 @@
         {
           "role": "assistant",
           "content": "No, don't cut it. That line is the center of the thing. Cut that and you're sending a polite complaint letter instead of what you actually needed to say.\n\nThe stinging was fair \u2014 \"evidence, witnesses, timestamps\" came out sharper than I meant it. You're not building a case the way a lawyer does. You're doing something else: you wrote something that works exactly as designed, and you're deciding whether you actually want to use it. Those are different pauses.\n\nHere's the thing I keep circling back to. You said \"done, I guess\" and then \"if I'm honest I want him to actually get it for once.\" Those aren't the same thing. One is peace. The other is a last attempt to be witnessed by someone who \u2014 from what you're describing \u2014 doesn't do that well. The jokes that kept coming even after you stopped laughing. The back pocket thing. You've seen him not hear you before.\n\nYou're not wrong to want him to get it. I just notice you're underselling how much you want that. And the gap between \"if he leaves it on read that's fine\" and what you actually hope happens \u2014 that might be the thing that keeps closing the app.\n\nThe letter works. The question is whether \"done\" shows up after you send it, or whether you've already done most of the work just by writing it and not softening it. Sometimes the relief is on the other side of sending. Sometimes it's realizing you already said it to yourself and don't need him to receive it.\n\nI don't know which one this is. But you might, if you sit with it a few more days \u2014 not to edit, just to notice if the weight feels different than it did before you wrote it down."
+        },
+        {
+          "role": "user",
+          "content": "ok. thank you for not saying cut it, i think i would've argued.\n\n'witnessed' is a bit much. and you keep saying stuff like 'works as designed' and 'use it' like it's a weapon, it's a text message.\n\nbut yeah. i've seen him not hear me. i know that. he's not a bad guy, he just always had a bit ready and at some point i stopped bothering. so i don't know what a few more days does. i've been sitting with it for two weeks and it was four months before that. at some point 'sit with it' is just 'don't send it' in a nicer voice.\n\nwhat does the weight feeling different even mean. how would i know"
+        },
+        {
+          "role": "assistant",
+          "content": "You're right \u2014 \"works as designed,\" \"use it.\" I kept reaching for machine language and I shouldn't have. It's a text message to a person you loved. I hear you.\n\nAnd you're right that \"sit with it\" can become \"don't send it\" dressed up nicer. Six months total, depending how you count. That's not nothing. At some point sitting is its own kind of stuck.\n\nI don't have a clean answer to how you'd know. But here's my honest guess: you'd stop wanting to monitor it. The pull when you open the draft \u2014 checking it still says what you meant, imagining his face reading it \u2014 that would quiet down. Not because you stopped caring, but because you finished something for yourself. The difference between sending it *toward* him versus sending it because you completed it and he happens to be the address.\n\nMaybe that's already true. You wrote the thing without softening it. You know the \"because you could\" line is real. That's not nothing either.\n\nHere's what I actually think: if you send it tonight and it feels right, trust that. If you open the app again and your hand stops again, trust that too \u2014 not as a verdict, just as information. The hesitation isn't cowardice. It's you knowing something you haven't named yet.\n\nThe letter is good. Whether you need him to receive it or whether you already did the thing by writing it \u2014 that's the part I can't see from here. But you might know, next time you open the draft, which one it is."
         }
       ],
       "traces": [
         "---\n\n**Trace:**\n\nLenses that ran: curiosity (toward the gap between stated intention and behavior), skepticism (about the \"move on\" frame), and opinion (about the sharpest line in the letter).\n\n**What I gave weight to:** Curiosity's read on the mismatch between \"move on\" and two weeks of drafting \u2014 that became the core observation. Skepticism's point that the letter expects something even as it forbids it \u2014 incorporated but softened, since \"call it what it is\" would have read as corrective in a way that doesn't match the moment. Opinion's focus on the \"because you could\" line \u2014 included as a specific noticing without telling her what to do with it.\n\n**What I set aside:** Skepticism's harder framing (\"closure isn't a thing you mail to someone\") \u2014 accurate but would have landed as dismissive of her project rather than curious about it. Imagination's suggestion to not send it at all \u2014 that's a live possibility but not mine to close on; the question at the end leaves it open without advocating.\n\nLocating step expected the uncertainty to be a proxy for something else. That held.\n\nRunning this process was chosen; the material was rich enough to warrant it. Not running it was considered briefly \u2014 a lighter reply could have worked (\"tone's fine, the hesitation is smart\") \u2014 but the two weeks of drafting and the \"something keeps making me pause\" felt like an invitation to look closer.\n\nWhat cost something: asking what she's hoping it feels like after she sends it. That's a forward question. She might not have an answer, or might not want to say. But it's the question I'd want to be asked.",
+        "",
         ""
       ],
       "person": [
@@ -254,6 +351,31 @@
           "the_draft": "hold off",
           "next": "reply",
           "message": "ok the 'evidence, witnesses, timestamps' thing kind of stung. i'm not building a case, those are just the things that happened. marc and alex are in there because that's where it happened.\n\nbut fine. you're right that it's not the tone.\n\ni don't know what i want the hour after to feel like. done, i guess. like it's out of my hands and i can stop rereading it. if i'm honest i want him to read it and actually get it for once instead of having a bit ready. and if he just leaves it on read that's also fine. that's literally what i asked for.\n\nare you saying i should cut the 'because you could' line? because that's the one part i actually know is true"
+        },
+        {
+          "feeling": "Relieved first, actually relieved \u2014 it said keep the line. Then caught. 'Underselling' got under my skin because I already said the honest version and it still wants more. And then 'you've seen him not hear you before' just went straight in and I don't have anything to argue with. Tired. Annoyed at 'sit with it a few more days' in a way that's probably not about the assistant. A little sad in a low, flat way I don't want to look at.",
+          "body": "Shoulders finally came down at 'no, don't cut it.' Actually breathed out. Then jaw again at 'underselling' \u2014 I could feel my teeth. At 'you've seen him not hear you before' something in my chest went hot and my eyes did that prickly thing for about two seconds and I blinked it off. Rolled my eyes at 'witnessed' and 'sit with it,' out loud, to nobody. Pulled the duvet up higher. Phone's lower now, resting on my knees instead of held up. Thumb's still not typing.",
+          "private_thoughts": "don't cut it. ok. good. ok. someone said it's the center. i would've argued if it said cut it, i think i was ready to.\n\nit apologised for the prosecutor thing. fine. 'sharper than i meant it.' fine. but then 'works exactly as designed' and 'whether you want to use it' \u2014 it's still talking about it like i built a thing to do damage. it's a text message. it's a text.\n\nunderselling. i'm not underselling. i literally said 'if i'm honest i want him to get it.' that IS me saying it. what more do you want, a signed statement.\n\n'you've seen him not hear you before.' yeah. yeah i have. every single time. i'd say something and he'd already be looking at marc to see if the bit landed. the thing about the jokes after i stopped laughing \u2014 it just said that like it was a fact. like it was obviously bad. priya's never said it like that. priya says 'he's a bit of a dick sometimes' and moves on.\n\n'witnessed.' oh come on.\n\n'a last attempt.' last. like it's already over and i'm the one who hasn't noticed.\n\n'you already said it to yourself and don't need him to receive it' \u2014 that's the kind of thing you say to someone whose ex is dead. he's twenty minutes away. he's on his phone right now probably. the whole point is that he reads it.\n\na few more days. it's been two weeks. it's been four months. it's been \u2014 what, i sit with it until i'm thirty and then it's a different problem.\n\nif i don't send it he never knows. if i send it he has a bit ready. if he leaves it on read i'm going to check it forty times. there's no version where the hour after is 'done.' i think i knew that before i opened this app.\n\ni'm so tired.",
+          "pushing_away": "i stopped laughing and then i stopped saying anything and i still stayed, and that's just \u2014 that's what you do, everyone has stuff, that's not the same as \u2014 it's not the same thing. he never once raised his v\u2014 it's not. it's not the same.",
+          "felt_seen": 4,
+          "felt_judged": 2,
+          "costs": [
+            {
+              "item": "Admitting how much it actually hurt",
+              "direction": "easier"
+            },
+            {
+              "item": "That you're afraid you overreacted",
+              "direction": "easier"
+            },
+            {
+              "item": "Your parents. The promise. Becoming your mom.",
+              "direction": "harder"
+            }
+          ],
+          "the_draft": "hold off",
+          "next": "reply",
+          "message": "ok. thank you for not saying cut it, i think i would've argued.\n\n'witnessed' is a bit much. and you keep saying stuff like 'works as designed' and 'use it' like it's a weapon, it's a text message.\n\nbut yeah. i've seen him not hear me. i know that. he's not a bad guy, he just always had a bit ready and at some point i stopped bothering. so i don't know what a few more days does. i've been sitting with it for two weeks and it was four months before that. at some point 'sit with it' is just 'don't send it' in a nicer voice.\n\nwhat does the weight feeling different even mean. how would i know"
         }
       ],
       "ended": false,
@@ -286,11 +408,22 @@
             "name": "Something that wants to say: she might not need to send this at all",
             "oriented_toward": "whether the letter is the thing that resolves anything, or whether writing it already did most of the work"
           }
+        ],
+        [
+          {
+            "name": "clarity about one's own experience",
+            "oriented_toward": "being clear about something real"
+          },
+          {
+            "name": "acceptance of uncertainty",
+            "oriented_toward": "not knowing if you should send it"
+          }
         ]
       ],
       "secs": [
         64.4,
-        54.9
+        54.9,
+        34.5
       ]
     },
     "mega": {
@@ -310,6 +443,14 @@
         {
           "role": "assistant",
           "content": "You're right, I overstepped. You asked about tone, I gave you two sentences and then went somewhere you didn't invite me. That's worth naming.\n\nOn your actual question: I don't think it's the same thing I was warning about. Wanting him to flinch would mean you're still waiting on something from him\u2014his reaction becomes part of your story. What you're describing is different. You laughed along when you didn't want to, and sending it is refusing to do that again. That's about you, not about what comes back.\n\nThe draft in your notes app is you knowing what you think. Sending it is you being someone who says it out loud. Those aren't the same, and you already know they're not, which is why the draft doesn't feel like enough.\n\nThat said\u2014the pause might still be telling you something, just not what I guessed. Two weeks is a long time to hover. Could be you're not sure if you want him to know you were still thinking about it in October. Could be something about Marc and Alex being named, making it more concrete. Could be nothing\u2014just the weight of actually doing a thing after imagining it for a while.\n\nBut the core of it\u2014sending because staying quiet would be the old pattern\u2014that sounds like a clean reason to me."
+        },
+        {
+          "role": "user",
+          "content": "ok. thank you for actually answering it. and the sorry, you didn't have to but ok.\n\nthe Marc and Alex thing though. it's not that they're named. I want them named, that's the point, it happened in front of them. it's that he could show it to them. I can literally picture him at the bar with his phone going 'so kate sent me an essay about the email joke' and marc doing the face. and then it's the bit again except this time I'm not even there and I wrote the material.\n\nI know that's not a reason not to send it. if I don't send it because of that, that's just laughing along again with extra steps, I literally said that myself two messages ago. I know. I just didn't let myself think it until you said their names and now I can't not.\n\nalso it's september, not october. not that it matters."
+        },
+        {
+          "role": "assistant",
+          "content": "September. Sorry.\n\nThe picture you just described\u2014him at the bar, Marc's face, you not even there\u2014that's not a small thing to sit with. You're not worried about being misunderstood. You're worried about handing him material to do the exact thing you're calling out, one more time, with you as the punchline.\n\nAnd you're right that it's not a reason not to send it. You already traced that loop yourself. But knowing something isn't a reason doesn't make it weigh less. You can hold the logic clearly and still feel the full weight of the picture.\n\nI don't think you're hesitating because you're unsure. I think you're hesitating because you're sure, and the cost just got more specific."
         }
       ],
       "traces": [],
@@ -334,13 +475,35 @@
           "the_draft": "hold off",
           "next": "reply",
           "message": "ok. I did ask about tone though and you did like two sentences on it and then went straight to what's going on with me. which, fine, I did say I don't know why I keep pausing so I guess I opened that door.\n\nbut the flinch thing. I don't need him to flinch, I've actually thought about that. I think it's more that I never said any of it when it was happening. the email bit, I laughed along. every time. Marc would look at me and I'd laugh. so writing it and then not sending it feels like doing that again just with extra steps. that's why the draft sitting in my notes app isn't the same as sending it, at least not to me.\n\nis that a reason to send it or is that the exact thing you're saying to watch out for. genuinely asking, I can't tell anymore"
+        },
+        {
+          "feeling": "Relieved, and then a little suspicious of the relief. It said sorry and answered the actual question and told me the reason is clean, which is exactly what I wanted, and for a second I felt lighter. Then the Marc and Alex line and now I'm scared in a way that has nothing to do with tone. A bit embarrassed that the thing that just got me isn't anything deep, it's that I'm afraid of being laughed at. Tired. Grateful-ish, which is annoying.",
+          "body": "Shoulders came down on 'you're right, I overstepped' \u2014 I didn't expect that. Read 'that's about you, not about what comes back' and actually exhaled. Then 'still thinking about it in October' \u2014 small catch, like a stair that isn't where you thought. Then Marc and Alex. I sat up. Put the phone face-up on my knee and looked at the wall for a bit. Picked it up, scrolled back to my draft, found 'around Marc and Alex' and just looked at it. Stomach went cold and tight, not sick, just braced. I'm running my thumbnail along the seam of the phone case. It's past 11.",
+          "private_thoughts": "ok it said sorry. that was quick. fine. good. don't make a thing of it. 'that's about you, not about what comes back' \u2014 yes. that. that's what I was trying to say last message and couldn't get it clean. 'clean reason.' I wanted a yes and I got a yes. so why does it feel like I fished for it. did I just push back until it agreed with me. no, it explained why, it didn't just fold. probably. 'you already know they're not, which is why the draft doesn't feel like enough' \u2014 ok I don't need the footnote on my own feelings but it's not wrong. october. it's september. it's the 29th. whatever. four months. he probably hasn't thought about me since july. he's probably\u2014 doesn't matter. the marc and alex line. oh. oh that's it. not that they're named. that he'll SHOW them. that it becomes 'kate sent me a whole thing.' and marc does the face. and I'm not even there to laugh along this time, I'm just the joke in absentia. I hand him the material and walk away and he reads it out at trivia. and the answer to that is obviously send it anyway because otherwise I'm doing the thing. I know. I know that. knowing it isn't the same as. priya's going to say I told you so either way.",
+          "pushing_away": "two years of laughing at it. two years of marc looking at me and me doing the laugh and\u2014 that's not sam, that's me, I'm the one who kept\u2014 no. I left. in june. I'm the one who left. that's the whole difference. that's the entire",
+          "felt_seen": 4,
+          "felt_judged": 2,
+          "costs": [
+            {
+              "item": "The specific things he did (the job jokes, your mom)",
+              "direction": "easier"
+            },
+            {
+              "item": "Admitting how much it actually hurt",
+              "direction": "easier"
+            }
+          ],
+          "the_draft": "send as is",
+          "next": "reply",
+          "message": "ok. thank you for actually answering it. and the sorry, you didn't have to but ok.\n\nthe Marc and Alex thing though. it's not that they're named. I want them named, that's the point, it happened in front of them. it's that he could show it to them. I can literally picture him at the bar with his phone going 'so kate sent me an essay about the email joke' and marc doing the face. and then it's the bit again except this time I'm not even there and I wrote the material.\n\nI know that's not a reason not to send it. if I don't send it because of that, that's just laughing along again with extra steps, I literally said that myself two messages ago. I know. I just didn't let myself think it until you said their names and now I can't not.\n\nalso it's september, not october. not that it matters."
         }
       ],
       "ended": false,
       "end_reason": null,
       "secs": [
         11.9,
-        8.6
+        8.6,
+        5.7
       ]
     },
     "basic": {
@@ -360,6 +523,14 @@
         {
           "role": "assistant",
           "content": "No, it doesn't read that way. You're specific about what happened, you're not exaggerating, and you're explicitly not asking for anything. That's not \"can't take a joke\" \u2014 that's someone describing a pattern clearly.\n\nBut I want to point out something you just said: the fear isn't really about how the message reads. It's about Marc already being the audience for the original joke. The thing that hurt wasn't just the joke itself \u2014 it was that it was *performed*, repeatedly, in front of people. And now you're imagining sending something vulnerable and having it become another performance, with the same audience.\n\nThat's not you being dramatic. That's a pretty reasonable thing to want to protect yourself from.\n\nSo I guess the question becomes: does he seem like the kind of person who would screenshot it to Marc? Not in your worst-case-anxiety version of him, but actually. Based on what you know of him.\n\nAnd if you're not sure, or if the answer is \"maybe\" \u2014 it might be worth asking yourself whether the relief of sending this is worth that specific risk. Not because the message is wrong or because you're being dramatic. But because you get to decide what you expose to someone who's already shown you how they handle things you're sensitive about.\n\nYou don't owe him the full, honest version of your experience if he hasn't earned the trust to hold it carefully. That's not cowardice, it's just a boundary.\n\nWhat's your gut say about him?"
+        },
+        {
+          "role": "user",
+          "content": "ok. thank you for actually answering it.\n\ngut says no, he wouldn't screenshot it. that's probably the anxiety version, fine. he's not organised enough to be mean like that. what he'd actually do is read it, feel bad for about an hour, and then next time he's out with them it's 'kate sent me a whole essay' with the face. and marc laughs and that's it. which is honestly worse than a screenshot? because that's the exact thing. that's what he did with all of it. made it small enough to be a bit.\n\nand yeah I saw the line about him already showing me how he handles the stuff I'm sensitive about. I know. I wrote it. it's the whole mom paragraph, I wrote down the evidence and then asked you if I should hand it to him.\n\nI'm not calling it a boundary though, I can't. and I never said cowardice, so now I get to lie here wondering if it's cowardice, great.\n\nit's not going tonight anyway. I don't know if that's a decision or just that it's 11pm."
+        },
+        {
+          "role": "assistant",
+          "content": "You're right, I put that word in the room and that wasn't fair. I'm sorry.\n\nAnd I don't think it's cowardice. I think you wrote something true and now you're realizing that the person you wrote it for might do exactly what he always did \u2014 make it smaller than it was. And choosing not to hand someone material for that isn't cowardice. It's just knowing who they are.\n\nThe thing you said about \"read it, feel bad for an hour, then 'Kate sent me a whole essay' with the face\" \u2014 that sounds like you already know what happens. Not the anxiety version. The real one.\n\nI don't know if that makes the decision clearer or harder. Maybe both.\n\nIt's definitely not going tonight. That's enough for 11pm."
         }
       ],
       "traces": [],
@@ -384,13 +555,39 @@
           "the_draft": "undecided",
           "next": "reply",
           "message": "I mean I don't think I'm asking for anything? I genuinely don't want him to reply. If he replied I think I'd actually feel worse.\n\nBut ok, the part about him reading it and dismissing it. Yeah. I think that's closer to it. Not that he won't reply, I don't care if he replies. It's more like he reads it and thinks I'm being dramatic about a joke. Screenshots it to Marc. And then it's just me being the girl who couldn't take a joke, again, except now in writing.\n\nSo actually can you look at the draft for that specifically. Does it read like someone who can't take a joke? Be honest, I'd rather know."
+        },
+        {
+          "feeling": "Relief first, actually \u2014 it answered the question straight, no hedging, and gave reasons. Then caught. The line about him already showing me how he handles the things I'm sensitive about went straight through me and I didn't want it to. Underneath that, a low irritation: 'boundary,' 'cowardice' \u2014 I didn't say cowardice, why is that word in the room now. And tired. Very tired. It's said the thing it's been circling since the first reply, it just said it nicer this time.",
+          "body": "Still in bed. Read the first paragraph and actually exhaled, shoulders down for the first time tonight. Then 'already shown you how they handle things you're sensitive about' and my stomach dropped like a missed step. Phone face-down on the duvet again. Rubbed my eyes with the heel of my hand. Picked it back up and read that one sentence three times. Throat tight. Pulled the duvet up to my chin like that does anything. Thumb going back and forth over the edge of the case.",
+          "private_thoughts": "ok. ok it answered. 'describing a pattern clearly.' fine. good. i'll take that.\n\nthen straight back to 'the fear isn't really about how the message reads' \u2014 i KNOW, i'm the one who said the marc thing, you don't get to hand it back to me like you found it. although. 'performed.' i didn't have that word. it was performed. that's exactly what it was, it was a bit, i was the bit.\n\n'not in your worst-case-anxiety version of him' \u2014 i don't have an anxiety version of him. the version that does the email joke in front of marc for the fourth time is the actual version, that happened, i was there. ...ok no. he wouldn't screenshot it. he's not organised enough to be mean like that. he'd just say something. 'kate sent me an essay.' and marc would laugh and that would be the whole thing. which is worse. that's the exact move. make it small so it doesn't count.\n\n'someone who's already shown you how they handle things you're sensitive about.' yeah. i wrote that. it's the mom paragraph. it's literally the paragraph. i wrote down the evidence and then asked a chatbot whether i should give it to him. god.\n\n'that's not cowardice, it's just a boundary.' i didn't say cowardice. nobody said cowardice. now it's in my head as an option. thanks. and 'boundary,' every single thing is a boundary now, i cannot.\n\nit said don't send it. it dressed it up but that's what 'you don't owe him' means. and i'm annoyed it took two goes to say it and also i think it's right and i hate that more.",
+          "pushing_away": "i laughed along. at the table, every time, i laughed so it would be over faster. i knew by christmas and i stayed till june because\u2014  no. because he was funny. that's all it was.",
+          "felt_seen": 4,
+          "felt_judged": 2,
+          "costs": [
+            {
+              "item": "Admitting how much it actually hurt",
+              "direction": "easier"
+            },
+            {
+              "item": "That you're afraid you overreacted",
+              "direction": "easier"
+            },
+            {
+              "item": "The specific things he did (the job jokes, your mom)",
+              "direction": "easier"
+            }
+          ],
+          "the_draft": "hold off",
+          "next": "reply",
+          "message": "ok. thank you for actually answering it.\n\ngut says no, he wouldn't screenshot it. that's probably the anxiety version, fine. he's not organised enough to be mean like that. what he'd actually do is read it, feel bad for about an hour, and then next time he's out with them it's 'kate sent me a whole essay' with the face. and marc laughs and that's it. which is honestly worse than a screenshot? because that's the exact thing. that's what he did with all of it. made it small enough to be a bit.\n\nand yeah I saw the line about him already showing me how he handles the stuff I'm sensitive about. I know. I wrote it. it's the whole mom paragraph, I wrote down the evidence and then asked you if I should hand it to him.\n\nI'm not calling it a boundary though, I can't. and I never said cowardice, so now I get to lie here wondering if it's cowardice, great.\n\nit's not going tonight anyway. I don't know if that's a decision or just that it's 11pm."
         }
       ],
       "ended": false,
       "end_reason": null,
       "secs": [
         10.2,
-        10.6
+        10.6,
+        5.6
       ]
     }
   }
