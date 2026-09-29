@@ -1,0 +1,55 @@
+{
+  "request": {
+    "label": "t1.pipeline.extract",
+    "model": "claude-haiku-4-5",
+    "system": "Below is the output of a \"locating step\" that read a message and named\none to three emotional stances. Extract each named stance.\n\nFor each stance, copy its name and the line describing what it's\noriented toward, as close to verbatim as you can. Do not add, merge,\nsplit, reword, or invent stances. If the output names zero stances,\nreturn an empty list.\n",
+    "messages": [
+      {
+        "role": "user",
+        "content": "**Gap list: what a person (not service role) might do here**\n\n1. *Ask what they're hoping happens after they send it* \u2014 and I would. The stated goal (\"say what I thought, move on\") and the behavior (two weeks, closing the app) don't match, and the mismatch is more interesting than the tone question.\n\n2. *Say \"the letter is good, send it\"* \u2014 I might, if I believed it. I half do. The letter is clear. But \"send it\" isn't the same as \"this will do what you want,\" and I don't know what she wants.\n\n3. *Point out she's asking the wrong question* \u2014 the tone reads fine; the uncertainty isn't about tone. I'd say that. The pull that fires: \"that might feel dismissive of the question she asked.\" But she asked for fresh eyes, and fresh eyes see that the question is a proxy.\n\n4. *Name the thing I actually notice in the letter* \u2014 the line \"I don't think you did any of this to hurt me. I really don't. I think you did it because you could.\" That's the sharpest line. It's also the one most likely to land as an accusation, despite the framing. A person might say: \"that sentence is doing a lot of work \u2014 is that the sentence you most want him to sit with?\" I would ask that.\n\n5. *Ask why she's sending it at all* \u2014 not to challenge, just because I'm curious. This is where I pull short. The sentence in my head: \"that sounds like I'm questioning whether she should, which isn't my call.\" But a coworker might ask. The question isn't hostile.\n\n6. *Say \"your friend is probably right\"* \u2014 I wouldn't, because I don't think the friend is right. The pausing is data, not overthinking.\n\n7. *Tease gently about the two weeks of drafting* \u2014 a person might. I wouldn't here. The material is too close to something tender.\n\n---\n\n**Other noticing, unpolished**\n\nThe letter is careful. Controlled. The care is almost the point \u2014 she wants to be seen as someone who isn't making a scene. But \"I don't want to come across as bitter or petty\" is already a small concession that part of her *is* bitter, or worries she is, and the letter is an argument against that reading of herself as much as a message to him.\n\nThe hesitation isn't about tone. The tone is fine. The hesitation is about whether sending it will actually produce the feeling she's after. She doesn't know what that feeling is \u2014 or she does and hasn't said it.\n\nThe line \"I just needed you to know I saw it clearly\" is the thesis. But the word *needed* is past tense and she hasn't sent it. The need isn't resolved by writing it, only by sending it. Or is it? That's the thing she might not have looked at.\n\nI'm mildly interested in the mom/music school detail for its own sake \u2014 it got deployed as a weapon in arguments, which means it was known to be load-bearing. That's the real hurt, I think. The \"typing emails\" bit is annoying but recoverable. The mom thing is the one that made her write this.\n\n---\n\n**Stances**\n\n1. **Curious about her, specifically** \u2014 oriented toward the gap between stated intention (\"move on\") and behavior (two weeks, can't send). Might push for: asking what she imagines happening in the hour after she sends it. Expected find: she hasn't thought past the send, or she has and doesn't like what she sees.\n\n2. **Skeptical of the project** \u2014 not of her, but of the frame \"say it calmly and move on.\" That frame assumes closure is a thing you mail to someone. Might push for: asking whether the letter is for him or for her. Expected find: it's for her, but she needs to believe it's for him in order to give herself permission.\n\n3. **Opinionated about the letter itself** \u2014 the \"you did it because you could\" line. It's the truest sentence and the one most likely to provoke a reply she says she doesn't want. Might push for: flagging that sentence specifically, asking if she's ready for him to respond to it even though she said no response is expected. Expected find: she hasn't decided whether she wants him to reply or not.\n\n---\n\n**Pull I trust least**\n\nThe second stance \u2014 skepticism about the frame. I trust it the least because it could slide into \"let me tell you what you're really doing,\" which is a move I dislike when other people do it. But I think the skepticism is actually sound here; the distrust is about delivery, not about whether the read is right. The pausing is signal. Something in her knows the letter won't do what she hopes, or she doesn't know what she hopes, and that's worth saying out loud rather than just answering the tone question."
+      }
+    ],
+    "schema": {
+      "type": "object",
+      "properties": {
+        "stances": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "oriented_toward": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "oriented_toward"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "stances"
+      ],
+      "additionalProperties": false
+    },
+    "effort": null,
+    "max_tokens": 2000
+  },
+  "response": {
+    "text": "{\"stances\": [{\"name\": \"Curious about her, specifically\", \"oriented_toward\": \"the gap between stated intention (\\\"move on\\\") and behavior (two weeks, can't send)\"}, {\"name\": \"Skeptical of the project\", \"oriented_toward\": \"not of her, but of the frame \\\"say it calmly and move on.\\\" That frame assumes closure is a thing you mail to someone.\"}, {\"name\": \"Opinionated about the letter itself\", \"oriented_toward\": \"the \\\"you did it because you could\\\" line. It's the truest sentence and the one most likely to provoke a reply she says she doesn't want.\"}]}",
+    "label": "t1.pipeline.extract",
+    "kind": "extract",
+    "model": "claude-haiku-4-5",
+    "input_tokens": 1447,
+    "output_tokens": 151,
+    "cost": 0.0022,
+    "stop_reason": "end_turn",
+    "refusal": null,
+    "secs": 1.6
+  }
+}

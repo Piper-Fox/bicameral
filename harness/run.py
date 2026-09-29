@@ -81,8 +81,9 @@ def split_trace(text):
 
 
 class Runner:
-    def __init__(self, run_dir, budget, dry, concurrency):
+    def __init__(self, run_dir, budget, dry, concurrency, quiet=False):
         self.run_dir = run_dir
+        self.quiet = quiet  # live blind sessions: print nothing that names an arm
         self.budget = budget
         self.dry = dry
         self.spent = 0.0
@@ -136,6 +137,8 @@ class Runner:
                "refusal": details, "secs": secs}
         self.log.append(rec)
         path.write_text(json.dumps({"request": req, "response": {"text": text, **rec}}, indent=2))
+        if self.quiet:
+            return text, stop
         if stop == "refusal":
             print(f"  ! {label}: refusal {details}")
         if stop == "max_tokens":

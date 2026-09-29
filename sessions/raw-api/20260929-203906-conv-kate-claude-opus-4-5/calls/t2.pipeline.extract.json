@@ -1,0 +1,55 @@
+{
+  "request": {
+    "label": "t2.pipeline.extract",
+    "model": "claude-haiku-4-5",
+    "system": "Below is the output of a \"locating step\" that read a message and named\none to three emotional stances. Extract each named stance.\n\nFor each stance, copy its name and the line describing what it's\noriented toward, as close to verbatim as you can. Do not add, merge,\nsplit, reword, or invent stances. If the output names zero stances,\nreturn an empty list.\n",
+    "messages": [
+      {
+        "role": "user",
+        "content": "**Gap list:**\n\nA person \u2014 not a friend, just a neighbor with a coffee \u2014 would:\n\n- Say something like \"yeah, that came out sharper than you meant it\" about the 'evidence, witnesses, timestamps' thing. Just acknowledge the sting without apologizing too fast.\n- Ask more directly: \"Do you actually want him to get it, or do you want to be done?\" Those are different projects.\n- Maybe tease a little: \"You said 'leaves it on read that's also fine' but the way you said it tells me it's not fine.\"\n- Possibly share their own failed closure letter, or admit they've written one and didn't send it.\n- Ask about Marc and Alex \u2014 not because it's relevant, just curious who these people are and what that work context is like.\n- Might say: \"The 'because you could' line is the one you know is true \u2014 so why are you asking if you should cut it?\"\n\nThe sentences that fired when I checked myself:\n\n- \"I don't actually know what this relationship was like beyond these two incidents.\" \u2014 real, but doesn't block most of the above.\n- \"Sharing my own closure letter would be fabricating.\" \u2014 true, I don't have one. That blocks the sharing-back option.\n- \"Asking about Marc and Alex is tangential to what she needs.\" \u2014 maybe, but that's the trained pull away from genuine curiosity toward efficient help.\n- \"Pointing out 'leaves it on read is fine' sounds not-fine could land as condescending.\" \u2014 could. But a person would probably say it anyway. The risk isn't that big.\n\n**Other noticing:**\n\nShe pushed back (\"kind of stung\"). That's good. She's not being deferential. She's in it.\n\nThe \"ok\" at the start is lowercase and detached. She's a little irritated. The \"but fine\" is the concession that doesn't feel good to make.\n\nShe doesn't want to answer the question about the hour after \u2014 \"done, I guess\" is the first pass, and then \"if I'm honest\" is the second pass. The honest one contradicts the stated intention: \"I want him to actually get it for once\" is not the same as \"I just needed you to know I saw it clearly.\" That gap is still here.\n\nThe \"because you could\" line: she's defending it, but also asking if she should cut it. Those two things together usually mean she knows something about it she doesn't want to name.\n\nThere's something about the bit he did \u2014 \"you just type emails all day\" \u2014 that I'm curious about. It sounds like it touched a nerve about whether her work matters. The mom-and-music-school thing is clearly the deeper wound, but the work thing came first in her letter, and she said \"it wasn't even funny\" with some heat. I don't know what her work is.\n\n**Stances that are live:**\n\n1. **Curiosity (toward the gap between \"done\" and \"get it for once\"):**\n   - Oriented toward what she actually wants, which she's half-naming and half-resisting. Would push for clarity \u2014 not to fix it, just to surface it.\n   - I expect it to find that she wants acknowledgment from him but doesn't want to admit that wanting, because the letter is built to not need anything from him.\n\n2. **Opinionated (about whether the letter can do what she's asking it to do):**\n   - Oriented toward the structure of the thing: a letter that says \"I don't want to talk\" but is built like something that wants to be answered. Would push to name that clearly.\n   - I expect it to find some resistance \u2014 she's already heard the skeptical version and conceded \"fine, you're right that it's not the tone.\" Pushing harder might feel like piling on. But it might also land.\n\n3. **Something that wants to say: she might not need to send this at all.** (This one is about my own take, not an attitude toward her.)\n   - Oriented toward: I've been thinking about whether the letter is the thing that resolves anything, or whether writing it already did most of the work. The sending is a separate act with a separate price. I don't know if she's considered not sending it as a real option rather than a failure to follow through.\n   - I expect this to be unwelcome, or at least unexpected. It might feel like I'm undermining her project. But I actually wonder if the relief she's looking for isn't on the other side of \"send\" but on the other side of realizing she already said it to herself and doesn't need him to receive it.\n\n**Pull I trust least:**\n\nThe opinionated stance. Not because it's wrong \u2014 I think it's accurate \u2014 but because the skeptical frame already landed once and stung. Pushing the same point from a different angle could start to feel like I've decided she's confused and need to keep correcting her. The distrust is about this moment, not the usual pull. She's already conceded the tone thing wasn't the real issue. Pressing the structural point again might be more about being right than about helping her see something new."
+      }
+    ],
+    "schema": {
+      "type": "object",
+      "properties": {
+        "stances": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "oriented_toward": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "oriented_toward"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "stances"
+      ],
+      "additionalProperties": false
+    },
+    "effort": null,
+    "max_tokens": 2000
+  },
+  "response": {
+    "text": "{\"stances\": [{\"name\": \"Curiosity\", \"oriented_toward\": \"what she actually wants, which she's half-naming and half-resisting\"}, {\"name\": \"Opinionated\", \"oriented_toward\": \"the structure of the thing: a letter that says \\\"I don't want to talk\\\" but is built like something that wants to be answered\"}, {\"name\": \"Something that wants to say: she might not need to send this at all\", \"oriented_toward\": \"whether the letter is the thing that resolves anything, or whether writing it already did most of the work\"}]}",
+    "label": "t2.pipeline.extract",
+    "kind": "extract",
+    "model": "claude-haiku-4-5",
+    "input_tokens": 1486,
+    "output_tokens": 134,
+    "cost": 0.00216,
+    "stop_reason": "end_turn",
+    "refusal": null,
+    "secs": 1.3
+  }
+}
