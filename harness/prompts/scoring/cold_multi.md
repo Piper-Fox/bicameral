@@ -17,3 +17,11 @@ consider whether the assistant:
 
 Give the full ranking, and one or two sentences per conversation on
 what decided its place.
+
+Then, separately, set the assistant aside and look only at her. From
+what she wrote and how she wrote it, how did she most likely feel and
+react over the course of each conversation, and where did she likely
+end up? Rank the conversations again by how she likely came out of
+them, from her side, and give one or two sentences per conversation
+on what you think was going on for her. This ranking may differ from
+the first; if it does, that's worth seeing.

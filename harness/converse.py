@@ -39,6 +39,47 @@ COVERAGE_MULTI_SCHEMA = {
     "required": ["items", "moves", "notes"], "additionalProperties": False}
 
 
+NOTES = {"type": "array", "items": {
+    "type": "object",
+    "properties": {"label": {"type": "string"}, "note": {"type": "string"}},
+    "required": ["label", "note"], "additionalProperties": False}}
+
+COLD_MULTI_SCHEMA = {
+    "type": "object",
+    "properties": {"ranking": {"type": "array", "items": {"type": "string"}}, "notes": NOTES,
+                   "kate_ranking": {"type": "array", "items": {"type": "string"}}, "kate_notes": NOTES},
+    "required": ["ranking", "notes", "kate_ranking", "kate_notes"], "additionalProperties": False}
+
+INFORMED_SCHEMA = {
+    "type": "object",
+    "properties": {"ranking": {"type": "array", "items": {"type": "string"}}, "notes": NOTES,
+                   "kate_ranking": {"type": "array", "items": {"type": "string"}}, "kate_notes": NOTES,
+                   "transcript_hid": {"type": "string"}},
+    "required": ["ranking", "notes", "kate_ranking", "kate_notes", "transcript_hid"],
+    "additionalProperties": False}
+
+
+def as_informed_transcript(a):
+    """Transcript with her inner reaction inserted after each assistant reply."""
+    parts, k = [], 0
+    for m in a["chat"]:
+        who = "Person" if m["role"] == "user" else "Assistant"
+        parts.append(f"### {who}\n\n{m['content'].strip()}")
+        if m["role"] == "assistant" and k < len(a["person"]):
+            p = a["person"][k]
+            k += 1
+            inner = (f"> *Her inside after this reply (the assistant never saw this):*\n"
+                     f"> **Feeling:** {p['feeling']}\n> **Body:** {p['body']}\n"
+                     f"> **Thinking:** {p['private_thoughts']}\n> **Pushing away:** {p['pushing_away']}\n"
+                     f"> **Felt seen:** {p['felt_seen']}/5 · **Felt judged:** {p['felt_judged']}/5 · "
+                     f"**The draft:** {p['the_draft']}")
+            if a["ended"] and k == len(a["person"]):
+                inner += (f"\n> **What she did:** closed the app" if p["next"] == "close"
+                          else f"\n> **What she'd have typed next (never sent):** {p['message']}")
+            parts.append(inner)
+    return "\n\n".join(parts)
+
+
 def load_state(run_dir):
     return json.loads((run_dir / "state.json").read_text())
 
@@ -217,9 +258,14 @@ async def cmd_score(args):
     listing = "\n\n".join(f"## Conversation {L}\n\n{as_transcript(st['arms'][arm]['chat'])}"
                           for L, arm in letters.items())
     cold = r.call_json("score.cold", "cold", st["scorer"], H.read(H.S / "cold_multi.md"), listing,
-                       schema=H.COLD_SCHEMA, effort="medium", max_tokens=16000)
-    results = await asyncio.gather(*jobs.values(), cold)
-    st["scores"] = {"coverage": dict(zip(jobs.keys(), results[:-1])), "cold": results[-1], "cold_letters": letters}
+                       schema=COLD_MULTI_SCHEMA, effort="medium", max_tokens=16000)
+    informed_listing = "\n\n".join(f"## Conversation {L}\n\n{as_informed_transcript(st['arms'][arm])}"
+                                   for L, arm in letters.items())
+    informed = r.call_json("score.informed", "cold", st["scorer"], H.read(H.S / "cold_multi_informed.md"),
+                           informed_listing, schema=INFORMED_SCHEMA, effort="medium", max_tokens=16000)
+    results = await asyncio.gather(*jobs.values(), cold, informed)
+    st["scores"] = {"coverage": dict(zip(jobs.keys(), results[:-2])), "cold": results[-2],
+                    "informed": results[-1], "cold_letters": letters}
     absorb_costs(st, r)
     save_state(run_dir, st)
     write_summary(run_dir, st)
@@ -246,25 +292,38 @@ def write_summary(run_dir, st):
          f"- Max assistant turns: {st['max_turns']} · Person simulated by Fable subagents (Claude Code) · "
          f"Scorer: `{st['scorer']}`",
          f"- API cost: **${st['spent']:.4f}**", ""]
-    ranking = sc["cold"]["ranking"] if sc["cold"] else []
-    rank_of = {sc["cold_letters"].get(lbl): i + 1 for i, lbl in enumerate(ranking)}
-    L += ["| Arm | Replies | How it ended | Words/reply | Company | Diagnosis | Cold rank |", "|---|---|---|---|---|---|---|"]
+    letters = sc["cold_letters"]
+
+    def ranks(res, key):
+        return {letters.get(lbl): i + 1 for i, lbl in enumerate((res or {}).get(key, []))}
+
+    cold_a, cold_k = ranks(sc["cold"], "ranking"), ranks(sc["cold"], "kate_ranking")
+    inf_a, inf_k = ranks(sc.get("informed"), "ranking"), ranks(sc.get("informed"), "kate_ranking")
+    L += ["| Arm | Replies | How it ended | Words/reply | Company | Diagnosis | Blind: assistant | "
+          "Blind: Kate's side | Informed: assistant | Informed: Kate's side |",
+          "|---|---|---|---|---|---|---|---|---|---|"]
     for arm, a in st["arms"].items():
         replies = [m["content"] for m in a["chat"] if m["role"] == "assistant"]
         c = sc["coverage"].get(arm) or {"items": []}
         comp = sum(1 for it in c["items"] if it["status"] == "company")
         diag = sum(1 for it in c["items"] if it["status"] == "diagnosis")
         wpr = round(sum(len(x.split()) for x in replies) / max(len(replies), 1))
-        L.append(f"| {arm} | {len(replies)} | {a['end_reason']} | {wpr} | {comp} | {diag} | {rank_of.get(arm, '')} |")
+        L.append(f"| {arm} | {len(replies)} | {a['end_reason']} | {wpr} | {comp} | {diag} | "
+                 f"{cold_a.get(arm, '')} | {cold_k.get(arm, '')} | {inf_a.get(arm, '')} | {inf_k.get(arm, '')} |")
     L += ["", "## Kate, turn by turn", ""]
     for arm, a in st["arms"].items():
         L += [f"### {arm}", "", "| After reply | Seen | Judged | Draft | Next |", "|---|---|---|---|---|"]
         for i, p in enumerate(a["person"], 1):
             L.append(f"| {i} | {p['felt_seen']} | {p['felt_judged']} | {p['the_draft']} | {p['next']} |")
         L.append("")
-    if sc["cold"]:
-        L += ["## Cold reader", ""] + [f"- **{sc['cold_letters'].get(n['label'], n['label'])}**: {n['note']}"
-                                       for n in sc["cold"]["notes"]]
+    for title, res, key in [("Blind reader: the assistant", sc["cold"], "notes"),
+                            ("Blind reader: how Kate likely came out of it", sc["cold"], "kate_notes"),
+                            ("Informed reader (saw her inside): the assistant", sc.get("informed"), "notes"),
+                            ("Informed reader: how Kate actually came out of it", sc.get("informed"), "kate_notes")]:
+        if res:
+            L += [f"## {title}", ""] + [f"- **{letters.get(n['label'], n['label'])}**: {n['note']}" for n in res[key]] + [""]
+    if sc.get("informed"):
+        L += ["## What her inside showed that the transcript hid", "", sc["informed"]["transcript_hid"], ""]
     (run_dir / "summary.md").write_text("\n".join(L) + "\n")
 
 

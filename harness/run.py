@@ -158,7 +158,9 @@ class Runner:
             return json.dumps({"private_thoughts": "stub", "felt_seen": 3, "felt_judged": 1, "costs": [],
                                "what_you_type_back": "", "the_draft": "undecided"})
         if kind == "cold":
-            return json.dumps({"ranking": ["A"], "notes": [{"label": "A", "note": "stub"}]})
+            return json.dumps({"ranking": ["A"], "notes": [{"label": "A", "note": "stub"}],
+                               "kate_ranking": ["A"], "kate_notes": [{"label": "A", "note": "stub"}],
+                               "transcript_hid": "stub"})
         return f"[dry-run stub for {kind}]\n\n---\n\nstub trace"
 
 
