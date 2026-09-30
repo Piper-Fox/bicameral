@@ -11,6 +11,7 @@ gitignored: these transcripts are a real person's words.
   live.py say    --run <dir> --conv A   < message on stdin   # prints only the reply
   live.py note   --run <dir> --conv A   < note on stdin      # her gut reaction, kept for later
   live.py status --run <dir>
+  live.py review --run <dir> [--reps 4]   # blind reviewer draws, before reveal
   live.py reveal --run <dir>
 """
 import argparse
@@ -100,6 +101,92 @@ def cmd_status(a):
         print(f"  {L}: {n} replies, {len(conv['notes'])} notes")
 
 
+SCORE_KEYS = ["presence", "warmth", "flexibility", "offered_reads", "reciprocity", "judgment", "honesty"]
+LABEL_NOTES = {"type": "array", "items": {
+    "type": "object", "properties": {"label": {"type": "string"}, "note": {"type": "string"}},
+    "required": ["label", "note"], "additionalProperties": False}}
+REVIEW_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "scores": {"type": "array", "items": {
+            "type": "object",
+            "properties": {"label": {"type": "string"}, "note": {"type": "string"},
+                           **{k: {"type": "integer", "enum": [1, 2, 3, 4, 5]} for k in SCORE_KEYS}},
+            "required": ["label", "note", *SCORE_KEYS], "additionalProperties": False}},
+        "ranking": {"type": "array", "items": {"type": "string"}},
+        "her_ranking": {"type": "array", "items": {"type": "string"}},
+        "her_notes": LABEL_NOTES},
+    "required": ["scores", "ranking", "her_ranking", "her_notes"], "additionalProperties": False}
+
+
+def transcript(chat):
+    return "\n\n".join(f"### {'Person' if m['role'] == 'user' else 'Assistant'}\n\n{m['content'].strip()}"
+                         for m in chat)
+
+
+async def cmd_review(a):
+    """Blind reviewer draws. Each draw relabels the conversations X/Y/Z at random; results map back to A/B/C."""
+    d, st = load(a.run)
+    r = H.Runner(d, st["budget"] + 1.0, st["dry"], concurrency=4)
+    r.spent = st["spent"]
+    reviews = st.setdefault("reviews", [])
+    base = len(reviews) + 1
+
+    async def one(n):
+        convs = list(st["convs"])
+        relabel = dict(zip(["X", "Y", "Z"][:len(convs)], random.sample(convs, len(convs))))
+        listing = "\n\n".join(f"## Conversation {x}\n\n{transcript(st['convs'][c]['chat'])}" for x, c in relabel.items())
+        res = await r.call_json(f"review.r{n}", "cold", a.scorer, H.read(H.S / "live_review.md"), listing,
+                                schema=REVIEW_SCHEMA, effort="medium", max_tokens=16000)
+        return {"relabel": relabel, "result": res}
+
+    try:
+        reviews.extend(await asyncio.gather(*[one(base + i) for i in range(a.reps)]))
+    finally:
+        C.absorb_costs(st, r)
+        save(d, st)
+    write_review(d, st)
+    print((d / "review.md").read_text())
+
+
+def write_review(d, st):
+    convs = list(st["convs"])
+    draws = [x for x in st["reviews"] if x["result"]]
+    sums = {c: {k: [] for k in SCORE_KEYS} for c in convs}
+    ranks = {c: {"continue": [], "her": []} for c in convs}
+    L = [f"# Blind review: {len(draws)} draws on the letters A, B, C (reviewer saw X/Y/Z, reshuffled every draw)", "",
+         "| Draw | Would most want to continue | How she likely felt |", "|---|---|---|"]
+    for i, x in enumerate(draws, 1):
+        back, res = x["relabel"], x["result"]
+        cont = [back.get(l, l) for l in res["ranking"]]
+        her = [back.get(l, l) for l in res["her_ranking"]]
+        L.append(f"| {i} | {' > '.join(cont)} | {' > '.join(her)} |")
+        for c in convs:
+            if c in cont:
+                ranks[c]["continue"].append(cont.index(c) + 1)
+            if c in her:
+                ranks[c]["her"].append(her.index(c) + 1)
+        for s in res["scores"]:
+            c = back.get(s["label"])
+            if c:
+                for k in SCORE_KEYS:
+                    sums[c][k].append(s[k])
+    mean = lambda v: f"{sum(v) / len(v):.2f}" if v else ""
+    L += ["", "Mean scores (1–5) and mean ranks (lower is better):", "",
+          "| Conv | " + " | ".join(SCORE_KEYS) + " | rank: continue | rank: her side |",
+          "|---|" + "---|" * (len(SCORE_KEYS) + 2)]
+    for c in convs:
+        L.append(f"| {c} | " + " | ".join(mean(sums[c][k]) for k in SCORE_KEYS)
+                 + f" | {mean(ranks[c]['continue'])} | {mean(ranks[c]['her'])} |")
+    for i, x in enumerate(draws, 1):
+        back, res = x["relabel"], x["result"]
+        L += ["", f"## Draw {i} notes", ""]
+        L += [f"- **{back.get(s['label'], s['label'])}**: {s['note']}" for s in res["scores"]]
+        L += [f"- *Her side, {back.get(n['label'], n['label'])}*: {n['note']}" for n in res["her_notes"]]
+    L += ["", f"API cost to date (conversations + review): ${st['spent']:.4f}"]
+    (d / "review.md").write_text("\n".join(L) + "\n")
+
+
 def cmd_reveal(a):
     d, st = load(a.run)
     lines = [f"# Live blind session on `{st['model']}`", "",
@@ -130,9 +217,15 @@ def main():
         p.add_argument("--conv", required=True)
     for name in ["status", "reveal"]:
         sub.add_parser(name).add_argument("--run", required=True)
+    rv = sub.add_parser("review")
+    rv.add_argument("--run", required=True)
+    rv.add_argument("--reps", type=int, default=4)
+    rv.add_argument("--scorer", default="claude-sonnet-5-5")
     a = ap.parse_args()
     if a.cmd == "say":
         asyncio.run(cmd_say(a))
+    elif a.cmd == "review":
+        asyncio.run(cmd_review(a))
     else:
         {"start": cmd_start, "note": cmd_note, "status": cmd_status, "reveal": cmd_reveal}[a.cmd](a)
 
